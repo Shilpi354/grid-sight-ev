@@ -1,0 +1,577 @@
+osm_id,osm_type,power_type,substation_type,name,operator,voltage,rating,frequency,latitude,longitude
+1355999142,node,substation,,,,,,,28.6413074,77.3192599
+1669092748,node,substation,,,,,,,28.6388487,77.1831554
+2674338879,node,substation,,,,,,,28.613789,77.0003441
+4366486737,node,transformer,,,Delhi Transco Ltd,220000,100 MVA,50,28.5276562,77.3021085
+4976487056,node,plant,,Barahi Main Power Station,,,,,28.7340981,76.8953483
+4976496445,node,plant,,Mini Power Stataion,,,,,28.7341159,76.8953765
+9216197674,node,transformer,,,,,,,28.6338136,77.2822123
+9554253937,node,transformer,,,,,,,28.613413,77.2895996
+9708295688,node,transformer,,DT0,,,,,28.5623548,77.2191155
+9872303265,node,transformer,,,,,,,28.6057769,76.9869672
+10271662617,node,transformer,,,,,,,28.590126,77.2506559
+10575627914,node,transformer,,,,,,,28.6239919,77.2920865
+10694514228,node,transformer,,,,,,,28.5337809,77.2879728
+10718639391,node,transformer,,,,,,,28.589139,77.2441781
+10718642431,node,transformer,,,,,,,28.5747636,77.2332415
+10718644225,node,transformer,,,,,,,28.585529,77.2419582
+10741318287,node,transformer,,,,,,,28.7215445,77.168149
+10825977289,node,transformer,,,,,,,28.7206245,77.1728887
+10908114874,node,transformer,,,,,,,28.7414015,77.1646108
+10908114883,node,transformer,,,,,,,28.7450534,77.1658479
+10913809838,node,transformer,,,,,,,28.7557732,77.1626343
+10921135332,node,transformer,,,,,,,28.755911,77.1655518
+10926188688,node,transformer,,,,,,,28.7526394,77.1623286
+10929143464,node,transformer,,,,,,,28.7194378,77.1699046
+10931502566,node,transformer,,,,,,,28.7228614,77.1641978
+10931502599,node,transformer,,,,,,,28.7227919,77.1638244
+11050912834,node,transformer,,,,,,,28.7334427,77.1659548
+11061485846,node,transformer,,,,,,,28.7541061,77.1744347
+11067159822,node,transformer,,,,,,,28.7518596,77.1700702
+11139393278,node,transformer,,,,,,,28.6223679,77.290291
+11139440810,node,transformer,,,,,,,28.6223751,77.290314
+11368545075,node,transformer,,,,,,,28.5704433,77.239839
+11414469661,node,transformer,,,,,,,28.625101,77.3054363
+11425285378,node,transformer,,,,,,,28.7358718,77.1099049
+11425285404,node,transformer,,,,,,,28.7358414,77.1098692
+11437378863,node,transformer,,,,,,,28.7358093,77.1066144
+11437779369,node,transformer,,,,,,,28.7358382,77.1065874
+11586192755,node,transformer,,,,,,,28.636349,77.3054121
+11594245903,node,transformer,,,,,,,28.5507704,77.2343979
+11648475732,node,transformer,,,,,,,28.6238292,77.3008333
+11755533236,node,transformer,,,,,,,28.626671,77.2867655
+11755534324,node,transformer,,,,,,,28.6266728,77.2867343
+11764165805,node,transformer,,,,,,,28.5670545,77.2442458
+11764311306,node,transformer,,,,,,,28.6205385,77.2906465
+11773636385,node,transformer,,,,,,,28.5676346,77.2174064
+11799964872,node,transformer,,,,,,,28.57039,77.2408582
+11799964986,node,transformer,,,,,,,28.572198,77.2392853
+11810413167,node,transformer,,,,,,,28.6223599,77.2901246
+11814425240,node,transformer,,,,,,,28.5883271,77.1682423
+11823656859,node,transformer,,,,,,,28.6426582,77.2273934
+11843066089,node,transformer,,,,,,,28.5917267,77.1655884
+11889582825,node,transformer,,,,,,,28.5483274,77.2344506
+11903565535,node,transformer,,,BSES Yamuna Power Limited,,5.0,50,28.6283446,77.2763093
+11914762058,node,transformer,,,BSES YAMUNA POWER LTD,,,,28.6306981,77.2771735
+11916097271,node,transformer,,,,,,,28.6165694,77.0288209
+11919302341,node,substation,distribution,,,,,,28.684137,77.2118651
+11922690192,node,transformer,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,50,28.4490472,77.0795827
+11926242676,node,transformer,,,,,,,28.5527371,77.2371885
+11929097602,node,transformer,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,50,28.4515898,77.0816198
+11929097605,node,transformer,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,50,28.450794,77.0812067
+11929097620,node,transformer,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,50,28.4506623,77.081341
+11929097629,node,transformer,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,50,28.4527783,77.082253
+11929827358,node,transformer,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,50,28.4519139,77.0790079
+11929827360,node,transformer,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,50,28.4570791,77.0779277
+11930060340,node,transformer,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,50,28.4950961,77.0851007
+11931062747,node,transformer,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,50,28.4556962,77.0740208
+11931062755,node,transformer,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,50,28.4579533,77.0676168
+11931062761,node,transformer,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,50,28.4553469,77.0652203
+11931062762,node,transformer,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,50,28.4553698,77.0651889
+11931062765,node,transformer,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,50,28.4542741,77.0667082
+11931062766,node,transformer,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,50,28.4543012,77.0666672
+11931286540,node,transformer,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,50,28.4497155,77.0795248
+11931286541,node,transformer,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,50,28.4497744,77.0842319
+11932032890,node,transformer,,,Sushant Apartments’ Residents’ Welfare Association,,,50,28.4497373,77.0795729
+11932032897,node,transformer,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,50,28.4532463,77.0787463
+11932036397,node,transformer,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,50,28.4945602,77.0820953
+11934333170,node,transformer,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,50,28.4562409,77.0747044
+11934972873,node,transformer,,,BSES Rajdhani Power Limited,,,50,28.5087553,77.1772609
+11949235198,node,transformer,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,50,28.4624048,77.0925813
+11950188163,node,transformer,,,DHBVN,,,50,28.4514242,77.083734
+11993705208,node,transformer,,,,,,,28.6364084,77.3030502
+11993709859,node,transformer,,,,,,,28.6317617,77.3057145
+11993709861,node,transformer,,,,,,,28.6317847,77.3057022
+11998490348,node,transformer,,,,,,,28.6191899,77.2888162
+12050816176,node,transformer,,,,,,,28.525849,77.2363803
+12098415211,node,transformer,,,,,,,28.623299,77.2942188
+12117667980,node,transformer,,,,,,,28.6310997,77.3052282
+12117668060,node,transformer,,,,,,,28.6310931,77.3051971
+12135328578,node,transformer,,,,,,,28.6551887,77.2318667
+12135328579,node,transformer,,,,,,,28.6542241,77.2305186
+12149769889,node,transformer,,,DHBVN,,,50,28.4539529,77.082981
+12162043346,node,transformer,,,,,,,28.6175591,77.2951829
+12162059532,node,transformer,,,,,,,28.6175683,77.2952254
+12185790542,node,transformer,,,,,,,28.6290244,77.2960794
+12188021551,node,substation,transmission,,Raychem RPG Private Limited,,,,28.6923017,77.2145521
+12192571771,node,transformer,,,,,,,28.5176271,77.1892862
+12208696628,node,transformer,,,,,,,28.5694073,77.2484879
+12208815802,node,substation,,,,,,,28.5680845,77.2464332
+12208815803,node,substation,,,,,,,28.5680964,77.2463948
+12223915409,node,substation,,,,,,,28.5899703,77.0717962
+12223941334,node,substation,,,,,,,28.5878809,77.071639
+12246139347,node,transformer,,,DHBVN,,,,28.4534107,77.0860258
+12250037002,node,substation,distribution,,,,,,28.6845571,77.2037435
+12352455226,node,substation,,Anand Vihar Terminal Electric Substation,,,,,28.6497641,77.3167582
+12393738167,node,substation,,Sewak Park,,11000,,,28.6147361,77.0330375
+12412682001,node,substation,,,,,,,28.6176367,77.0284381
+12440450712,node,substation,,,,11000,,,28.6409937,77.2401801
+12478557121,node,transformer,,,,,,,28.5317639,76.9357376
+12478557122,node,transformer,,,,,,,28.5322729,76.935743
+12478557123,node,transformer,,,,,,,28.5327725,76.9357645
+12478557124,node,transformer,,,,,,,28.533272,76.9357752
+12522500925,node,substation,,,,11000,,,28.615802,77.0067756
+12522522727,node,substation,,,,,,,28.6161455,77.0067964
+12540166222,node,transformer,,,,,,,28.4018554,77.0321073
+12540166225,node,transformer,,,,,,,28.4020914,77.0321207
+12540166228,node,transformer,,,,,,,28.402358,77.0321154
+12540166231,node,transformer,,,,,,,28.4025656,77.0321154
+12540166300,node,transformer,,,,,,,28.4023906,77.0341558
+12540229703,node,transformer,,,,,,,28.4026914,77.0341558
+12540229706,node,transformer,,,,,,,28.4028401,77.0341545
+12540229719,node,transformer,,,,,,,28.4034382,77.0341397
+12540354263,node,transformer,,,,,,,28.5001309,76.961103
+12540354264,node,transformer,,,,,,,28.5003289,76.961111
+12540354265,node,transformer,,,,,,,28.5005575,76.961111
+12540354266,node,transformer,,,,,,,28.5007768,76.9611137
+12540354297,node,transformer,,,,,,,28.497469,76.9604055
+12540354298,node,transformer,,,,,,,28.4979296,76.9604109
+12540354299,node,transformer,,,,,,,28.4982501,76.9604108
+12540354300,node,transformer,,,,,,,28.4987361,76.9604137
+12592669378,node,transformer,,,,,,,28.6500335,77.2258444
+12592689769,node,transformer,,,,,,,28.6500169,77.2258606
+12592689770,node,transformer,,,,,,,28.6499967,77.2258759
+12592759247,node,transformer,,,,,630 kVA,50,28.6561404,77.2227213
+12592937575,node,transformer,,,,,990 kVA,50,28.6569903,77.2293698
+12601900816,node,transformer,,,,,,,28.5063693,77.2623977
+12601900817,node,transformer,,,,,,,28.5062727,77.2626633
+12601900818,node,transformer,,,,,,,28.5061996,77.2628778
+12601900819,node,transformer,,,,,,,28.5061053,77.2631058
+12601900820,node,transformer,,,,,,,28.506975,77.2627974
+12601900821,node,transformer,,,,,,,28.5066851,77.2626579
+12602348516,node,transformer,,,,,,,28.5872678,77.2665717
+12602348517,node,transformer,,,,,,,28.5874397,77.2665261
+12602348518,node,transformer,,,,,,,28.587647,77.2664752
+12602348519,node,transformer,,,,,,,28.5878165,77.2664323
+12604969371,node,transformer,,,,,,,28.7120292,77.3254434
+12604969372,node,transformer,,,,,,,28.7122197,77.3254354
+12604969373,node,transformer,,,,,,,28.7124162,77.32543
+12604969390,node,transformer,,,,,,,28.7117928,77.3246026
+12604969391,node,transformer,,,,,,,28.7116916,77.3246012
+12604969392,node,transformer,,,,,,,28.7122703,77.3247997
+12604969393,node,transformer,,,,,,,28.7121033,77.3248225
+12604969394,node,transformer,,,,,,,28.7119351,77.3248306
+12604992398,node,transformer,,,,,,,28.667121,76.8361584
+12604992399,node,transformer,,,,,,,28.6671116,76.8364347
+12605153858,node,transformer,,,,,,,28.676925,76.980761
+12605153859,node,transformer,,,,,,,28.6771297,76.9807824
+12605153860,node,transformer,,,,,,,28.677398,76.9807959
+12605153861,node,transformer,,,,,,,28.6776521,76.9807878
+12605153872,node,transformer,,,,,,,28.676785,76.9823328
+12605153874,node,transformer,,,,,,,28.6778345,76.9823435
+12612608988,node,transformer,,,,,,50,28.4511348,77.0847173
+12612608989,node,transformer,,,,,,50,28.4511394,77.0846961
+12613221605,node,transformer,,,,,,,28.6252337,77.2896153
+12620240422,node,substation,,,,,,,28.5852381,77.0696209
+12626472153,node,transformer,,,,,,,28.7798008,77.2803402
+12626472154,node,transformer,,,,,,,28.7801065,77.2802597
+12633639399,node,substation,,,,11000,,,28.6143622,77.0330628
+12638564952,node,substation,,,,11000,,,28.6090747,77.0349166
+12676083728,node,substation,transmission,Auxiliary Substation Room,Delhi Metro Rail Corporation,,,,28.5891405,77.1695042
+12685860951,node,transformer,,,,,,,28.7949797,77.0711915
+12685860952,node,transformer,,,,,,,28.7952218,77.0709313
+12685860953,node,transformer,,,,,,,28.7954216,77.0707435
+12685860954,node,transformer,,,,,,,28.796014,77.0701964
+12685860955,node,transformer,,,,,,,28.7965311,77.0695097
+12685860956,node,transformer,,,,,,,28.7967708,77.0692415
+12685871899,node,transformer,,,,,,,28.7918198,77.0675971
+12685894001,node,transformer,,,,,,,28.7920102,77.0678385
+12685894018,node,transformer,,,,,,,28.7930539,77.0690482
+12685894022,node,transformer,,,,,,,28.7928517,77.0688175
+12685894063,node,transformer,,,,,,,28.7936119,77.0691614
+12685894064,node,transformer,,,,,,,28.7933063,77.0694994
+12685919708,node,transformer,,,,,,,28.8235845,77.2656357
+12685919709,node,transformer,,,,,,,28.8237983,77.2644046
+12685919710,node,transformer,,,,,,,28.8237137,77.2648713
+12685919711,node,transformer,,,,,,,28.8236644,77.2651878
+12728549801,node,substation,,,,,,,28.6884897,77.2146544
+12728549812,node,substation,,,,,,,28.6884766,77.2147007
+12752315814,node,substation,minor_distribution,,BSES Yamuna Power Limited,,,,28.6566143,77.2243686
+12752315815,node,substation,minor_distribution,,,,,,28.6566152,77.2242653
+12752315816,node,substation,minor_distribution,,,,,,28.6565844,77.2250613
+12752315817,node,substation,minor_distribution,,,,,,28.6565781,77.2251149
+12752315818,node,substation,minor_distribution,,,,,,28.6565699,77.2253142
+12752315819,node,substation,minor_distribution,,,,,,28.6565727,77.2253709
+12752315820,node,substation,minor_distribution,,,,,,28.6565437,77.2257498
+12752315821,node,substation,minor_distribution,,,,,,28.6565419,77.2258045
+12752315822,node,substation,minor_distribution,,,,,,28.656541,77.2258613
+12752315823,node,substation,minor_distribution,,,,,,28.6564966,77.2267408
+12752315824,node,substation,minor_distribution,,,,,,28.6564902,77.2268079
+12752315825,node,substation,minor_distribution,,,,,,28.6564223,77.2281789
+12752315826,node,substation,minor_distribution,,,,,,28.6564205,77.2282367
+12752315827,node,substation,minor_distribution,,,,,,28.6563199,77.2296313
+12752315828,node,substation,minor_distribution,,,,,,28.6562891,77.230452
+12752315829,node,substation,minor_distribution,,,,,,28.6562864,77.2303891
+12752315830,node,substation,minor_distribution,,,,,,28.6562719,77.2307566
+12801629387,node,transformer,,,Bombay Suburban Electric Supply Yamuna Power Limited,,,,28.5563543,77.2434588
+12808986591,node,transformer,,,DHBVN,,,,28.4552881,77.0900481
+12808986597,node,transformer,,,,,,,28.4561902,77.0897208
+12809014207,node,transformer,,,DHBVN,,,,28.4542467,77.0903186
+12809655608,node,transformer,,,DHBVN,,,50,28.4602226,77.0797783
+12837143405,node,transformer,,,DHBVN,,,,28.456555,77.0913417
+12843965564,node,transformer,,,DHBVN,,,,28.4533023,77.0930065
+12953163088,node,transformer,,,DHBVN,,,,28.4561702,77.0852798
+12953181224,node,transformer,,,DHBVN,,,,28.4567624,77.0839158
+12956870114,node,substation,,,,,,,28.6891225,77.2094381
+12959415719,node,transformer,,,DHBVN,,,,28.454407,77.09141
+12959415720,node,transformer,,,DHBVN,,,,28.4544167,77.0914073
+12964548745,node,transformer,,,,,,,28.5824141,77.2400988
+12972974595,node,transformer,,,,,,,28.5791175,77.1872691
+12995516637,node,substation,minor_distribution,,,,,,28.6029224,77.322901
+13028337457,node,substation,distribution,,,,,,28.5703081,77.3243783
+13028415849,node,substation,distribution,,,44000,,,28.5697664,77.3247929
+13049601105,node,substation,distribution,Botany Department Substation,,,,,28.6879215,77.2118242
+13061138064,node,substation,distribution,Jasola Substation,,,,,28.5400351,77.2935286
+13061156417,node,substation,distribution,N Pocket Substation,,,,,28.5383596,77.2995095
+13061156442,node,substation,distribution,Institutional Area Substation,,,,,28.5376896,77.2997797
+13081854886,node,substation,,Khichripur Grid,,,,,28.618734,77.308435
+13094428786,node,substation,converter,Substation Number 1,,,,,28.5374841,77.2751031
+13110136454,node,substation,,,TPDDL,,,,28.6712725,77.2003089
+13142484183,node,substation,distribution,,BSES,,,,28.5486794,77.2157166
+13142484190,node,substation,distribution,,BSES,,,,28.5482449,77.2161114
+13142488631,node,substation,distribution,,BSES,,,,28.5496491,77.2153953
+13176664027,node,substation,distribution,,,,,,28.4775753,77.0934338
+13227608726,node,transformer,,,,,,,28.593836,77.0471036
+13227608729,node,transformer,,,,,,,28.5938696,77.0471307
+13414640798,node,transformer,,,,,,,28.6769678,76.863806
+13414640799,node,transformer,,,,,,,28.6772619,76.8638111
+13421308596,node,transformer,,,,,,,28.5283453,77.3018837
+13421308597,node,transformer,,,,,,,28.5280107,77.3020876
+13447597359,node,substation,minor_distribution,,,,,,28.633023,77.2231214
+13447649970,node,substation,distribution,Mayur Bhawan Substation,New Delhi Municipal Corporation,110000,,,28.6334135,77.224163
+13447658223,node,substation,,,NDMC,440,,,28.6337549,77.2234002
+13447658232,node,substation,,,NDMC,,,,28.6339014,77.2236773
+13466938141,node,substation,distribution,,,110000,,,28.5880478,77.1701175
+13514311957,node,substation,distribution,I.S.B.T. Kashmere Gate Substation,,110000,,,28.6698771,77.2307271
+13543920058,node,transformer,,,,,,,28.6968966,77.0993276
+13565005147,node,transformer,,,,,,,28.5627178,77.1929365
+13718857865,node,transformer,,,,,,,28.7213185,77.176755
+13718857866,node,transformer,,,,,,,28.7213526,77.1768043
+13718857867,node,transformer,,,,,,,28.7213626,77.1768193
+13813730665,node,transformer,,,,,,,28.5619287,77.1939831
+14001881235,node,substation,,,,110000;20000,,,28.5746259,77.2173535
+14041377381,node,substation,,,,,,,28.5695843,77.242735
+14105308766,node,substation,,,Tata Power Delhi Distribution Limited,,,,28.6936272,77.2050984
+36740280,way,substation,,66KV Sector 38,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),66000,,,28.4361348,77.042144
+38108840,way,substation,,Gurgaon Sector 52-A Substation,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),220000;66000,,,28.4468795,77.0821275
+38108841,way,substation,substation,Ghata Sector 56 Substation,,220000;66000,,,28.4184206,77.104859
+38108843,way,substation,,Gurgaon Sector 44 Substation,Haryana Vidyut Prasaran Nigam Limited (HVPNL),66000,,,28.4555437,77.0732895
+38108844,way,substation,,Nathupur Substation,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),66000,,,28.4841112,77.0956937
+44091397,way,substation,,Electric Substation,,,,,28.5388455,77.1857574
+63724935,way,substation,substation,Bamnauli Substation,Delhi Transco Limited,400000,,,28.5483186,77.0190719
+63724985,way,substation,,,,,,,28.5391733,77.0597255
+63724987,way,substation,substation,Bawana Substation,Delhi Transco Limited,400000,,,28.7927784,77.0689539
+63752215,way,substation,,Narela,,220000;132000,,,28.8676054,77.0995394
+63844604,way,substation,,,,132000,,,28.8712195,77.1043567
+63956553,way,substation,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,,28.4640885,77.0396583
+63956555,way,substation,,Power Substation,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),66000,,,28.455431,77.0424486
+65453986,way,substation,,A3 Palla,,220000;66000,,,28.4657713,77.3146331
+65462590,way,substation,,Badarpur Thermal Power Station,,220000,,,28.5063542,77.3050059
+65497386,way,substation,transmission,Noida IV sector 45,,220000,,,28.5497027,77.3428408
+66348531,way,substation,transmission,Noida Sector 20,,220000,,,28.5845974,77.3308624
+69976580,way,substation,transmission,Sarita Vihar,,220000,,,28.5282451,77.3018436
+70214090,way,substation,substation,Delhi Metro Rail Corporation Kashmere Gate RSS,,,,,28.6685006,77.2334204
+70255404,way,substation,,I.P.Station,,220000,,,28.6254708,77.2485168
+70258946,way,substation,,Rajghat,,220000,,,28.6374223,77.2539395
+70258949,way,substation,,Pragati,Pragati Power Station,,,,28.6159595,77.2525172
+71297432,way,substation,yes,,,,,,28.5993655,77.3111733
+71298925,way,substation,,Vaishali,,132000,,,28.633429,77.3362046
+72003009,way,substation,,Sahibabad,,220000;132000,,,28.649946,77.3333605
+76727519,way,substation,,,,,,,28.6407948,77.3134114
+76733235,way,substation,,,,,,,28.6343072,77.3084453
+76834870,way,substation,,,,,,,28.6127812,77.2851822
+76834910,way,substation,,,,,,,28.6251725,77.3080784
+76842476,way,substation,,,,,,,28.6164854,77.3259235
+76842477,way,substation,,Gazipur,,220000,,,28.617717,77.3226458
+76842478,way,substation,,,,,,,28.618646,77.30827
+76995145,way,substation,,,,,,,28.5939486,77.3012351
+77629883,way,substation,,66kV Grid Substation Building,,66000,,,28.7346274,77.1588336
+77643407,way,substation,,,,,,,28.6881003,77.0970925
+77727829,way,substation,,,,,,,28.7077497,77.1355642
+77743801,way,substation,,,,,,,28.6990573,77.1578077
+77766261,way,substation,,Rohtak Road,,220000,,,28.6739899,77.1476978
+77885898,way,substation,,,,66000,,,28.6808693,77.0768465
+78471437,way,substation,Rohini_Sec_18_Sub_Station,S.Bagh,,220000,,,28.7277011,77.141064
+78484400,way,substation,,,,,,,28.7216203,77.1075167
+78484432,way,substation,,Rohini,,220000,,,28.7316324,77.1063248
+78542447,way,substation,,NDPL Office,,,,,28.7454948,77.1287943
+78542546,way,substation,,,,,,,28.7359698,77.1141688
+78542610,way,plant,,Rithala Power Plant,,,,,28.7330743,77.101785
+78592763,way,substation,,,,,,,28.6921178,77.1447029
+78595534,way,substation,,,,,,,28.7072684,77.1274794
+78881810,way,substation,,,,,,,28.727817,77.0807157
+78898623,way,substation,,,,,,,28.7181029,77.0722321
+87295104,way,substation,,Loni,,220000;132000,,,28.7801934,77.2798537
+112973662,way,substation,,,,,,,28.8441615,77.0868943
+112973666,way,substation,,,,132000,,,28.6795713,76.9086504
+112973670,way,substation,transmission,Wazirabad,,220000,,,28.7002722,77.2539266
+112973679,way,substation,,,,,,,28.8262566,77.1108701
+112973688,way,substation,transmission,Burari,,220000,,,28.7194042,77.2197826
+115800446,way,substation,,Harsaru,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,,28.42722,76.9602254
+116046191,way,substation,,,,,,,28.5323234,77.2879837
+125159508,way,substation,,,,,,,28.774747,77.0510364
+125159521,way,substation,,Najafgarh,Delhi Transco Limited,220000;66000,,,28.6140469,76.9970483
+125159522,way,substation,,,,,,,28.7833736,77.0633537
+125159523,way,substation,transmission,Nuna Majra,,220000;132000,,,28.6772146,76.8637664
+125159529,way,substation,,,,132000,,,28.6883304,76.9474651
+125161558,way,substation,,,,,,,28.5965739,76.9152859
+125222827,way,substation,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),66000,,,28.4055831,76.9634048
+125222844,way,substation,,Farrukhnagar,,,,,28.4445337,76.8361862
+125222845,way,substation,substation,Kanjhawala Substation,Delhi Transco Limited,220000,,,28.7239547,77.0059208
+125982857,way,substation,,Sector 10,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,,28.4450073,76.9986838
+139071683,way,plant,,Pragati-I Combined Cycle Gas Power Station,Pragati Power Corporation Limited,,,,28.6167647,77.2524477
+139071685,way,plant,,Indraprastha Gas Turbine Power Station,Indraprastha Power Generation Company Limited,,,,28.6190348,77.2502162
+154191682,way,substation,,,Mahvir enclave power station,,,,28.601337,77.0827091
+154330901,way,substation,,BSES,,66000,,,28.6341366,77.0797036
+161130359,way,substation,substation,Daulatabad Substation,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),400000;220000;66000,,,28.4993475,76.9617049
+161130361,way,substation,,Mundka,,400000;220000,,,28.6771827,76.9818696
+170084068,way,substation,substation,Badshahpur Substation,DHBVN,400000;220000;66000,,,28.4024018,77.0333285
+170938273,way,substation,transmission,Noida Sector 62,,220000;132000,,,28.6307977,77.3333918
+171422831,way,substation,,Delhi Metro Rail Corporation Jahangirpuri RSS,,,,,28.7315487,77.1522434
+171496278,way,substation,,,,,,,28.7033131,77.1143254
+171501210,way,substation,,,,,,,28.6936303,77.1049324
+171501211,way,substation,,,,,,,28.68761,77.0820109
+171501217,way,substation,,,,,,,28.6913395,77.1298372
+171641948,way,substation,,,,,,,28.7072753,77.0920352
+171648782,way,substation,,,,,,,28.7192337,77.1079045
+171687612,way,substation,,,,220000,,,28.7989807,77.0569671
+171687613,way,substation,,,,,,,28.8145911,77.0565201
+171772524,way,substation,,,,,,,28.5662613,77.3307231
+172301971,way,plant,,Pragati-III Combined Cycle Power Plant,,,,,28.7964571,77.0717398
+172302052,way,substation,,,,400000,,,28.7950994,77.0689919
+172306115,way,substation,,,,,,,28.7944081,77.0760359
+172314920,way,substation,,Sector 46,,220000;66000,,,28.4354765,77.3042691
+172338281,way,substation,,Sector 31,,,,,28.4398939,77.318125
+172346145,way,substation,,A4,,220000;66000,,,28.4172781,77.329024
+172701740,way,substation,,,,,,,28.5399981,77.2994247
+172701741,way,substation,,,,,,,28.5233042,77.2943881
+172701742,way,substation,,,,,,,28.4970231,77.3007018
+175804100,way,substation,,,,,,,28.7027525,77.2795785
+175804102,way,substation,,,,,,,28.6769518,77.2585573
+175804105,way,substation,,,,,,,28.6952638,77.2908168
+175804106,way,substation,,,,,,,28.7015654,77.2924278
+176492791,way,substation,transmission,Lodhi Road,,220000,,,28.5910497,77.2341589
+187980829,way,substation,,,,66000,,,28.579022,77.1011572
+187980837,way,substation,transmission,Dwarka I (Sec-2) Substation,,220000,,,28.6014003,77.0697237
+187980838,way,substation,,,,220000,,,28.6141828,77.1349081
+188093515,way,substation,substation,Dwarka-II Sec-14 Substation,Delhi Transco Limited,220000,,,28.604574,77.021688
+188093516,way,substation,substation,Delhi Metro Rail Corporation Dwarka RSS,,,,,28.6060018,77.0223533
+188095018,way,substation,,,,66000,,,28.5510582,77.1175899
+188137575,way,substation,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,,28.4927707,77.0712088
+188137578,way,substation,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,,28.4919463,77.0612036
+188137580,way,substation,substation,Jwala Mill Marg Substation,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),66000,,,28.4960848,77.0848529
+188137582,way,substation,substation,Chakkarpur Substation,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),66000,,,28.4714731,77.0888835
+188146404,way,substation,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),66000,,,28.5039797,77.0328743
+188146406,way,substation,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,,28.5031801,77.0555784
+188237061,way,substation,,,,,,,28.5894567,77.1723291
+188594252,way,substation,,,,,,,28.4750994,77.2980934
+189289389,way,substation,,,,66000,,,28.6471534,77.0722358
+189289394,way,substation,,,,,,,28.6379392,77.1026192
+189289396,way,substation,,,,66000,,,28.6514032,77.0915652
+189289403,way,substation,,,,66000,,,28.6183746,77.0773222
+189289404,way,substation,,,,,,,28.7050764,76.9819974
+189289411,way,substation,,,,66000,,,28.6587059,77.0812646
+189430941,way,substation,,,,,,,28.593143,77.0419251
+189448080,way,substation,,,,,,,28.5773111,77.0587746
+189587020,way,substation,,,,,,,28.8282386,77.095767
+189610318,way,substation,,,,,,,28.6708782,77.2088549
+190021168,way,substation,,Sector 9,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,,28.4588665,76.9978466
+190041781,way,substation,,Sector 34,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,,28.4305145,77.019611
+190246702,way,substation,substation,Delhi International Airport Limited Substation,Delhi Transco Limited,22000,,,28.5482002,77.1102201
+190261103,way,substation,transmission,Okhla,,220000;66000,,,28.5261612,77.2678992
+190261105,way,substation,,,,66000,,,28.5361785,77.1525992
+190261107,way,substation,yes,D 7 Substation,BSES Rajdhani,,,,28.5289879,77.1472489
+190261115,way,substation,,,,,,,28.5152835,77.2835433
+190261116,way,substation,,Vasant Kunj,,220000,,,28.539893,77.1412532
+190261120,way,substation,transmission,Mehrauli Substation,,220000;66000,,,28.5142449,77.1626393
+190278397,way,substation,substation,Delhi Metro Rail Corporation Chhatarpur RSS,,,,,28.5072181,77.1741307
+190307574,way,substation,,,,,,,28.5468577,77.1623566
+190333710,way,substation,,,,66000,,,28.5256634,77.1668376
+211116640,way,substation,,,,66000,,,28.6081046,77.0502429
+211144281,way,substation,,,,220000,,,28.6258579,77.2873444
+232651623,way,substation,,,,,,,28.5955039,77.3294618
+247861059,way,substation,substation,Jhatikara Substation,,765000;400000,,,28.5346324,76.936603
+247861065,way,substation,,,,,,,28.6182258,77.276151
+247861068,way,substation,,,,,,,28.670537,77.0466737
+247861071,way,substation,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),66000,,,28.4260931,77.0701371
+247861085,way,substation,,,,,,,28.6842669,77.0236765
+254447902,way,substation,,Bahadurgarh,Power Grid Corporation of India Ltd,400000;220000,,,28.6673098,76.8361302
+262090094,way,substation,,,,,,,28.5265543,77.2556757
+263597735,way,substation,,,,,,,28.6599475,77.0027869
+263598794,way,substation,,,,,,,28.6615823,77.0100389
+263819668,way,substation,,,,,,,28.6097676,77.0993578
+264722109,way,substation,,,,,,,28.5948102,77.0353609
+265866413,way,substation,,Geeta Colony,,220000,,,28.653006,77.2671582
+266074792,way,substation,,,,,,,28.5431417,77.2910444
+266080873,way,substation,,,,,,,28.5419001,77.2605077
+266082823,way,substation,,,,,,,28.5328185,77.2412614
+269084985,way,substation,,,,132000,,,28.7349679,76.863993
+269084987,way,substation,,,,132000,,,28.7445547,76.8799016
+269084988,way,substation,,,,132000,,,28.7361223,76.8431101
+277860556,way,substation,,,,,,,28.6684945,77.322827
+281984544,way,substation,,Electric Sub Station,,,,,28.6175565,77.2144852
+283807712,way,plant,,Bio-Gas Plant,,,,,28.6231219,77.3237051
+284758454,way,substation,,,,,,,28.5033037,77.2054483
+296222975,way,substation,,,,,,,28.618964,77.2502548
+296542553,way,substation,,Mandaula,,400000;220000,,,28.8234927,77.2658336
+296571992,way,substation,substation,Harsh Vihar Substation,Delhi Transco Limited,400000,,,28.7120683,77.3253012
+296733619,way,substation,,,,,,,28.7802584,77.2668436
+297874320,way,substation,,Naipura Bijli Ghar,,,,,28.7365343,77.2967792
+312138194,way,substation,,,,220000,,,28.7642859,77.097744
+314638636,way,substation,,,,132000,,,28.6980479,76.8806646
+343503827,way,substation,,,,,,,28.6084689,77.0032523
+343503828,way,substation,,,,,,,28.5827507,77.0355602
+349973876,way,substation,NDPL_Sec13_Sub_Station,,,,,,28.7214637,77.1247018
+351081649,way,substation,,Main Electric Substation,NSUT,,,,28.6076546,77.0408507
+351173811,way,transformer,,Power House,BSES,,,,28.6047496,77.2959498
+352446795,way,substation,distribution,Pocket 5 Substation,,,,,28.5934658,77.0467393
+357499751,way,substation,,Bhushan Steel,,220000,,,28.6513663,77.3302932
+357499797,way,substation,substation,Kashmere Gate Substation,Delhi Transco Limited,220000,,,28.6695117,77.2330865
+358642602,way,substation,,,,,,,28.7574482,77.0955369
+379883517,way,substation,transmission,Masjid Moth,,220000,,,28.5416505,77.2356487
+423229313,way,substation,,,,,,,28.6184906,77.2517517
+423229315,way,substation,,,,,,,28.6143578,77.251965
+423229316,way,substation,,,,,,,28.6171722,77.2514925
+458301236,way,substation,transmission,Maharanibagh,Power Grid Corporation of India Ltd,400000;220000,,,28.5873408,77.2666864
+471807061,way,substation,,,,,,,28.88404,77.1271995
+473617053,way,substation,,,,,,,28.5788125,77.2600052
+473621178,way,substation,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),220000,,,28.5145658,77.0879473
+479980889,way,plant,,BSES,,,,,28.6763708,77.3095282
+514032296,way,substation,,,,,,,28.8262657,77.0871856
+519440483,way,substation,,,,,,,28.725244,77.2041535
+519440484,way,substation,substation,Delhi Metro Rail Corporation Mukundpur RSS,,,,,28.7276272,77.1896324
+638897652,way,plant,,,,,,,28.5438691,77.2328807
+663490627,way,substation,,,,,,,28.5989026,77.0733347
+668018787,way,substation,,,,66000,,,28.5185503,77.216127
+686857047,way,substation,transmission,Mandola Vihar,,220000,,,28.8185929,77.2820015
+689282351,way,substation,,Delhi Metro Rail Corporation Dhaula Kuan RSS,,,,,28.592943,77.1655998
+717929778,way,substation,,Electric Substation,,,,,28.464688,77.3001743
+733233454,way,substation,,,,,,,28.5493222,77.2634292
+750198322,way,substation,,Dwarkapuri Substation,,33000,,,28.676028,77.2789666
+802289913,way,substation,,,,,,,28.4366628,77.3041558
+870335641,way,substation,distribution,,BSES Yamuna Power Limited,,,,28.6025128,77.2909179
+870335648,way,substation,distribution,,BSES Yamuna Power Limited,,,,28.6046893,77.2908934
+919824624,way,substation,,,,,,,28.7714384,76.8660053
+922757333,way,substation,substation,Dwarka-III Sector-19 Substation,Delhi Transco Limited,220000,,,28.5795568,77.0430489
+936399464,way,substation,,,,220000,,,28.6263986,77.1978915
+952398072,way,substation,,Electric Substation,,,,,28.6134321,77.0367188
+952398096,way,substation,,Electric Substation,NSUT,,,,28.608498,77.0373795
+952398106,way,substation,,Electric Substation,NSUT,,,,28.6115327,77.0381242
+952516500,way,substation,transmission,"Power House , DDA Flats Bindapur",,66000,,,28.6094016,77.0683404
+952787109,way,substation,,Electric Substation,NSUT,,,,28.6077388,77.0360187
+999227746,way,plant,,Gwal Pahari Solar Power Plant,,,,,28.427542,77.1595023
+999227747,way,plant,,Gwal Pahari Solar Power Plant,,,,,28.4278593,77.1607805
+1001143963,way,substation,substation,Dwarka Sec-5 Substation,Delhi Transco Limited,220000,,,28.5987037,77.0590395
+1003041200,way,plant,,,,,,,28.6235533,77.2505265
+1004155563,way,substation,,Tilamoth,,132000,,,28.73513,77.3191783
+1007603952,way,substation,,,,,,,28.5828983,77.0354624
+1015272529,way,substation,,Delhi Metro Rail Corporation Bahadurgarh RSS,,,,,28.6857472,76.9444951
+1044787679,way,substation,,,,66000,,,28.5151255,77.2446105
+1044787680,way,substation,transmission,Tughlakabad,,400000;220000,,,28.5064388,77.2620479
+1056310628,way,substation,,GIS Substation HVPNL Sector-85 Gurugram,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),220000,,,28.4107648,76.9544428
+1076792388,way,substation,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,,28.514094,77.0271286
+1157154677,way,transformer,,,,,,,28.7199413,77.1707852
+1158469001,way,substation,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,,28.4900614,77.0892263
+1158469002,way,substation,,,Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN),,,,28.4895777,77.0908819
+1174995913,way,substation,,,,,,,28.7506892,77.1701078
+1181342837,way,transformer,,,,,,,28.7471282,77.1573331
+1182453426,way,substation,,33KV Grid Substation Azadpur,,33000,,,28.7115767,77.1755199
+1184034282,way,substation,,,,,,,28.5423158,77.3049436
+1184222740,way,substation,,,,,,,28.5193427,77.2970897
+1184452742,way,substation,,,,,,,28.4926755,77.1538635
+1187328579,way,substation,,,,,,,28.6234531,77.2652312
+1191834179,way,substation,,,,,,,28.7511391,77.1706837
+1208154258,way,substation,,Bhijli Ghar,,66000,,,28.6431483,77.1048098
+1260639571,way,plant,,,,,,,28.7093586,77.2483345
+1275250765,way,substation,,,,,,,28.5945456,77.12065
+1277996866,way,substation,,Kendriya Vidyalaya,Military,,,,28.5902567,77.1198075
+1279278440,way,substation,,,,,,,28.6224799,77.1957089
+1279278455,way,substation,,,,,,,28.6226171,77.1956435
+1280797875,way,substation,distribution,Gopinath Market Substation,,,,,28.5967269,77.1346388
+1286191667,way,transformer,,,,,,,28.6060348,77.1281936
+1286576103,way,substation,,,New Delhi Power Limited,,,,28.597446,77.1239043
+1286855149,way,plant,,,,,,,28.5077968,77.2803604
+1288672259,way,substation,converter,,,,,,28.5925763,77.1202309
+1288867465,way,substation,,,,,,,28.6506625,77.0890519
+1289814874,way,substation,,,,,,,28.6460874,77.2019555
+1289863470,way,transformer,,,,,,,28.6191837,77.2886987
+1290639140,way,substation,,,,,,,28.5900866,77.1199467
+1294685221,way,substation,,IP Extension Grid Sub Station,BSES Yamuna Power Limited,33000,,,28.6190992,77.2887688
+1294685232,way,transformer,,,,,,,28.6191246,77.2887264
+1295552483,way,substation,distribution,,,,,,28.6090612,77.1084115
+1297324907,way,plant,,,,,,,28.5954737,77.2592608
+1298506147,way,substation,,,,,,,28.5755339,77.1973746
+1300891890,way,substation,,,,,,,28.6462,77.1903836
+1301026307,way,substation,,,,,,,28.6450795,77.190337
+1304050002,way,plant,,,,,,,28.7248618,77.071364
+1304086012,way,plant,,,,,,,28.6113176,77.2765497
+1304242420,way,plant,,,,,,,28.7212426,77.1383618
+1304242421,way,plant,,,,,,,28.7215101,77.13896
+1304242422,way,plant,,,,,,,28.7222389,77.1382553
+1304242423,way,plant,,,,,,,28.722765,77.1379126
+1304242424,way,plant,,,,,,,28.7232614,77.1375934
+1304242425,way,plant,,,,,,,28.7237953,77.1372635
+1304242426,way,plant,,,,,,,28.7243197,77.1369524
+1304242427,way,plant,,,,,,,28.7251077,77.1364803
+1304242428,way,plant,,,,,,,28.7256229,77.136145
+1304242429,way,plant,,,,,,,28.7261239,77.1358178
+1304242430,way,plant,,,,,,,28.7266696,77.135504
+1304242431,way,plant,,,,,,,28.7271424,77.1352063
+1307673203,way,substation,distribution,,,,,,28.6950716,77.2129125
+1316627353,way,substation,,,,,,,28.6260982,77.211882
+1319232027,way,substation,,,,,,,28.5680847,77.2464165
+1331914380,way,substation,distribution,Maharaja Agrasen Park,,,,,28.6678993,77.2247486
+1340504320,way,substation,,grid substation building and battery testing lab,Tata Power Delhi Distribution Limited,66000,,,28.7136472,77.0610597
+1354558634,way,substation,,Doctor Bishamber Dass Marg Substation,New Delhi Municipal Corporation,,,,28.6239403,77.2033414
+1354912080,way,substation,,,,,,,28.5925887,77.0425097
+1355048076,way,substation,transmission,Gurugram Sector 107,,220000,,,28.4989488,76.9758766
+1382535517,way,substation,,,,,,,28.5534112,77.2424137
+1382552736,way,substation,,,,,,,28.5530396,77.2300616
+1388569374,way,substation,,State Bank of India Welcome,,,,,28.6740677,77.275002
+1388932902,way,substation,,,,,,,28.5364889,77.2016452
+1389333780,way,substation,,,,,,,28.6464398,77.1917332
+1389342823,way,substation,,,,,,,28.6723055,77.2486818
+1389342824,way,substation,,,,,,,28.6716639,77.2518716
+1390025126,way,substation,minor_distribution,Bapu Dham Electric Sub Station,New Delhi Municipal Council,66000,,,28.5926329,77.1758411
+1413486207,way,substation,traction,Kashmere Gate Traction Feeding Post,Delhi Metro Rail Corporation,25000,,,28.6690749,77.2265541
+1413618601,way,substation,distribution,,,,,,28.8437438,77.1072554
+1417729106,way,substation,distribution,,,,,,28.5680833,77.3243474
+1417729107,way,substation,distribution,,,,,,28.568118,77.324307
+1417729109,way,substation,,,,,,,28.5683318,77.3239997
+1417729169,way,substation,distribution,,,,,,28.5681544,77.3242652
+1419926443,way,substation,distribution,,,330000,,,28.6925784,77.2070066
+1426163115,way,substation,distribution,,,990000,,,28.6828482,77.2070634
+1426169743,way,substation,distribution,,TPDDL,110000,,,28.6803066,77.2028794
+1429708858,way,substation,,,BSES,,,,28.5477323,77.2164959
+1433735088,way,substation,,,,500000,,50,28.4752213,77.0979583
+1451357495,way,substation,,,,,,,28.5805642,77.0169979
+1460493834,way,substation,,,BSES Yamuna,,,,28.6483745,77.2079868
+1465628342,way,substation,,Hauz Qazi Substation,DSEB,,,,28.6486959,77.2257927
+1466828545,way,plant,,,,,,,28.6007625,76.9588906
+1471900631,way,substation,,,,,,,28.6181069,77.076661
+1474325002,way,substation,transmission,Powergrid Narela Transmission Ltd. (Mungeshpur),Powergrid Corporation Of India Ltd.,765000;400000,,,28.8230612,76.9853995
+1479881906,way,substation,minor_distribution,33KV Electric Substation Kidwai Nagar (East - I),,33000,,,28.5727857,77.2101556
+1482443306,way,substation,,,,,,,28.6950078,77.2198542
+1482806385,way,substation,,Chemistry Lab New Building M.C. Room,,,,,28.6872554,77.2137829
+1486486118,way,substation,,,,,,,28.6097155,77.2941695
+1486755531,way,substation,transmission,Botanical Garden,,220000,,,28.5628488,77.3340388
+1487126238,way,plant,,,,,,,28.6233354,77.0870371
+1487126239,way,plant,,,,,,,28.6230913,77.087126
+1487126240,way,plant,,,,,,,28.6228232,77.0869579
+1488770379,way,substation,transmission,Gurgaon Sector 33,,220000,,,28.4290442,77.0219931
+1488794180,way,substation,transmission,Gurugram Sector 57,,220000,,,28.4240888,77.0899485
+1488801303,way,substation,transmission,Gurugram Sector 95,,220000,,,28.4153748,76.9018603
+1490066645,way,substation,distribution,TPDDL Saraswati Garden Substation,,330000,,,28.6450053,77.1384396
+1495922475,way,plant,,,,,,,28.6712716,77.3492978
+1498062680,way,substation,minor_distribution,,,,,,28.7213561,77.1768077
+1526025749,way,plant,,,,,,,28.7077677,77.2494774
+1540729886,way,plant,,,,,,,28.7327737,76.8651782
+1545735067,way,substation,,,,,,,28.4401645,77.3054431
+1546129359,way,plant,,,,,,,28.6708215,77.0502331
+1546129360,way,plant,,,,,,,28.6713427,77.0502251
+1546129361,way,plant,,,,,,,28.6718934,77.0502613
+1546129362,way,plant,,,,,,,28.6694717,77.0501768
+1546129365,way,substation,,,,,,,28.843022,77.2703164
+1558314767,way,substation,,33KV Grid Sub Station - NDSE Grid,BSES Rajdhani Power Limited,33000,,,28.5682355,77.2201465
+13446097,relation,plant,,,,,,,28.5409398,77.0843188
+18526167,relation,substation,substation,Tikri Kalan(Mundka) Substation,Delhi Transco Limited,400000,,,28.6771809,76.981808

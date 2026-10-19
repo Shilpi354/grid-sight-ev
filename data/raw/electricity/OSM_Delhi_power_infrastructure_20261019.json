@@ -1,0 +1,6959 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-19T13:23:27Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 1355999142,
+      "lat": 28.6413074,
+      "lon": 77.3192599,
+      "tags": {
+        "designation": "Kaushambi Electric Sub-station",
+        "power": "substation",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1669092748,
+      "lat": 28.6388487,
+      "lon": 77.1831554,
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2674338879,
+      "lat": 28.613789,
+      "lon": 77.0003441,
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4366486737,
+      "lat": 28.5276562,
+      "lon": 77.3021085,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "operator": "Delhi Transco Ltd",
+        "phases": "3",
+        "power": "transformer",
+        "rating": "100 MVA",
+        "transformer": "distribution",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4976487056,
+      "lat": 28.7340981,
+      "lon": 76.8953483,
+      "tags": {
+        "name": "Barahi Main Power Station",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4976496445,
+      "lat": 28.7341159,
+      "lon": 76.8953765,
+      "tags": {
+        "name": "Mini Power Stataion",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9216197674,
+      "lat": 28.6338136,
+      "lon": 77.2822123,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9554253937,
+      "lat": 28.613413,
+      "lon": 77.2895996,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9708295688,
+      "lat": 28.5623548,
+      "lon": 77.2191155,
+      "tags": {
+        "name": "DT0",
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9872303265,
+      "lat": 28.6057769,
+      "lon": 76.9869672,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10271662617,
+      "lat": 28.590126,
+      "lon": 77.2506559,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10575627914,
+      "lat": 28.6239919,
+      "lon": 77.2920865,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10694514228,
+      "lat": 28.5337809,
+      "lon": 77.2879728,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10718639391,
+      "lat": 28.589139,
+      "lon": 77.2441781,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10718642431,
+      "lat": 28.5747636,
+      "lon": 77.2332415,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10718644225,
+      "lat": 28.585529,
+      "lon": 77.2419582,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10741318287,
+      "lat": 28.7215445,
+      "lon": 77.168149,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10825977289,
+      "lat": 28.7206245,
+      "lon": 77.1728887,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10908114874,
+      "lat": 28.7414015,
+      "lon": 77.1646108,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10908114883,
+      "lat": 28.7450534,
+      "lon": 77.1658479,
+      "tags": {
+        "power": "transformer",
+        "transformer": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10913809838,
+      "lat": 28.7557732,
+      "lon": 77.1626343,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10921135332,
+      "lat": 28.755911,
+      "lon": 77.1655518,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10926188688,
+      "lat": 28.7526394,
+      "lon": 77.1623286,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10929143464,
+      "lat": 28.7194378,
+      "lon": 77.1699046,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10931502566,
+      "lat": 28.7228614,
+      "lon": 77.1641978,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10931502599,
+      "lat": 28.7227919,
+      "lon": 77.1638244,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11050912834,
+      "lat": 28.7334427,
+      "lon": 77.1659548,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11061485846,
+      "lat": 28.7541061,
+      "lon": 77.1744347,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11067159822,
+      "lat": 28.7518596,
+      "lon": 77.1700702,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11139393278,
+      "lat": 28.6223679,
+      "lon": 77.290291,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11139440810,
+      "lat": 28.6223751,
+      "lon": 77.290314,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11368545075,
+      "lat": 28.5704433,
+      "lon": 77.239839,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11414469661,
+      "lat": 28.625101,
+      "lon": 77.3054363,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11425285378,
+      "lat": 28.7358718,
+      "lon": 77.1099049,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11425285404,
+      "lat": 28.7358414,
+      "lon": 77.1098692,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11437378863,
+      "lat": 28.7358093,
+      "lon": 77.1066144,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11437779369,
+      "lat": 28.7358382,
+      "lon": 77.1065874,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11586192755,
+      "lat": 28.636349,
+      "lon": 77.3054121,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11594245903,
+      "lat": 28.5507704,
+      "lon": 77.2343979,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11648475732,
+      "lat": 28.6238292,
+      "lon": 77.3008333,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11755533236,
+      "lat": 28.626671,
+      "lon": 77.2867655,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11755534324,
+      "lat": 28.6266728,
+      "lon": 77.2867343,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11764165805,
+      "lat": 28.5670545,
+      "lon": 77.2442458,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11764311306,
+      "lat": 28.6205385,
+      "lon": 77.2906465,
+      "tags": {
+        "location": "indoor",
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11773636385,
+      "lat": 28.5676346,
+      "lon": 77.2174064,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11799964872,
+      "lat": 28.57039,
+      "lon": 77.2408582,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11799964986,
+      "lat": 28.572198,
+      "lon": 77.2392853,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11810413167,
+      "lat": 28.6223599,
+      "lon": 77.2901246,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11814425240,
+      "lat": 28.5883271,
+      "lon": 77.1682423,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11823656859,
+      "lat": 28.6426582,
+      "lon": 77.2273934,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11843066089,
+      "lat": 28.5917267,
+      "lon": 77.1655884,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11889582825,
+      "lat": 28.5483274,
+      "lon": 77.2344506,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11903565535,
+      "lat": 28.6283446,
+      "lon": 77.2763093,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "operator": "BSES Yamuna Power Limited",
+        "power": "transformer",
+        "rating": "5.0",
+        "transformer": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11914762058,
+      "lat": 28.6306981,
+      "lon": 77.2771735,
+      "tags": {
+        "description": "D-block, Vikas Marg, Khatta, LNR",
+        "devices": "3",
+        "location": "outdoor",
+        "operator": "BSES YAMUNA POWER LTD",
+        "power": "transformer",
+        "ref": "Z-2501",
+        "source": "survey",
+        "transformer": "distribution",
+        "voltage:primary": "11000"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11916097271,
+      "lat": 28.6165694,
+      "lon": 77.0288209,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11919302341,
+      "lat": 28.684137,
+      "lon": 77.2118651,
+      "tags": {
+        "location": "indoor",
+        "power": "substation",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11922690192,
+      "lat": 28.4490472,
+      "lon": 77.0795827,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "note": "Contributors are requested to not edit the \"frequency\", \"location\", \"operator\" and \"transformer\" tags. (2024/05/25)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11926242676,
+      "lat": 28.5527371,
+      "lon": 77.2371885,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11929097602,
+      "lat": 28.4515898,
+      "lon": 77.0816198,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "note": "Contributors are requested to not edit the \"frequency\", \"location\", \"operator\" and \"transformer\" tags. (2024/05/25)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11929097605,
+      "lat": 28.450794,
+      "lon": 77.0812067,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "note": "Contributors are requested to not edit the \"frequency\", \"location\", \"operator\" and \"transformer\" tags. (2024/05/25)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11929097620,
+      "lat": 28.4506623,
+      "lon": 77.081341,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "note": "Contributors are requested to not edit the \"frequency\", \"location\", \"operator\" and \"transformer\" tags. (2024/05/25)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11929097629,
+      "lat": 28.4527783,
+      "lon": 77.082253,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "note": "Contributors are requested to not edit the \"frequency\", \"location\", \"operator\" and \"transformer\" tags. (2024/05/25)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11929827358,
+      "lat": 28.4519139,
+      "lon": 77.0790079,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "note": "Contributors are requested to not edit the \"frequency\", \"location\", \"operator\" and \"transformer\" tags. (2024/05/25)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11929827360,
+      "lat": 28.4570791,
+      "lon": 77.0779277,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "note": "Contributors are requested to not edit the \"frequency\", \"location\", \"operator\" and \"transformer\" tags. (2024/05/25)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11930060340,
+      "lat": 28.4950961,
+      "lon": 77.0851007,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "note": "Contributors are requested to not edit the \"frequency\", \"location\", \"operator\" and \"transformer\" tags. (2024/05/25)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11931062747,
+      "lat": 28.4556962,
+      "lon": 77.0740208,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "note": "Contributors are requested to not edit the \"frequency\", \"location\", \"operator\" and \"transformer\" tags. (2024/05/25)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11931062755,
+      "lat": 28.4579533,
+      "lon": 77.0676168,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "note": "Contributors are requested to not edit the \"frequency\", \"location\", \"operator\" and \"transformer\" tags. (2024/05/25)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11931062761,
+      "lat": 28.4553469,
+      "lon": 77.0652203,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "note": "Contributors are requested to not edit the \"frequency\", \"location\", \"operator\" and \"transformer\" tags. (2024/05/25)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11931062762,
+      "lat": 28.4553698,
+      "lon": 77.0651889,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "note": "Contributors are requested to not edit the \"frequency\", \"location\", \"operator\" and \"transformer\" tags. (2024/05/25)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11931062765,
+      "lat": 28.4542741,
+      "lon": 77.0667082,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "note": "Contributors are requested to not edit the \"frequency\", \"location\", \"operator\" and \"transformer\" tags. (2024/05/25)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11931062766,
+      "lat": 28.4543012,
+      "lon": 77.0666672,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "note": "Contributors are requested to not edit the \"frequency\", \"location\", \"operator\" and \"transformer\" tags. (2024/05/25)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11931286540,
+      "lat": 28.4497155,
+      "lon": 77.0795248,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "note": "Contributors are requested to not edit the \"frequency\", \"location\", \"operator\" and \"transformer\" tags. (2024/05/25)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11931286541,
+      "lat": 28.4497744,
+      "lon": 77.0842319,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "note": "Contributors are requested to not edit the \"frequency\", \"location\", \"operator\" and \"transformer\" tags. (2024/05/25)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932032890,
+      "lat": 28.4497373,
+      "lon": 77.0795729,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "operator": "Sushant Apartments\u2019 Residents\u2019 Welfare Association",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932032897,
+      "lat": 28.4532463,
+      "lon": 77.0787463,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "note": "Contributors are requested to not edit the \"frequency\", \"location\", \"operator\" and \"transformer\" tags. (2024/05/25)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932036397,
+      "lat": 28.4945602,
+      "lon": 77.0820953,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "note": "Contributors are requested to not edit the \"frequency\", \"location\", \"operator\" and \"transformer\" tags. (2024/05/25)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11934333170,
+      "lat": 28.4562409,
+      "lon": 77.0747044,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "note": "Contributors are requested to not edit the \"frequency\", \"location\", \"operator\" and \"transformer\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11934972873,
+      "lat": 28.5087553,
+      "lon": 77.1772609,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "operator": "BSES Rajdhani Power Limited",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11949235198,
+      "lat": 28.4624048,
+      "lon": 77.0925813,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "note": "Contributors are requested to not edit the \"frequency\", \"location\", \"operator\" and \"transformer\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11950188163,
+      "lat": 28.4514242,
+      "lon": 77.083734,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "operator": "DHBVN",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11993705208,
+      "lat": 28.6364084,
+      "lon": 77.3030502,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11993709859,
+      "lat": 28.6317617,
+      "lon": 77.3057145,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11993709861,
+      "lat": 28.6317847,
+      "lon": 77.3057022,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11998490348,
+      "lat": 28.6191899,
+      "lon": 77.2888162,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12050816176,
+      "lat": 28.525849,
+      "lon": 77.2363803,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12098415211,
+      "lat": 28.623299,
+      "lon": 77.2942188,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12117667980,
+      "lat": 28.6310997,
+      "lon": 77.3052282,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12117668060,
+      "lat": 28.6310931,
+      "lon": 77.3051971,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135328578,
+      "lat": 28.6551887,
+      "lon": 77.2318667,
+      "tags": {
+        "location": "outdoor",
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12135328579,
+      "lat": 28.6542241,
+      "lon": 77.2305186,
+      "tags": {
+        "location": "indoor",
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12149769889,
+      "lat": 28.4539529,
+      "lon": 77.082981,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "operator": "DHBVN",
+        "phases": "3",
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12162043346,
+      "lat": 28.6175591,
+      "lon": 77.2951829,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12162059532,
+      "lat": 28.6175683,
+      "lon": 77.2952254,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12185790542,
+      "lat": 28.6290244,
+      "lon": 77.2960794,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12188021551,
+      "lat": 28.6923017,
+      "lon": 77.2145521,
+      "tags": {
+        "operator": "Raychem RPG Private Limited",
+        "power": "substation",
+        "ref": "418-2",
+        "substation": "transmission"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12192571771,
+      "lat": 28.5176271,
+      "lon": 77.1892862,
+      "tags": {
+        "location": "outdoor",
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12208696628,
+      "lat": 28.5694073,
+      "lon": 77.2484879,
+      "tags": {
+        "location": "outdoor",
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12208815802,
+      "lat": 28.5680845,
+      "lon": 77.2464332,
+      "tags": {
+        "note": "Package Substation",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12208815803,
+      "lat": 28.5680964,
+      "lon": 77.2463948,
+      "tags": {
+        "note": "Package Substation",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12223915409,
+      "lat": 28.5899703,
+      "lon": 77.0717962,
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12223941334,
+      "lat": 28.5878809,
+      "lon": 77.071639,
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12246139347,
+      "lat": 28.4534107,
+      "lon": 77.0860258,
+      "tags": {
+        "location": "outdoor",
+        "operator": "DHBVN",
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12250037002,
+      "lat": 28.6845571,
+      "lon": 77.2037435,
+      "tags": {
+        "location": "surface",
+        "power": "substation",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12352455226,
+      "lat": 28.6497641,
+      "lon": 77.3167582,
+      "tags": {
+        "name": "Anand Vihar Terminal Electric Substation",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12393738167,
+      "lat": 28.6147361,
+      "lon": 77.0330375,
+      "tags": {
+        "name": "Sewak Park",
+        "power": "substation",
+        "voltage": "11000"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12412682001,
+      "lat": 28.6176367,
+      "lon": 77.0284381,
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12440450712,
+      "lat": 28.6409937,
+      "lon": 77.2401801,
+      "tags": {
+        "power": "substation",
+        "voltage": "11000"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12478557121,
+      "lat": 28.5317639,
+      "lon": 76.9357376,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12478557122,
+      "lat": 28.5322729,
+      "lon": 76.935743,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12478557123,
+      "lat": 28.5327725,
+      "lon": 76.9357645,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12478557124,
+      "lat": 28.533272,
+      "lon": 76.9357752,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12522500925,
+      "lat": 28.615802,
+      "lon": 77.0067756,
+      "tags": {
+        "power": "substation",
+        "voltage": "11000"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12522522727,
+      "lat": 28.6161455,
+      "lon": 77.0067964,
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12540166222,
+      "lat": 28.4018554,
+      "lon": 77.0321073,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12540166225,
+      "lat": 28.4020914,
+      "lon": 77.0321207,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12540166228,
+      "lat": 28.402358,
+      "lon": 77.0321154,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12540166231,
+      "lat": 28.4025656,
+      "lon": 77.0321154,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12540166300,
+      "lat": 28.4023906,
+      "lon": 77.0341558,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12540229703,
+      "lat": 28.4026914,
+      "lon": 77.0341558,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12540229706,
+      "lat": 28.4028401,
+      "lon": 77.0341545,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12540229719,
+      "lat": 28.4034382,
+      "lon": 77.0341397,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12540354263,
+      "lat": 28.5001309,
+      "lon": 76.961103,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12540354264,
+      "lat": 28.5003289,
+      "lon": 76.961111,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12540354265,
+      "lat": 28.5005575,
+      "lon": 76.961111,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12540354266,
+      "lat": 28.5007768,
+      "lon": 76.9611137,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12540354297,
+      "lat": 28.497469,
+      "lon": 76.9604055,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12540354298,
+      "lat": 28.4979296,
+      "lon": 76.9604109,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12540354299,
+      "lat": 28.4982501,
+      "lon": 76.9604108,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12540354300,
+      "lat": 28.4987361,
+      "lon": 76.9604137,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12592669378,
+      "lat": 28.6500335,
+      "lon": 77.2258444,
+      "tags": {
+        "location": "outdoor",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12592689769,
+      "lat": 28.6500169,
+      "lon": 77.2258606,
+      "tags": {
+        "location": "outdoor",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12592689770,
+      "lat": 28.6499967,
+      "lon": 77.2258759,
+      "tags": {
+        "location": "outdoor",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12592759247,
+      "lat": 28.6561404,
+      "lon": 77.2227213,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "phases": "3",
+        "power": "transformer",
+        "rating": "630 kVA",
+        "transformer": "distribution",
+        "voltage:primary": "11000"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12592937575,
+      "lat": 28.6569903,
+      "lon": 77.2293698,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "phases": "3",
+        "power": "transformer",
+        "rating": "990 kVA",
+        "transformer": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12601900816,
+      "lat": 28.5063693,
+      "lon": 77.2623977,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12601900817,
+      "lat": 28.5062727,
+      "lon": 77.2626633,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12601900818,
+      "lat": 28.5061996,
+      "lon": 77.2628778,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12601900819,
+      "lat": 28.5061053,
+      "lon": 77.2631058,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12601900820,
+      "lat": 28.506975,
+      "lon": 77.2627974,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12601900821,
+      "lat": 28.5066851,
+      "lon": 77.2626579,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12602348516,
+      "lat": 28.5872678,
+      "lon": 77.2665717,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12602348517,
+      "lat": 28.5874397,
+      "lon": 77.2665261,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12602348518,
+      "lat": 28.587647,
+      "lon": 77.2664752,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12602348519,
+      "lat": 28.5878165,
+      "lon": 77.2664323,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12604969371,
+      "lat": 28.7120292,
+      "lon": 77.3254434,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12604969372,
+      "lat": 28.7122197,
+      "lon": 77.3254354,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12604969373,
+      "lat": 28.7124162,
+      "lon": 77.32543,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12604969390,
+      "lat": 28.7117928,
+      "lon": 77.3246026,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12604969391,
+      "lat": 28.7116916,
+      "lon": 77.3246012,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12604969392,
+      "lat": 28.7122703,
+      "lon": 77.3247997,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12604969393,
+      "lat": 28.7121033,
+      "lon": 77.3248225,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12604969394,
+      "lat": 28.7119351,
+      "lon": 77.3248306,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12604992398,
+      "lat": 28.667121,
+      "lon": 76.8361584,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12604992399,
+      "lat": 28.6671116,
+      "lon": 76.8364347,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12605153858,
+      "lat": 28.676925,
+      "lon": 76.980761,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12605153859,
+      "lat": 28.6771297,
+      "lon": 76.9807824,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12605153860,
+      "lat": 28.677398,
+      "lon": 76.9807959,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12605153861,
+      "lat": 28.6776521,
+      "lon": 76.9807878,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12605153872,
+      "lat": 28.676785,
+      "lon": 76.9823328,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12605153874,
+      "lat": 28.6778345,
+      "lon": 76.9823435,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12612608988,
+      "lat": 28.4511348,
+      "lon": 77.0847173,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12612608989,
+      "lat": 28.4511394,
+      "lon": 77.0846961,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12613221605,
+      "lat": 28.6252337,
+      "lon": 77.2896153,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12620240422,
+      "lat": 28.5852381,
+      "lon": 77.0696209,
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12626472153,
+      "lat": 28.7798008,
+      "lon": 77.2803402,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12626472154,
+      "lat": 28.7801065,
+      "lon": 77.2802597,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12633639399,
+      "lat": 28.6143622,
+      "lon": 77.0330628,
+      "tags": {
+        "power": "substation",
+        "voltage": "11000"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12638564952,
+      "lat": 28.6090747,
+      "lon": 77.0349166,
+      "tags": {
+        "power": "substation",
+        "voltage": "11000"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12676083728,
+      "lat": 28.5891405,
+      "lon": 77.1695042,
+      "tags": {
+        "name": "Auxiliary Substation Room",
+        "operator": "Delhi Metro Rail Corporation",
+        "power": "substation",
+        "substation": "transmission"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12685860951,
+      "lat": 28.7949797,
+      "lon": 77.0711915,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12685860952,
+      "lat": 28.7952218,
+      "lon": 77.0709313,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12685860953,
+      "lat": 28.7954216,
+      "lon": 77.0707435,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12685860954,
+      "lat": 28.796014,
+      "lon": 77.0701964,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12685860955,
+      "lat": 28.7965311,
+      "lon": 77.0695097,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12685860956,
+      "lat": 28.7967708,
+      "lon": 77.0692415,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12685871899,
+      "lat": 28.7918198,
+      "lon": 77.0675971,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12685894001,
+      "lat": 28.7920102,
+      "lon": 77.0678385,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12685894018,
+      "lat": 28.7930539,
+      "lon": 77.0690482,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12685894022,
+      "lat": 28.7928517,
+      "lon": 77.0688175,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12685894063,
+      "lat": 28.7936119,
+      "lon": 77.0691614,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12685894064,
+      "lat": 28.7933063,
+      "lon": 77.0694994,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12685919708,
+      "lat": 28.8235845,
+      "lon": 77.2656357,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12685919709,
+      "lat": 28.8237983,
+      "lon": 77.2644046,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12685919710,
+      "lat": 28.8237137,
+      "lon": 77.2648713,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12685919711,
+      "lat": 28.8236644,
+      "lon": 77.2651878,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12728549801,
+      "lat": 28.6884897,
+      "lon": 77.2146544,
+      "tags": {
+        "location": "outdoor",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12728549812,
+      "lat": 28.6884766,
+      "lon": 77.2147007,
+      "tags": {
+        "location": "outdoor",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12752315814,
+      "lat": 28.6566143,
+      "lon": 77.2243686,
+      "tags": {
+        "location": "kiosk",
+        "manufacturer": "Siemens",
+        "operator": "BSES Yamuna Power Limited",
+        "operator:en": "BSES Yamuna Power Limited",
+        "power": "substation",
+        "substation": "minor_distribution",
+        "transformer": "main",
+        "voltage:primary": "11000",
+        "voltage:secondary": "433"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12752315815,
+      "lat": 28.6566152,
+      "lon": 77.2242653,
+      "tags": {
+        "location": "kiosk",
+        "manufacturer": "Siemens",
+        "operator:en": "BSES Yamuna Power Limited",
+        "power": "substation",
+        "substation": "minor_distribution",
+        "transformer": "main",
+        "voltage:primary": "11000",
+        "voltage:secondary": "433"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12752315816,
+      "lat": 28.6565844,
+      "lon": 77.2250613,
+      "tags": {
+        "location": "kiosk",
+        "manufacturer": "Siemens",
+        "operator:en": "BSES Yamuna Power Limited",
+        "power": "substation",
+        "substation": "minor_distribution",
+        "transformer": "main",
+        "voltage:primary": "11000",
+        "voltage:secondary": "433"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12752315817,
+      "lat": 28.6565781,
+      "lon": 77.2251149,
+      "tags": {
+        "location": "kiosk",
+        "manufacturer": "Siemens",
+        "operator:en": "BSES Yamuna Power Limited",
+        "power": "substation",
+        "substation": "minor_distribution",
+        "transformer": "main",
+        "voltage:primary": "11000",
+        "voltage:secondary": "433"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12752315818,
+      "lat": 28.6565699,
+      "lon": 77.2253142,
+      "tags": {
+        "location": "kiosk",
+        "manufacturer": "Siemens",
+        "operator:en": "BSES Yamuna Power Limited",
+        "power": "substation",
+        "substation": "minor_distribution",
+        "transformer": "main",
+        "voltage:primary": "11000",
+        "voltage:secondary": "433"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12752315819,
+      "lat": 28.6565727,
+      "lon": 77.2253709,
+      "tags": {
+        "location": "kiosk",
+        "manufacturer": "Siemens",
+        "operator:en": "BSES Yamuna Power Limited",
+        "power": "substation",
+        "substation": "minor_distribution",
+        "transformer": "main",
+        "voltage:primary": "11000",
+        "voltage:secondary": "433"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12752315820,
+      "lat": 28.6565437,
+      "lon": 77.2257498,
+      "tags": {
+        "location": "kiosk",
+        "manufacturer": "Siemens",
+        "operator:en": "BSES Yamuna Power Limited",
+        "power": "substation",
+        "substation": "minor_distribution",
+        "transformer": "main",
+        "voltage:primary": "11000",
+        "voltage:secondary": "433"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12752315821,
+      "lat": 28.6565419,
+      "lon": 77.2258045,
+      "tags": {
+        "location": "kiosk",
+        "manufacturer": "Siemens",
+        "operator:en": "BSES Yamuna Power Limited",
+        "power": "substation",
+        "substation": "minor_distribution",
+        "transformer": "main",
+        "voltage:primary": "11000",
+        "voltage:secondary": "433"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12752315822,
+      "lat": 28.656541,
+      "lon": 77.2258613,
+      "tags": {
+        "location": "kiosk",
+        "manufacturer": "Siemens",
+        "operator:en": "BSES Yamuna Power Limited",
+        "power": "substation",
+        "substation": "minor_distribution",
+        "transformer": "main",
+        "voltage:primary": "11000",
+        "voltage:secondary": "433"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12752315823,
+      "lat": 28.6564966,
+      "lon": 77.2267408,
+      "tags": {
+        "location": "kiosk",
+        "manufacturer": "Siemens",
+        "operator:en": "BSES Yamuna Power Limited",
+        "power": "substation",
+        "substation": "minor_distribution",
+        "transformer": "main",
+        "voltage:primary": "11000",
+        "voltage:secondary": "433"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12752315824,
+      "lat": 28.6564902,
+      "lon": 77.2268079,
+      "tags": {
+        "location": "kiosk",
+        "manufacturer": "Siemens",
+        "operator:en": "BSES Yamuna Power Limited",
+        "power": "substation",
+        "substation": "minor_distribution",
+        "transformer": "main",
+        "voltage:primary": "11000",
+        "voltage:secondary": "433"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12752315825,
+      "lat": 28.6564223,
+      "lon": 77.2281789,
+      "tags": {
+        "location": "kiosk",
+        "manufacturer": "Siemens",
+        "operator:en": "BSES Yamuna Power Limited",
+        "power": "substation",
+        "substation": "minor_distribution",
+        "transformer": "main",
+        "voltage:primary": "11000",
+        "voltage:secondary": "433"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12752315826,
+      "lat": 28.6564205,
+      "lon": 77.2282367,
+      "tags": {
+        "location": "kiosk",
+        "manufacturer": "Siemens",
+        "operator:en": "BSES Yamuna Power Limited",
+        "power": "substation",
+        "substation": "minor_distribution",
+        "transformer": "main",
+        "voltage:primary": "11000",
+        "voltage:secondary": "433"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12752315827,
+      "lat": 28.6563199,
+      "lon": 77.2296313,
+      "tags": {
+        "location": "kiosk",
+        "manufacturer": "Siemens",
+        "operator:en": "BSES Yamuna Power Limited",
+        "power": "substation",
+        "substation": "minor_distribution",
+        "transformer": "main",
+        "voltage:primary": "11000",
+        "voltage:secondary": "433"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12752315828,
+      "lat": 28.6562891,
+      "lon": 77.230452,
+      "tags": {
+        "location": "kiosk",
+        "manufacturer": "Siemens",
+        "operator:en": "BSES Yamuna Power Limited",
+        "power": "substation",
+        "substation": "minor_distribution",
+        "transformer": "main",
+        "voltage:primary": "11000",
+        "voltage:secondary": "433"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12752315829,
+      "lat": 28.6562864,
+      "lon": 77.2303891,
+      "tags": {
+        "location": "kiosk",
+        "manufacturer": "Siemens",
+        "operator:en": "BSES Yamuna Power Limited",
+        "power": "substation",
+        "substation": "minor_distribution",
+        "transformer": "main",
+        "voltage:primary": "11000",
+        "voltage:secondary": "433"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12752315830,
+      "lat": 28.6562719,
+      "lon": 77.2307566,
+      "tags": {
+        "location": "kiosk",
+        "manufacturer": "Siemens",
+        "operator:en": "BSES Yamuna Power Limited",
+        "power": "substation",
+        "substation": "minor_distribution",
+        "transformer": "main",
+        "voltage:primary": "11000",
+        "voltage:secondary": "433"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12801629387,
+      "lat": 28.5563543,
+      "lon": 77.2434588,
+      "tags": {
+        "operator": "Bombay Suburban Electric Supply Yamuna Power Limited",
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12808986591,
+      "lat": 28.4552881,
+      "lon": 77.0900481,
+      "tags": {
+        "location": "outdoor",
+        "operator": "DHBVN",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12808986597,
+      "lat": 28.4561902,
+      "lon": 77.0897208,
+      "tags": {
+        "location": "outdoor",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12809014207,
+      "lat": 28.4542467,
+      "lon": 77.0903186,
+      "tags": {
+        "location": "outdoor",
+        "operator": "DHBVN",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12809655608,
+      "lat": 28.4602226,
+      "lon": 77.0797783,
+      "tags": {
+        "frequency": "50",
+        "location": "outdoor",
+        "operator": "DHBVN",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12837143405,
+      "lat": 28.456555,
+      "lon": 77.0913417,
+      "tags": {
+        "location": "outdoor",
+        "operator": "DHBVN",
+        "power": "transformer",
+        "transformer": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12843965564,
+      "lat": 28.4533023,
+      "lon": 77.0930065,
+      "tags": {
+        "location": "outdoor",
+        "operator": "DHBVN",
+        "power": "transformer",
+        "transformer": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12953163088,
+      "lat": 28.4561702,
+      "lon": 77.0852798,
+      "tags": {
+        "location": "outdoor",
+        "operator": "DHBVN",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12953181224,
+      "lat": 28.4567624,
+      "lon": 77.0839158,
+      "tags": {
+        "location": "outdoor",
+        "operator": "DHBVN",
+        "phases": "3",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12956870114,
+      "lat": 28.6891225,
+      "lon": 77.2094381,
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12959415719,
+      "lat": 28.454407,
+      "lon": 77.09141,
+      "tags": {
+        "location": "outdoor",
+        "operator": "DHBVN",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12959415720,
+      "lat": 28.4544167,
+      "lon": 77.0914073,
+      "tags": {
+        "location": "outdoor",
+        "operator": "DHBVN",
+        "power": "transformer",
+        "transformer": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12964548745,
+      "lat": 28.5824141,
+      "lon": 77.2400988,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12972974595,
+      "lat": 28.5791175,
+      "lon": 77.1872691,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12995516637,
+      "lat": 28.6029224,
+      "lon": 77.322901,
+      "tags": {
+        "location": "indoor",
+        "power": "substation",
+        "substation": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13028337457,
+      "lat": 28.5703081,
+      "lon": 77.3243783,
+      "tags": {
+        "power": "substation",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13028415849,
+      "lat": 28.5697664,
+      "lon": 77.3247929,
+      "tags": {
+        "location": "underground",
+        "power": "substation",
+        "substation": "distribution",
+        "voltage": "44000"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13049601105,
+      "lat": 28.6879215,
+      "lon": 77.2118242,
+      "tags": {
+        "location": "indoor",
+        "name": "Botany Department Substation",
+        "power": "substation",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13061138064,
+      "lat": 28.5400351,
+      "lon": 77.2935286,
+      "tags": {
+        "location": "indoor",
+        "name": "Jasola Substation",
+        "power": "substation",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13061156417,
+      "lat": 28.5383596,
+      "lon": 77.2995095,
+      "tags": {
+        "location": "indoor",
+        "name": "N Pocket Substation",
+        "power": "substation",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13061156442,
+      "lat": 28.5376896,
+      "lon": 77.2997797,
+      "tags": {
+        "location": "indoor",
+        "name": "Institutional Area Substation",
+        "power": "substation",
+        "ref": "2",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13081854886,
+      "lat": 28.618734,
+      "lon": 77.308435,
+      "tags": {
+        "name": "Khichripur Grid",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13094428786,
+      "lat": 28.5374841,
+      "lon": 77.2751031,
+      "tags": {
+        "location": "indoor",
+        "name": "Substation Number 1",
+        "power": "substation",
+        "ref": "1",
+        "substation": "converter"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13110136454,
+      "lat": 28.6712725,
+      "lon": 77.2003089,
+      "tags": {
+        "operator": "TPDDL",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13142484183,
+      "lat": 28.5486794,
+      "lon": 77.2157166,
+      "tags": {
+        "location": "outdoor",
+        "operator": "BSES",
+        "power": "substation",
+        "ref": "HKSFPA121",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13142484190,
+      "lat": 28.5482449,
+      "lon": 77.2161114,
+      "tags": {
+        "location": "outdoor",
+        "operator": "BSES",
+        "power": "substation",
+        "ref": "HKSFPA121",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13142488631,
+      "lat": 28.5496491,
+      "lon": 77.2153953,
+      "tags": {
+        "location": "outdoor",
+        "operator": "BSES",
+        "power": "substation",
+        "ref": "HKSFPA121",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13176664027,
+      "lat": 28.4775753,
+      "lon": 77.0934338,
+      "tags": {
+        "location": "outdoor",
+        "power": "substation",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13227608726,
+      "lat": 28.593836,
+      "lon": 77.0471036,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13227608729,
+      "lat": 28.5938696,
+      "lon": 77.0471307,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13414640798,
+      "lat": 28.6769678,
+      "lon": 76.863806,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13414640799,
+      "lat": 28.6772619,
+      "lon": 76.8638111,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13421308596,
+      "lat": 28.5283453,
+      "lon": 77.3018837,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13421308597,
+      "lat": 28.5280107,
+      "lon": 77.3020876,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13447597359,
+      "lat": 28.633023,
+      "lon": 77.2231214,
+      "tags": {
+        "power": "substation",
+        "ref": "25 c",
+        "substation": "minor_distribution"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13447649970,
+      "lat": 28.6334135,
+      "lon": 77.224163,
+      "tags": {
+        "location": "indoor",
+        "name": "Mayur Bhawan Substation",
+        "operator": "New Delhi Municipal Corporation",
+        "power": "substation",
+        "substation": "distribution",
+        "voltage": "110000"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13447658223,
+      "lat": 28.6337549,
+      "lon": 77.2234002,
+      "tags": {
+        "location": "outdoor",
+        "operator": "NDMC",
+        "power": "substation",
+        "ref": "26",
+        "voltage": "440"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13447658232,
+      "lat": 28.6339014,
+      "lon": 77.2236773,
+      "tags": {
+        "location": "outdoor",
+        "operator": "NDMC",
+        "power": "substation",
+        "ref": "29"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13466938141,
+      "lat": 28.5880478,
+      "lon": 77.1701175,
+      "tags": {
+        "location": "surface",
+        "power": "substation",
+        "substation": "distribution",
+        "voltage": "110000"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13514311957,
+      "lat": 28.6698771,
+      "lon": 77.2307271,
+      "tags": {
+        "location": "indoor",
+        "name": "I.S.B.T. Kashmere Gate Substation",
+        "power": "substation",
+        "substation": "distribution",
+        "voltage": "110000"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13543920058,
+      "lat": 28.6968966,
+      "lon": 77.0993276,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13565005147,
+      "lat": 28.5627178,
+      "lon": 77.1929365,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13718857865,
+      "lat": 28.7213185,
+      "lon": 77.176755,
+      "tags": {
+        "power": "transformer",
+        "transformer": "main"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13718857866,
+      "lat": 28.7213526,
+      "lon": 77.1768043,
+      "tags": {
+        "power": "transformer",
+        "transformer": "main"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13718857867,
+      "lat": 28.7213626,
+      "lon": 77.1768193,
+      "tags": {
+        "power": "transformer",
+        "transformer": "main"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13813730665,
+      "lat": 28.5619287,
+      "lon": 77.1939831,
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14001881235,
+      "lat": 28.5746259,
+      "lon": 77.2173535,
+      "tags": {
+        "power": "substation",
+        "voltage": "110000;20000"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14041377381,
+      "lat": 28.5695843,
+      "lon": 77.242735,
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14105308766,
+      "lat": 28.6936272,
+      "lon": 77.2050984,
+      "tags": {
+        "operator": "Tata Power Delhi Distribution Limited",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 36740280,
+      "center": {
+        "lat": 28.4361348,
+        "lon": 77.042144
+      },
+      "tags": {
+        "name": "66KV Sector 38",
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 38108840,
+      "center": {
+        "lat": 28.4468795,
+        "lon": 77.0821275
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "Gurgaon Sector 52-A Substation",
+        "name:en": "Gurgaon Sector 52-A Substation",
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation",
+        "voltage": "220000;66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 38108841,
+      "center": {
+        "lat": 28.4184206,
+        "lon": 77.104859
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "Ghata Sector 56 Substation",
+        "power": "substation",
+        "substation": "substation",
+        "voltage": "220000;66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 38108843,
+      "center": {
+        "lat": 28.4555437,
+        "lon": 77.0732895
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "Gurgaon Sector 44 Substation",
+        "name:en": "Gurgaon Sector 44 Substation",
+        "name:hi": "\u0917\u0941\u0921\u093c\u0917\u093e\u0901\u0935 \u0938\u0947\u0915\u094d\u091f\u0930 \u096a\u096a \u0938\u092c\u0938\u094d\u091f\u0947\u0936\u0928",
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Haryana Vidyut Prasaran Nigam Limited (HVPNL)",
+        "operator:en": "Haryana Vidyut Prasaran Nigam Limited (HVPNL)",
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 38108844,
+      "center": {
+        "lat": 28.4841112,
+        "lon": 77.0956937
+      },
+      "tags": {
+        "name": "Nathupur Substation",
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 44091397,
+      "center": {
+        "lat": 28.5388455,
+        "lon": 77.1857574
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Electric Substation",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 63724935,
+      "center": {
+        "lat": 28.5483186,
+        "lon": 77.0190719
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "Bamnauli Substation",
+        "operator": "Delhi Transco Limited",
+        "power": "substation",
+        "substation": "substation",
+        "voltage": "400000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 63724985,
+      "center": {
+        "lat": 28.5391733,
+        "lon": 77.0597255
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 63724987,
+      "center": {
+        "lat": 28.7927784,
+        "lon": 77.0689539
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "Bawana Substation",
+        "operator": "Delhi Transco Limited",
+        "power": "substation",
+        "substation": "substation",
+        "voltage": "400000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 63752215,
+      "center": {
+        "lat": 28.8676054,
+        "lon": 77.0995394
+      },
+      "tags": {
+        "name": "Narela",
+        "power": "substation",
+        "voltage": "220000;132000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 63844604,
+      "center": {
+        "lat": 28.8712195,
+        "lon": 77.1043567
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "132000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 63956553,
+      "center": {
+        "lat": 28.4640885,
+        "lon": 77.0396583
+      },
+      "tags": {
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 63956555,
+      "center": {
+        "lat": 28.455431,
+        "lon": 77.0424486
+      },
+      "tags": {
+        "name": "Power Substation",
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 65453986,
+      "center": {
+        "lat": 28.4657713,
+        "lon": 77.3146331
+      },
+      "tags": {
+        "name": "A3 Palla",
+        "power": "substation",
+        "voltage": "220000;66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 65462590,
+      "center": {
+        "lat": 28.5063542,
+        "lon": 77.3050059
+      },
+      "tags": {
+        "name": "Badarpur Thermal Power Station",
+        "power": "substation",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 65497386,
+      "center": {
+        "lat": 28.5497027,
+        "lon": 77.3428408
+      },
+      "tags": {
+        "name": "Noida IV sector 45",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 66348531,
+      "center": {
+        "lat": 28.5845974,
+        "lon": 77.3308624
+      },
+      "tags": {
+        "name": "Noida Sector 20",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 69976580,
+      "center": {
+        "lat": 28.5282451,
+        "lon": 77.3018436
+      },
+      "tags": {
+        "name": "Sarita Vihar",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 70214090,
+      "center": {
+        "lat": 28.6685006,
+        "lon": 77.2334204
+      },
+      "tags": {
+        "name": "Delhi Metro Rail Corporation Kashmere Gate RSS",
+        "power": "substation",
+        "substation": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 70255404,
+      "center": {
+        "lat": 28.6254708,
+        "lon": 77.2485168
+      },
+      "tags": {
+        "name": "I.P.Station",
+        "power": "substation",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 70258946,
+      "center": {
+        "lat": 28.6374223,
+        "lon": 77.2539395
+      },
+      "tags": {
+        "name": "Rajghat",
+        "power": "substation",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 70258949,
+      "center": {
+        "lat": 28.6159595,
+        "lon": 77.2525172
+      },
+      "tags": {
+        "name": "Pragati",
+        "operator": "Pragati Power Station",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 71297432,
+      "center": {
+        "lat": 28.5993655,
+        "lon": 77.3111733
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation",
+        "substation": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 71298925,
+      "center": {
+        "lat": 28.633429,
+        "lon": 77.3362046
+      },
+      "tags": {
+        "name": "Vaishali",
+        "power": "substation",
+        "voltage": "132000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 72003009,
+      "center": {
+        "lat": 28.649946,
+        "lon": 77.3333605
+      },
+      "tags": {
+        "name": "Sahibabad",
+        "power": "substation",
+        "voltage": "220000;132000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 76727519,
+      "center": {
+        "lat": 28.6407948,
+        "lon": 77.3134114
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 76733235,
+      "center": {
+        "lat": 28.6343072,
+        "lon": 77.3084453
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 76834870,
+      "center": {
+        "lat": 28.6127812,
+        "lon": 77.2851822
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 76834910,
+      "center": {
+        "lat": 28.6251725,
+        "lon": 77.3080784
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 76842476,
+      "center": {
+        "lat": 28.6164854,
+        "lon": 77.3259235
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 76842477,
+      "center": {
+        "lat": 28.617717,
+        "lon": 77.3226458
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "Gazipur",
+        "power": "substation",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 76842478,
+      "center": {
+        "lat": 28.618646,
+        "lon": 77.30827
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 76995145,
+      "center": {
+        "lat": 28.5939486,
+        "lon": 77.3012351
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 77629883,
+      "center": {
+        "lat": 28.7346274,
+        "lon": 77.1588336
+      },
+      "tags": {
+        "name": "66kV Grid Substation Building",
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 77643407,
+      "center": {
+        "lat": 28.6881003,
+        "lon": 77.0970925
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 77727829,
+      "center": {
+        "lat": 28.7077497,
+        "lon": 77.1355642
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 77743801,
+      "center": {
+        "lat": 28.6990573,
+        "lon": 77.1578077
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 77766261,
+      "center": {
+        "lat": 28.6739899,
+        "lon": 77.1476978
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "Rohtak Road",
+        "power": "substation",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 77885898,
+      "center": {
+        "lat": 28.6808693,
+        "lon": 77.0768465
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 78471437,
+      "center": {
+        "lat": 28.7277011,
+        "lon": 77.141064
+      },
+      "tags": {
+        "name": "S.Bagh",
+        "power": "substation",
+        "substation": "Rohini_Sec_18_Sub_Station",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 78484400,
+      "center": {
+        "lat": 28.7216203,
+        "lon": 77.1075167
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 78484432,
+      "center": {
+        "lat": 28.7316324,
+        "lon": 77.1063248
+      },
+      "tags": {
+        "name": "Rohini",
+        "power": "substation",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 78542447,
+      "center": {
+        "lat": 28.7454948,
+        "lon": 77.1287943
+      },
+      "tags": {
+        "addr:city": "Badli Industrial Area, Badli, Delhi",
+        "addr:postcode": "110042",
+        "name": "NDPL Office",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 78542546,
+      "center": {
+        "lat": 28.7359698,
+        "lon": 77.1141688
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 78542610,
+      "center": {
+        "lat": 28.7330743,
+        "lon": 77.101785
+      },
+      "tags": {
+        "landuse": "industrial",
+        "name": "Rithala Power Plant",
+        "plant:method": "combustion",
+        "plant:output:electricity": "108 MW",
+        "plant:source": "gas",
+        "power": "plant",
+        "source": "https://www.gem.wiki/Rithala_Gas_power_plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 78592763,
+      "center": {
+        "lat": 28.6921178,
+        "lon": 77.1447029
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 78595534,
+      "center": {
+        "lat": 28.7072684,
+        "lon": 77.1274794
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 78881810,
+      "center": {
+        "lat": 28.727817,
+        "lon": 77.0807157
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 78898623,
+      "center": {
+        "lat": 28.7181029,
+        "lon": 77.0722321
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 87295104,
+      "center": {
+        "lat": 28.7801934,
+        "lon": 77.2798537
+      },
+      "tags": {
+        "name": "Loni",
+        "power": "substation",
+        "voltage": "220000;132000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 112973662,
+      "center": {
+        "lat": 28.8441615,
+        "lon": 77.0868943
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 112973666,
+      "center": {
+        "lat": 28.6795713,
+        "lon": 76.9086504
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "132000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 112973670,
+      "center": {
+        "lat": 28.7002722,
+        "lon": 77.2539266
+      },
+      "tags": {
+        "name": "Wazirabad",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 112973679,
+      "center": {
+        "lat": 28.8262566,
+        "lon": 77.1108701
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 112973688,
+      "center": {
+        "lat": 28.7194042,
+        "lon": 77.2197826
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "Burari",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 115800446,
+      "center": {
+        "lat": 28.42722,
+        "lon": 76.9602254
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "Harsaru",
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 116046191,
+      "center": {
+        "lat": 28.5323234,
+        "lon": 77.2879837
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 125159508,
+      "center": {
+        "lat": 28.774747,
+        "lon": 77.0510364
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 125159521,
+      "center": {
+        "lat": 28.6140469,
+        "lon": 76.9970483
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "Najafgarh",
+        "operator": "Delhi Transco Limited",
+        "power": "substation",
+        "voltage": "220000;66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 125159522,
+      "center": {
+        "lat": 28.7833736,
+        "lon": 77.0633537
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 125159523,
+      "center": {
+        "lat": 28.6772146,
+        "lon": 76.8637664
+      },
+      "tags": {
+        "name": "Nuna Majra",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "220000;132000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 125159529,
+      "center": {
+        "lat": 28.6883304,
+        "lon": 76.9474651
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "132000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 125161558,
+      "center": {
+        "lat": 28.5965739,
+        "lon": 76.9152859
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 125222827,
+      "center": {
+        "lat": 28.4055831,
+        "lon": 76.9634048
+      },
+      "tags": {
+        "barrier": "wall",
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 125222844,
+      "center": {
+        "lat": 28.4445337,
+        "lon": 76.8361862
+      },
+      "tags": {
+        "name": "Farrukhnagar",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 125222845,
+      "center": {
+        "lat": 28.7239547,
+        "lon": 77.0059208
+      },
+      "tags": {
+        "name": "Kanjhawala Substation",
+        "operator": "Delhi Transco Limited",
+        "power": "substation",
+        "substation": "substation",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 125982857,
+      "center": {
+        "lat": 28.4450073,
+        "lon": 76.9986838
+      },
+      "tags": {
+        "name": "Sector 10",
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 139071683,
+      "center": {
+        "lat": 28.6167647,
+        "lon": 77.2524477
+      },
+      "tags": {
+        "landuse": "industrial",
+        "name": "Pragati-I Combined Cycle Gas Power Station",
+        "operator": "Pragati Power Corporation Limited",
+        "plant:method": "combustion",
+        "plant:output:electricity": "330 MW",
+        "plant:source": "gas",
+        "plant:type": "combined_cycle",
+        "power": "plant",
+        "source": "http://ipgcl-ppcl.gov.in/powerstations.htm",
+        "wikidata": "Q7237615"
+      }
+    },
+    {
+      "type": "way",
+      "id": 139071685,
+      "center": {
+        "lat": 28.6190348,
+        "lon": 77.2502162
+      },
+      "tags": {
+        "landuse": "industrial",
+        "name": "Indraprastha Gas Turbine Power Station",
+        "operator": "Indraprastha Power Generation Company Limited",
+        "plant:method": "combustion",
+        "plant:output:electricity": "270 MW",
+        "plant:source": "gas",
+        "plant:type": "combined_cycle",
+        "power": "plant",
+        "source": "http://ipgcl-ppcl.gov.in/powerstations.htm",
+        "wikidata": "Q5973021"
+      }
+    },
+    {
+      "type": "way",
+      "id": 154191682,
+      "center": {
+        "lat": 28.601337,
+        "lon": 77.0827091
+      },
+      "tags": {
+        "operator": "Mahvir enclave power station",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 154330901,
+      "center": {
+        "lat": 28.6341366,
+        "lon": 77.0797036
+      },
+      "tags": {
+        "name": "BSES",
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 161130359,
+      "center": {
+        "lat": 28.4993475,
+        "lon": 76.9617049
+      },
+      "tags": {
+        "name": "Daulatabad Substation",
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation",
+        "substation": "substation",
+        "voltage": "400000;220000;66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 161130361,
+      "center": {
+        "lat": 28.6771827,
+        "lon": 76.9818696
+      },
+      "tags": {
+        "name": "Mundka",
+        "power": "substation",
+        "voltage": "400000;220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 170084068,
+      "center": {
+        "lat": 28.4024018,
+        "lon": 77.0333285
+      },
+      "tags": {
+        "name": "Badshahpur Substation",
+        "operator": "DHBVN",
+        "power": "substation",
+        "substation": "substation",
+        "voltage": "400000;220000;66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 170938273,
+      "center": {
+        "lat": 28.6307977,
+        "lon": 77.3333918
+      },
+      "tags": {
+        "name": "Noida Sector 62",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "220000;132000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 171422831,
+      "center": {
+        "lat": 28.7315487,
+        "lon": 77.1522434
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "Delhi Metro Rail Corporation Jahangirpuri RSS",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 171496278,
+      "center": {
+        "lat": 28.7033131,
+        "lon": 77.1143254
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 171501210,
+      "center": {
+        "lat": 28.6936303,
+        "lon": 77.1049324
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 171501211,
+      "center": {
+        "lat": 28.68761,
+        "lon": 77.0820109
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 171501217,
+      "center": {
+        "lat": 28.6913395,
+        "lon": 77.1298372
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 171641948,
+      "center": {
+        "lat": 28.7072753,
+        "lon": 77.0920352
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 171648782,
+      "center": {
+        "lat": 28.7192337,
+        "lon": 77.1079045
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 171687612,
+      "center": {
+        "lat": 28.7989807,
+        "lon": 77.0569671
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 171687613,
+      "center": {
+        "lat": 28.8145911,
+        "lon": 77.0565201
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 171772524,
+      "center": {
+        "lat": 28.5662613,
+        "lon": 77.3307231
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 172301971,
+      "center": {
+        "lat": 28.7964571,
+        "lon": 77.0717398
+      },
+      "tags": {
+        "landuse": "industrial",
+        "name": "Pragati-III Combined Cycle Power Plant",
+        "plant:method": "combustion",
+        "plant:output:electricity": "1500 MW",
+        "plant:source": "gas",
+        "plant:type": "combined_cycle",
+        "power": "plant",
+        "wikidata": "Q7237608"
+      }
+    },
+    {
+      "type": "way",
+      "id": 172302052,
+      "center": {
+        "lat": 28.7950994,
+        "lon": 77.0689919
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "400000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 172306115,
+      "center": {
+        "lat": 28.7944081,
+        "lon": 77.0760359
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 172314920,
+      "center": {
+        "lat": 28.4354765,
+        "lon": 77.3042691
+      },
+      "tags": {
+        "name": "Sector 46",
+        "power": "substation",
+        "voltage": "220000;66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 172338281,
+      "center": {
+        "lat": 28.4398939,
+        "lon": 77.318125
+      },
+      "tags": {
+        "name": "Sector 31",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 172346145,
+      "center": {
+        "lat": 28.4172781,
+        "lon": 77.329024
+      },
+      "tags": {
+        "name": "A4",
+        "power": "substation",
+        "voltage": "220000;66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 172701740,
+      "center": {
+        "lat": 28.5399981,
+        "lon": 77.2994247
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 172701741,
+      "center": {
+        "lat": 28.5233042,
+        "lon": 77.2943881
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 172701742,
+      "center": {
+        "lat": 28.4970231,
+        "lon": 77.3007018
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 175804100,
+      "center": {
+        "lat": 28.7027525,
+        "lon": 77.2795785
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 175804102,
+      "center": {
+        "lat": 28.6769518,
+        "lon": 77.2585573
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 175804105,
+      "center": {
+        "lat": 28.6952638,
+        "lon": 77.2908168
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 175804106,
+      "center": {
+        "lat": 28.7015654,
+        "lon": 77.2924278
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 176492791,
+      "center": {
+        "lat": 28.5910497,
+        "lon": 77.2341589
+      },
+      "tags": {
+        "name": "Lodhi Road",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 187980829,
+      "center": {
+        "lat": 28.579022,
+        "lon": 77.1011572
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 187980837,
+      "center": {
+        "lat": 28.6014003,
+        "lon": 77.0697237
+      },
+      "tags": {
+        "alt_name": "Pappankalan-I",
+        "barrier": "wall",
+        "name": "Dwarka I (Sec-2) Substation",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 187980838,
+      "center": {
+        "lat": 28.6141828,
+        "lon": 77.1349081
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188093515,
+      "center": {
+        "lat": 28.604574,
+        "lon": 77.021688
+      },
+      "tags": {
+        "alt_name": "Pappankalan-II Substation",
+        "barrier": "wall",
+        "name": "Dwarka-II Sec-14 Substation",
+        "operator": "Delhi Transco Limited",
+        "power": "substation",
+        "substation": "substation",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188093516,
+      "center": {
+        "lat": 28.6060018,
+        "lon": 77.0223533
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "Delhi Metro Rail Corporation Dwarka RSS",
+        "power": "substation",
+        "substation": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188095018,
+      "center": {
+        "lat": 28.5510582,
+        "lon": 77.1175899
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188137575,
+      "center": {
+        "lat": 28.4927707,
+        "lon": 77.0712088
+      },
+      "tags": {
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188137578,
+      "center": {
+        "lat": 28.4919463,
+        "lon": 77.0612036
+      },
+      "tags": {
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188137580,
+      "center": {
+        "lat": 28.4960848,
+        "lon": 77.0848529
+      },
+      "tags": {
+        "name": "Jwala Mill Marg Substation",
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation",
+        "substation": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188137582,
+      "center": {
+        "lat": 28.4714731,
+        "lon": 77.0888835
+      },
+      "tags": {
+        "name": "Chakkarpur Substation",
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation",
+        "substation": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188146404,
+      "center": {
+        "lat": 28.5039797,
+        "lon": 77.0328743
+      },
+      "tags": {
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188146406,
+      "center": {
+        "lat": 28.5031801,
+        "lon": 77.0555784
+      },
+      "tags": {
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188237061,
+      "center": {
+        "lat": 28.5894567,
+        "lon": 77.1723291
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188594252,
+      "center": {
+        "lat": 28.4750994,
+        "lon": 77.2980934
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 189289389,
+      "center": {
+        "lat": 28.6471534,
+        "lon": 77.0722358
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 189289394,
+      "center": {
+        "lat": 28.6379392,
+        "lon": 77.1026192
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 189289396,
+      "center": {
+        "lat": 28.6514032,
+        "lon": 77.0915652
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 189289403,
+      "center": {
+        "lat": 28.6183746,
+        "lon": 77.0773222
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 189289404,
+      "center": {
+        "lat": 28.7050764,
+        "lon": 76.9819974
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 189289411,
+      "center": {
+        "lat": 28.6587059,
+        "lon": 77.0812646
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 189430941,
+      "center": {
+        "lat": 28.593143,
+        "lon": 77.0419251
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 189448080,
+      "center": {
+        "lat": 28.5773111,
+        "lon": 77.0587746
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 189587020,
+      "center": {
+        "lat": 28.8282386,
+        "lon": 77.095767
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 189610318,
+      "center": {
+        "lat": 28.6708782,
+        "lon": 77.2088549
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 190021168,
+      "center": {
+        "lat": 28.4588665,
+        "lon": 76.9978466
+      },
+      "tags": {
+        "name": "Sector 9",
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 190041781,
+      "center": {
+        "lat": 28.4305145,
+        "lon": 77.019611
+      },
+      "tags": {
+        "name": "Sector 34",
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 190246702,
+      "center": {
+        "lat": 28.5482002,
+        "lon": 77.1102201
+      },
+      "tags": {
+        "name": "Delhi International Airport Limited Substation",
+        "not:operator:wikidata": "Q5253827",
+        "operator": "Delhi Transco Limited",
+        "power": "substation",
+        "substation": "substation",
+        "voltage": "22000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 190261103,
+      "center": {
+        "lat": 28.5261612,
+        "lon": 77.2678992
+      },
+      "tags": {
+        "name": "Okhla",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "220000;66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 190261105,
+      "center": {
+        "lat": 28.5361785,
+        "lon": 77.1525992
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 190261107,
+      "center": {
+        "lat": 28.5289879,
+        "lon": 77.1472489
+      },
+      "tags": {
+        "name": "D 7 Substation",
+        "operator": "BSES Rajdhani",
+        "power": "substation",
+        "substation": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 190261115,
+      "center": {
+        "lat": 28.5152835,
+        "lon": 77.2835433
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 190261116,
+      "center": {
+        "lat": 28.539893,
+        "lon": 77.1412532
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "Vasant Kunj",
+        "power": "substation",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 190261120,
+      "center": {
+        "lat": 28.5142449,
+        "lon": 77.1626393
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "Mehrauli Substation",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "220000;66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 190278397,
+      "center": {
+        "lat": 28.5072181,
+        "lon": 77.1741307
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "Delhi Metro Rail Corporation Chhatarpur RSS",
+        "power": "substation",
+        "substation": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 190307574,
+      "center": {
+        "lat": 28.5468577,
+        "lon": 77.1623566
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 190333710,
+      "center": {
+        "lat": 28.5256634,
+        "lon": 77.1668376
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 211116640,
+      "center": {
+        "lat": 28.6081046,
+        "lon": 77.0502429
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 211144281,
+      "center": {
+        "lat": 28.6258579,
+        "lon": 77.2873444
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 232651623,
+      "center": {
+        "lat": 28.5955039,
+        "lon": 77.3294618
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 247861059,
+      "center": {
+        "lat": 28.5346324,
+        "lon": 76.936603
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "Jhatikara Substation",
+        "power": "substation",
+        "substation": "substation",
+        "voltage": "765000;400000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 247861065,
+      "center": {
+        "lat": 28.6182258,
+        "lon": 77.276151
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 247861068,
+      "center": {
+        "lat": 28.670537,
+        "lon": 77.0466737
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 247861071,
+      "center": {
+        "lat": 28.4260931,
+        "lon": 77.0701371
+      },
+      "tags": {
+        "addr:street": "Sector 51",
+        "barrier": "wall",
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 247861085,
+      "center": {
+        "lat": 28.6842669,
+        "lon": 77.0236765
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 254447902,
+      "center": {
+        "lat": 28.6673098,
+        "lon": 76.8361302
+      },
+      "tags": {
+        "name": "Bahadurgarh",
+        "operator": "Power Grid Corporation of India Ltd",
+        "operator:wikidata": "Q3400886",
+        "power": "substation",
+        "voltage": "400000;220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 262090094,
+      "center": {
+        "lat": 28.5265543,
+        "lon": 77.2556757
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 263597735,
+      "center": {
+        "lat": 28.6599475,
+        "lon": 77.0027869
+      },
+      "tags": {
+        "designation": "66 kv",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 263598794,
+      "center": {
+        "lat": 28.6615823,
+        "lon": 77.0100389
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 263819668,
+      "center": {
+        "lat": 28.6097676,
+        "lon": 77.0993578
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 264722109,
+      "center": {
+        "lat": 28.5948102,
+        "lon": 77.0353609
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 265866413,
+      "center": {
+        "lat": 28.653006,
+        "lon": 77.2671582
+      },
+      "tags": {
+        "name": "Geeta Colony",
+        "power": "substation",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 266074792,
+      "center": {
+        "lat": 28.5431417,
+        "lon": 77.2910444
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 266080873,
+      "center": {
+        "lat": 28.5419001,
+        "lon": 77.2605077
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 266082823,
+      "center": {
+        "lat": 28.5328185,
+        "lon": 77.2412614
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 269084985,
+      "center": {
+        "lat": 28.7349679,
+        "lon": 76.863993
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "132000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 269084987,
+      "center": {
+        "lat": 28.7445547,
+        "lon": 76.8799016
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "132000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 269084988,
+      "center": {
+        "lat": 28.7361223,
+        "lon": 76.8431101
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "132000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 277860556,
+      "center": {
+        "lat": 28.6684945,
+        "lon": 77.322827
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 281984544,
+      "center": {
+        "lat": 28.6175565,
+        "lon": 77.2144852
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Electric Sub Station",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 283807712,
+      "center": {
+        "lat": 28.6231219,
+        "lon": 77.3237051
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "Bio-Gas Plant",
+        "plant:source": "biogas",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 284758454,
+      "center": {
+        "lat": 28.5033037,
+        "lon": 77.2054483
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 296222975,
+      "center": {
+        "lat": 28.618964,
+        "lon": 77.2502548
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 296542553,
+      "center": {
+        "lat": 28.8234927,
+        "lon": 77.2658336
+      },
+      "tags": {
+        "name": "Mandaula",
+        "power": "substation",
+        "voltage": "400000;220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 296571992,
+      "center": {
+        "lat": 28.7120683,
+        "lon": 77.3253012
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "Harsh Vihar Substation",
+        "operator": "Delhi Transco Limited",
+        "power": "substation",
+        "substation": "substation",
+        "voltage": "400000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 296733619,
+      "center": {
+        "lat": 28.7802584,
+        "lon": 77.2668436
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 297874320,
+      "center": {
+        "lat": 28.7365343,
+        "lon": 77.2967792
+      },
+      "tags": {
+        "name": "Naipura Bijli Ghar",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 312138194,
+      "center": {
+        "lat": 28.7642859,
+        "lon": 77.097744
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 314638636,
+      "center": {
+        "lat": 28.6980479,
+        "lon": 76.8806646
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "132000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 343503827,
+      "center": {
+        "lat": 28.6084689,
+        "lon": 77.0032523
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 343503828,
+      "center": {
+        "lat": 28.5827507,
+        "lon": 77.0355602
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 349973876,
+      "center": {
+        "lat": 28.7214637,
+        "lon": 77.1247018
+      },
+      "tags": {
+        "power": "substation",
+        "substation": "NDPL_Sec13_Sub_Station"
+      }
+    },
+    {
+      "type": "way",
+      "id": 351081649,
+      "center": {
+        "lat": 28.6076546,
+        "lon": 77.0408507
+      },
+      "tags": {
+        "building": "service",
+        "name": "Main Electric Substation",
+        "operator": "NSUT",
+        "power": "substation",
+        "start_date": "1999-04-26"
+      }
+    },
+    {
+      "type": "way",
+      "id": 351173811,
+      "center": {
+        "lat": 28.6047496,
+        "lon": 77.2959498
+      },
+      "tags": {
+        "addr:city": "Delhi",
+        "addr:postcode": "110091",
+        "addr:state": "DL",
+        "addr:street": "Khudiram Bose Marg",
+        "building": "yes",
+        "name": "Power House",
+        "operator": "BSES",
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 352446795,
+      "center": {
+        "lat": 28.5934658,
+        "lon": 77.0467393
+      },
+      "tags": {
+        "building": "yes",
+        "location": "indoor",
+        "name": "Pocket 5 Substation",
+        "power": "substation",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "way",
+      "id": 357499751,
+      "center": {
+        "lat": 28.6513663,
+        "lon": 77.3302932
+      },
+      "tags": {
+        "name": "Bhushan Steel",
+        "power": "substation",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 357499797,
+      "center": {
+        "lat": 28.6695117,
+        "lon": 77.2330865
+      },
+      "tags": {
+        "name": "Kashmere Gate Substation",
+        "operator": "Delhi Transco Limited",
+        "power": "substation",
+        "substation": "substation",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 358642602,
+      "center": {
+        "lat": 28.7574482,
+        "lon": 77.0955369
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 379883517,
+      "center": {
+        "lat": 28.5416505,
+        "lon": 77.2356487
+      },
+      "tags": {
+        "name": "Masjid Moth",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 423229313,
+      "center": {
+        "lat": 28.6184906,
+        "lon": 77.2517517
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 423229315,
+      "center": {
+        "lat": 28.6143578,
+        "lon": 77.251965
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 423229316,
+      "center": {
+        "lat": 28.6171722,
+        "lon": 77.2514925
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 458301236,
+      "center": {
+        "lat": 28.5873408,
+        "lon": 77.2666864
+      },
+      "tags": {
+        "name": "Maharanibagh",
+        "operator": "Power Grid Corporation of India Ltd",
+        "operator:wikidata": "Q3400886",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "400000;220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 471807061,
+      "center": {
+        "lat": 28.88404,
+        "lon": 77.1271995
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 473617053,
+      "center": {
+        "lat": 28.5788125,
+        "lon": 77.2600052
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 473621178,
+      "center": {
+        "lat": 28.5145658,
+        "lon": 77.0879473
+      },
+      "tags": {
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 479980889,
+      "center": {
+        "lat": 28.6763708,
+        "lon": 77.3095282
+      },
+      "tags": {
+        "name": "BSES",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 514032296,
+      "center": {
+        "lat": 28.8262657,
+        "lon": 77.0871856
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 519440483,
+      "center": {
+        "lat": 28.725244,
+        "lon": 77.2041535
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 519440484,
+      "center": {
+        "lat": 28.7276272,
+        "lon": 77.1896324
+      },
+      "tags": {
+        "name": "Delhi Metro Rail Corporation Mukundpur RSS",
+        "power": "substation",
+        "substation": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 638897652,
+      "center": {
+        "lat": 28.5438691,
+        "lon": 77.2328807
+      },
+      "tags": {
+        "description": "6710",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "plant:type": "solar_photovoltaic_panel",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 663490627,
+      "center": {
+        "lat": 28.5989026,
+        "lon": 77.0733347
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 668018787,
+      "center": {
+        "lat": 28.5185503,
+        "lon": 77.216127
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 686857047,
+      "center": {
+        "lat": 28.8185929,
+        "lon": 77.2820015
+      },
+      "tags": {
+        "name": "Mandola Vihar",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 689282351,
+      "center": {
+        "lat": 28.592943,
+        "lon": 77.1655998
+      },
+      "tags": {
+        "name": "Delhi Metro Rail Corporation Dhaula Kuan RSS",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 717929778,
+      "center": {
+        "lat": 28.464688,
+        "lon": 77.3001743
+      },
+      "tags": {
+        "building": "yes",
+        "building:levels": "1",
+        "name": "Electric Substation",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 733233454,
+      "center": {
+        "lat": 28.5493222,
+        "lon": 77.2634292
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 750198322,
+      "center": {
+        "lat": 28.676028,
+        "lon": 77.2789666
+      },
+      "tags": {
+        "name": "Dwarkapuri Substation",
+        "power": "substation",
+        "voltage": "33000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 802289913,
+      "center": {
+        "lat": 28.4366628,
+        "lon": 77.3041558
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 870335641,
+      "center": {
+        "lat": 28.6025128,
+        "lon": 77.2909179
+      },
+      "tags": {
+        "location": "indoor",
+        "operator": "BSES Yamuna Power Limited",
+        "power": "substation",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "way",
+      "id": 870335648,
+      "center": {
+        "lat": 28.6046893,
+        "lon": 77.2908934
+      },
+      "tags": {
+        "operator": "BSES Yamuna Power Limited",
+        "power": "substation",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "way",
+      "id": 919824624,
+      "center": {
+        "lat": 28.7714384,
+        "lon": 76.8660053
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 922757333,
+      "center": {
+        "lat": 28.5795568,
+        "lon": 77.0430489
+      },
+      "tags": {
+        "alt_name": "Pappankalan-III",
+        "barrier": "wall",
+        "name": "Dwarka-III Sector-19 Substation",
+        "operator": "Delhi Transco Limited",
+        "power": "substation",
+        "substation": "substation",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 936399464,
+      "center": {
+        "lat": 28.6263986,
+        "lon": 77.1978915
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 952398072,
+      "center": {
+        "lat": 28.6134321,
+        "lon": 77.0367188
+      },
+      "tags": {
+        "building": "service",
+        "name": "Electric Substation",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 952398096,
+      "center": {
+        "lat": 28.608498,
+        "lon": 77.0373795
+      },
+      "tags": {
+        "building": "service",
+        "name": "Electric Substation",
+        "operator": "NSUT",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 952398106,
+      "center": {
+        "lat": 28.6115327,
+        "lon": 77.0381242
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Electric Substation",
+        "operator": "NSUT",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 952516500,
+      "center": {
+        "lat": 28.6094016,
+        "lon": 77.0683404
+      },
+      "tags": {
+        "description": "81, Uttam Vihar, Block F, Uttam Nagar, Bindapur, New Delhi, Delhi 110059",
+        "name": "Power House , DDA Flats Bindapur",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 952787109,
+      "center": {
+        "lat": 28.6077388,
+        "lon": 77.0360187
+      },
+      "tags": {
+        "building": "service",
+        "name": "Electric Substation",
+        "operator": "NSUT",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 999227746,
+      "center": {
+        "lat": 28.427542,
+        "lon": 77.1595023
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "Gwal Pahari Solar Power Plant",
+        "plant:method": "thermal",
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 999227747,
+      "center": {
+        "lat": 28.4278593,
+        "lon": 77.1607805
+      },
+      "tags": {
+        "barrier": "wall",
+        "description": "4990",
+        "name": "Gwal Pahari Solar Power Plant",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1001143963,
+      "center": {
+        "lat": 28.5987037,
+        "lon": 77.0590395
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "Dwarka Sec-5 Substation",
+        "operator": "Delhi Transco Limited",
+        "power": "substation",
+        "substation": "substation",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1003041200,
+      "center": {
+        "lat": 28.6235533,
+        "lon": 77.2505265
+      },
+      "tags": {
+        "description": "25850",
+        "landuse": "industrial",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "plant:type": "solar_photovoltaic_panel",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1004155563,
+      "center": {
+        "lat": 28.73513,
+        "lon": 77.3191783
+      },
+      "tags": {
+        "name": "Tilamoth",
+        "power": "substation",
+        "voltage": "132000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1007603952,
+      "center": {
+        "lat": 28.5828983,
+        "lon": 77.0354624
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1015272529,
+      "center": {
+        "lat": 28.6857472,
+        "lon": 76.9444951
+      },
+      "tags": {
+        "name": "Delhi Metro Rail Corporation Bahadurgarh RSS",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1044787679,
+      "center": {
+        "lat": 28.5151255,
+        "lon": 77.2446105
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1044787680,
+      "center": {
+        "lat": 28.5064388,
+        "lon": 77.2620479
+      },
+      "tags": {
+        "name": "Tughlakabad",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "400000;220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1056310628,
+      "center": {
+        "lat": 28.4107648,
+        "lon": 76.9544428
+      },
+      "tags": {
+        "name": "GIS Substation HVPNL Sector-85 Gurugram",
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1076792388,
+      "center": {
+        "lat": 28.514094,
+        "lon": 77.0271286
+      },
+      "tags": {
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1157154677,
+      "center": {
+        "lat": 28.7199413,
+        "lon": 77.1707852
+      },
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1158469001,
+      "center": {
+        "lat": 28.4900614,
+        "lon": 77.0892263
+      },
+      "tags": {
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation",
+        "source": "local knowledge"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1158469002,
+      "center": {
+        "lat": 28.4895777,
+        "lon": 77.0908819
+      },
+      "tags": {
+        "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+        "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1174995913,
+      "center": {
+        "lat": 28.7506892,
+        "lon": 77.1701078
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1181342837,
+      "center": {
+        "lat": 28.7471282,
+        "lon": 77.1573331
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1182453426,
+      "center": {
+        "lat": 28.7115767,
+        "lon": 77.1755199
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "33KV Grid Substation Azadpur",
+        "power": "substation",
+        "voltage": "33000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1184034282,
+      "center": {
+        "lat": 28.5423158,
+        "lon": 77.3049436
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1184222740,
+      "center": {
+        "lat": 28.5193427,
+        "lon": 77.2970897
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1184452742,
+      "center": {
+        "lat": 28.4926755,
+        "lon": 77.1538635
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1187328579,
+      "center": {
+        "lat": 28.6234531,
+        "lon": 77.2652312
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1191834179,
+      "center": {
+        "lat": 28.7511391,
+        "lon": 77.1706837
+      },
+      "tags": {
+        "barrier": "wall",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1208154258,
+      "center": {
+        "lat": 28.6431483,
+        "lon": 77.1048098
+      },
+      "tags": {
+        "name": "Bhijli Ghar",
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1260639571,
+      "center": {
+        "lat": 28.7093586,
+        "lon": 77.2483345
+      },
+      "tags": {
+        "description": "12500",
+        "landuse": "industrial",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "plant:type": "solar_photovoltaic_panel",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1275250765,
+      "center": {
+        "lat": 28.5945456,
+        "lon": 77.12065
+      },
+      "tags": {
+        "location": "outdoor",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1277996866,
+      "center": {
+        "lat": 28.5902567,
+        "lon": 77.1198075
+      },
+      "tags": {
+        "alt_name": "Old Base Hospital",
+        "name": "Kendriya Vidyalaya",
+        "operator": "Military",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1279278440,
+      "center": {
+        "lat": 28.6224799,
+        "lon": 77.1957089
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1279278455,
+      "center": {
+        "lat": 28.6226171,
+        "lon": 77.1956435
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1280797875,
+      "center": {
+        "lat": 28.5967269,
+        "lon": 77.1346388
+      },
+      "tags": {
+        "name": "Gopinath Market Substation",
+        "power": "substation",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1286191667,
+      "center": {
+        "lat": 28.6060348,
+        "lon": 77.1281936
+      },
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1286576103,
+      "center": {
+        "lat": 28.597446,
+        "lon": 77.1239043
+      },
+      "tags": {
+        "operator": "New Delhi Power Limited",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1286855149,
+      "center": {
+        "lat": 28.5077968,
+        "lon": 77.2803604
+      },
+      "tags": {
+        "building": "yes",
+        "landuse": "industrial",
+        "plant:method": "combustion",
+        "plant:output:electricity": "yes",
+        "plant:source": "waste",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1288672259,
+      "center": {
+        "lat": 28.5925763,
+        "lon": 77.1202309
+      },
+      "tags": {
+        "power": "substation",
+        "substation": "converter"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1288867465,
+      "center": {
+        "lat": 28.6506625,
+        "lon": 77.0890519
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1289814874,
+      "center": {
+        "lat": 28.6460874,
+        "lon": 77.2019555
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1289863470,
+      "center": {
+        "lat": 28.6191837,
+        "lon": 77.2886987
+      },
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1290639140,
+      "center": {
+        "lat": 28.5900866,
+        "lon": 77.1199467
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1294685221,
+      "center": {
+        "lat": 28.6190992,
+        "lon": 77.2887688
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "IP Extension Grid Sub Station",
+        "operator": "BSES Yamuna Power Limited",
+        "power": "substation",
+        "voltage": "33000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1294685232,
+      "center": {
+        "lat": 28.6191246,
+        "lon": 77.2887264
+      },
+      "tags": {
+        "power": "transformer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1295552483,
+      "center": {
+        "lat": 28.6090612,
+        "lon": 77.1084115
+      },
+      "tags": {
+        "power": "substation",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1297324907,
+      "center": {
+        "lat": 28.5954737,
+        "lon": 77.2592608
+      },
+      "tags": {
+        "plant:output:electricity": "2 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "start_date": "2024-12-19"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1298506147,
+      "center": {
+        "lat": 28.5755339,
+        "lon": 77.1973746
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1300891890,
+      "center": {
+        "lat": 28.6462,
+        "lon": 77.1903836
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1301026307,
+      "center": {
+        "lat": 28.6450795,
+        "lon": 77.190337
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1304050002,
+      "center": {
+        "lat": 28.7248618,
+        "lon": 77.071364
+      },
+      "tags": {
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1304086012,
+      "center": {
+        "lat": 28.6113176,
+        "lon": 77.2765497
+      },
+      "tags": {
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1304242420,
+      "center": {
+        "lat": 28.7212426,
+        "lon": 77.1383618
+      },
+      "tags": {
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1304242421,
+      "center": {
+        "lat": 28.7215101,
+        "lon": 77.13896
+      },
+      "tags": {
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1304242422,
+      "center": {
+        "lat": 28.7222389,
+        "lon": 77.1382553
+      },
+      "tags": {
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1304242423,
+      "center": {
+        "lat": 28.722765,
+        "lon": 77.1379126
+      },
+      "tags": {
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1304242424,
+      "center": {
+        "lat": 28.7232614,
+        "lon": 77.1375934
+      },
+      "tags": {
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1304242425,
+      "center": {
+        "lat": 28.7237953,
+        "lon": 77.1372635
+      },
+      "tags": {
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1304242426,
+      "center": {
+        "lat": 28.7243197,
+        "lon": 77.1369524
+      },
+      "tags": {
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1304242427,
+      "center": {
+        "lat": 28.7251077,
+        "lon": 77.1364803
+      },
+      "tags": {
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1304242428,
+      "center": {
+        "lat": 28.7256229,
+        "lon": 77.136145
+      },
+      "tags": {
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1304242429,
+      "center": {
+        "lat": 28.7261239,
+        "lon": 77.1358178
+      },
+      "tags": {
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1304242430,
+      "center": {
+        "lat": 28.7266696,
+        "lon": 77.135504
+      },
+      "tags": {
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1304242431,
+      "center": {
+        "lat": 28.7271424,
+        "lon": 77.1352063
+      },
+      "tags": {
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1307673203,
+      "center": {
+        "lat": 28.6950716,
+        "lon": 77.2129125
+      },
+      "tags": {
+        "power": "substation",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1316627353,
+      "center": {
+        "lat": 28.6260982,
+        "lon": 77.211882
+      },
+      "tags": {
+        "addr:housenumber": "257",
+        "addr:street": "Jai Singh Road",
+        "building": "office",
+        "building:colour": "brown",
+        "building:levels": "2",
+        "building:use": "office",
+        "power": "substation",
+        "roof:shape": "flat"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1319232027,
+      "center": {
+        "lat": 28.5680847,
+        "lon": 77.2464165
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1331914380,
+      "center": {
+        "lat": 28.6678993,
+        "lon": 77.2247486
+      },
+      "tags": {
+        "location": "surface",
+        "name": "Maharaja Agrasen Park",
+        "power": "substation",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1340504320,
+      "center": {
+        "lat": 28.7136472,
+        "lon": 77.0610597
+      },
+      "tags": {
+        "name": "grid substation building and battery testing lab",
+        "operator": "Tata Power Delhi Distribution Limited",
+        "power": "substation",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1354558634,
+      "center": {
+        "lat": 28.6239403,
+        "lon": 77.2033414
+      },
+      "tags": {
+        "location": "indoor",
+        "name": "Doctor Bishamber Dass Marg Substation",
+        "operator": "New Delhi Municipal Corporation",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1354912080,
+      "center": {
+        "lat": 28.5925887,
+        "lon": 77.0425097
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1355048076,
+      "center": {
+        "lat": 28.4989488,
+        "lon": 76.9758766
+      },
+      "tags": {
+        "name": "Gurugram Sector 107",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1382535517,
+      "center": {
+        "lat": 28.5534112,
+        "lon": 77.2424137
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1382552736,
+      "center": {
+        "lat": 28.5530396,
+        "lon": 77.2300616
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1388569374,
+      "center": {
+        "lat": 28.6740677,
+        "lon": 77.275002
+      },
+      "tags": {
+        "name": "State Bank of India Welcome",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1388932902,
+      "center": {
+        "lat": 28.5364889,
+        "lon": 77.2016452
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1389333780,
+      "center": {
+        "lat": 28.6464398,
+        "lon": 77.1917332
+      },
+      "tags": {
+        "location": "surface",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1389342823,
+      "center": {
+        "lat": 28.6723055,
+        "lon": 77.2486818
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1389342824,
+      "center": {
+        "lat": 28.6716639,
+        "lon": 77.2518716
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1390025126,
+      "center": {
+        "lat": 28.5926329,
+        "lon": 77.1758411
+      },
+      "tags": {
+        "name": "Bapu Dham Electric Sub Station",
+        "operator": "New Delhi Municipal Council",
+        "power": "substation",
+        "substation": "minor_distribution",
+        "voltage": "66000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1413486207,
+      "center": {
+        "lat": 28.6690749,
+        "lon": 77.2265541
+      },
+      "tags": {
+        "location": "indoor",
+        "name": "Kashmere Gate Traction Feeding Post",
+        "operator": "Delhi Metro Rail Corporation",
+        "operator:wikidata": "Q1029339",
+        "power": "substation",
+        "substation": "traction",
+        "voltage": "25000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1413618601,
+      "center": {
+        "lat": 28.8437438,
+        "lon": 77.1072554
+      },
+      "tags": {
+        "power": "substation",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1417729106,
+      "center": {
+        "lat": 28.5680833,
+        "lon": 77.3243474
+      },
+      "tags": {
+        "location": "surface",
+        "power": "substation",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1417729107,
+      "center": {
+        "lat": 28.568118,
+        "lon": 77.324307
+      },
+      "tags": {
+        "location": "surface",
+        "power": "substation",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1417729109,
+      "center": {
+        "lat": 28.5683318,
+        "lon": 77.3239997
+      },
+      "tags": {
+        "location": "surface",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1417729169,
+      "center": {
+        "lat": 28.5681544,
+        "lon": 77.3242652
+      },
+      "tags": {
+        "location": "surface",
+        "power": "substation",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1419926443,
+      "center": {
+        "lat": 28.6925784,
+        "lon": 77.2070066
+      },
+      "tags": {
+        "location": "indoor",
+        "power": "substation",
+        "substation": "distribution",
+        "voltage": "330000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426163115,
+      "center": {
+        "lat": 28.6828482,
+        "lon": 77.2070634
+      },
+      "tags": {
+        "location": "outdoor",
+        "power": "substation",
+        "substation": "distribution",
+        "voltage": "990000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426169743,
+      "center": {
+        "lat": 28.6803066,
+        "lon": 77.2028794
+      },
+      "tags": {
+        "location": "outdoor",
+        "operator": "TPDDL",
+        "power": "substation",
+        "substation": "distribution",
+        "voltage": "110000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429708858,
+      "center": {
+        "lat": 28.5477323,
+        "lon": 77.2164959
+      },
+      "tags": {
+        "location": "indoor",
+        "operator": "BSES",
+        "power": "substation",
+        "ref": "26234"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1433735088,
+      "center": {
+        "lat": 28.4752213,
+        "lon": 77.0979583
+      },
+      "tags": {
+        "frequency": "50",
+        "power": "substation",
+        "voltage": "500000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1451357495,
+      "center": {
+        "lat": 28.5805642,
+        "lon": 77.0169979
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1460493834,
+      "center": {
+        "lat": 28.6483745,
+        "lon": 77.2079868
+      },
+      "tags": {
+        "operator": "BSES Yamuna",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1465628342,
+      "center": {
+        "lat": 28.6486959,
+        "lon": 77.2257927
+      },
+      "tags": {
+        "building": "yes",
+        "building:levels": "4",
+        "name": "Hauz Qazi Substation",
+        "operator": "DSEB",
+        "power": "substation",
+        "roof:shape": "flat",
+        "start_date": "1953"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1466828545,
+      "center": {
+        "lat": 28.6007625,
+        "lon": 76.9588906
+      },
+      "tags": {
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471900631,
+      "center": {
+        "lat": 28.6181069,
+        "lon": 77.076661
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1474325002,
+      "center": {
+        "lat": 28.8230612,
+        "lon": 76.9853995
+      },
+      "tags": {
+        "building": "commercial",
+        "name": "Powergrid Narela Transmission Ltd. (Mungeshpur)",
+        "operator": "Powergrid Corporation Of India Ltd.",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "765000;400000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1479881906,
+      "center": {
+        "lat": 28.5727857,
+        "lon": 77.2101556
+      },
+      "tags": {
+        "building": "yes",
+        "building:levels": "2",
+        "location": "outdoor",
+        "name": "33KV Electric Substation Kidwai Nagar (East - I)",
+        "power": "substation",
+        "substation": "minor_distribution",
+        "voltage": "33000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1482443306,
+      "center": {
+        "lat": 28.6950078,
+        "lon": 77.2198542
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1482806385,
+      "center": {
+        "lat": 28.6872554,
+        "lon": 77.2137829
+      },
+      "tags": {
+        "building": "yes",
+        "building:levels": "1",
+        "location": "outdoor",
+        "man_made": "street_cabinet",
+        "name": "Chemistry Lab New Building M.C. Room",
+        "power": "substation",
+        "street_cabinet": "power"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1486486118,
+      "center": {
+        "lat": 28.6097155,
+        "lon": 77.2941695
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1486755531,
+      "center": {
+        "lat": 28.5628488,
+        "lon": 77.3340388
+      },
+      "tags": {
+        "name": "Botanical Garden",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1487126238,
+      "center": {
+        "lat": 28.6233354,
+        "lon": 77.0870371
+      },
+      "tags": {
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1487126239,
+      "center": {
+        "lat": 28.6230913,
+        "lon": 77.087126
+      },
+      "tags": {
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1487126240,
+      "center": {
+        "lat": 28.6228232,
+        "lon": 77.0869579
+      },
+      "tags": {
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1488770379,
+      "center": {
+        "lat": 28.4290442,
+        "lon": 77.0219931
+      },
+      "tags": {
+        "name": "Gurgaon Sector 33",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1488794180,
+      "center": {
+        "lat": 28.4240888,
+        "lon": 77.0899485
+      },
+      "tags": {
+        "name": "Gurugram Sector 57",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1488801303,
+      "center": {
+        "lat": 28.4153748,
+        "lon": 76.9018603
+      },
+      "tags": {
+        "name": "Gurugram Sector 95",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "220000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1490066645,
+      "center": {
+        "lat": 28.6450053,
+        "lon": 77.1384396
+      },
+      "tags": {
+        "location": "indoor",
+        "name": "TPDDL Saraswati Garden Substation",
+        "power": "substation",
+        "substation": "distribution",
+        "voltage": "330000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1495922475,
+      "center": {
+        "lat": 28.6712716,
+        "lon": 77.3492978
+      },
+      "tags": {
+        "plant:method": "photovoltaic",
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1498062680,
+      "center": {
+        "lat": 28.7213561,
+        "lon": 77.1768077
+      },
+      "tags": {
+        "landuse": "industrial",
+        "power": "substation",
+        "substation": "minor_distribution"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1526025749,
+      "center": {
+        "lat": 28.7077677,
+        "lon": 77.2494774
+      },
+      "tags": {
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1540729886,
+      "center": {
+        "lat": 28.7327737,
+        "lon": 76.8651782
+      },
+      "tags": {
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1545735067,
+      "center": {
+        "lat": 28.4401645,
+        "lon": 77.3054431
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1546129359,
+      "center": {
+        "lat": 28.6708215,
+        "lon": 77.0502331
+      },
+      "tags": {
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1546129360,
+      "center": {
+        "lat": 28.6713427,
+        "lon": 77.0502251
+      },
+      "tags": {
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1546129361,
+      "center": {
+        "lat": 28.6718934,
+        "lon": 77.0502613
+      },
+      "tags": {
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1546129362,
+      "center": {
+        "lat": 28.6694717,
+        "lon": 77.0501768
+      },
+      "tags": {
+        "plant:source": "solar",
+        "power": "plant"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1546129365,
+      "center": {
+        "lat": 28.843022,
+        "lon": 77.2703164
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1558314767,
+      "center": {
+        "lat": 28.5682355,
+        "lon": 77.2201465
+      },
+      "tags": {
+        "building": "yes",
+        "location": "outdoor",
+        "name": "33KV Grid Sub Station - NDSE Grid",
+        "operator": "BSES Rajdhani Power Limited",
+        "power": "substation",
+        "voltage": "33000"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 13446097,
+      "center": {
+        "lat": 28.5409398,
+        "lon": 77.0843188
+      },
+      "tags": {
+        "description": "76210",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "7.84 MW",
+        "plant:source": "solar",
+        "plant:type": "solar_photovoltaic_panel",
+        "power": "plant",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 18526167,
+      "center": {
+        "lat": 28.6771809,
+        "lon": 76.981808
+      },
+      "tags": {
+        "barrier": "wall",
+        "name": "Tikri Kalan(Mundka) Substation",
+        "operator": "Delhi Transco Limited",
+        "power": "substation",
+        "substation": "substation",
+        "type": "multipolygon",
+        "voltage": "400000"
+      }
+    }
+  ]
+}
