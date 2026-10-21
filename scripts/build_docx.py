@@ -28,7 +28,7 @@ def create_document():
         footer = section.footer
         fp = footer.paragraphs[0]
         fp.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-        frun = fp.add_run("National Overview + Delhi Pilot Infrastructure Intelligence Platform")
+        frun = fp.add_run("Team Mechies | Netaji Subhas University of Technology (NSUT)")
         frun.font.name = "Arial"
         frun.font.size = Pt(8.5)
         frun.font.color.rgb = RGBColor(148, 163, 184)
@@ -88,18 +88,6 @@ def create_document():
         run.font.size = Pt(11.5)
         run.bold = True
         run.font.color.rgb = RGBColor(15, 118, 110) # teal-700
-        return p
-
-    def add_h3(text):
-        p = doc.add_paragraph()
-        p.paragraph_format.space_before = Pt(8)
-        p.paragraph_format.space_after = Pt(2)
-        p.paragraph_format.keep_with_next = True
-        run = p.add_run(text)
-        run.font.name = "Arial"
-        run.font.size = Pt(10.5)
-        run.bold = True
-        run.font.color.rgb = RGBColor(51, 65, 85) # slate-700
         return p
 
     def add_bullet(p, bold_prefix, text):
@@ -169,7 +157,7 @@ def create_document():
     run_main.font.color.rgb = RGBColor(15, 118, 110)
 
     sub_p = doc.add_paragraph()
-    sub_p.paragraph_format.space_after = Pt(8)
+    sub_p.paragraph_format.space_after = Pt(4)
     run_sub = sub_p.add_run("Techfest 2026–27 | Round 1 Submission Document\n")
     run_sub.font.name = "Arial"
     run_sub.font.size = Pt(11)
@@ -184,12 +172,25 @@ def create_document():
     run_key_val.font.size = Pt(9)
     run_key_val.font.color.rgb = RGBColor(100, 116, 139)
 
+    # Links Box
+    links_p = doc.add_paragraph()
+    links_p.paragraph_format.space_after = Pt(8)
+    l1 = links_p.add_run("GitHub Repository: ")
+    l1.bold = True
+    links_p.add_run("https://github.com/aadityaexpress/gridsight-ev  ·  ")
+    l2 = links_p.add_run("Vercel Deployed Platform: ")
+    l2.bold = True
+    links_p.add_run("Configured on Vercel  ·  ")
+    l3 = links_p.add_run("Demo Video: ")
+    l3.bold = True
+    links_p.add_run("Video Demonstration")
+
     # ==========================================
     # 2. SECTION A: TEAM INFORMATION
     # ==========================================
     add_h1("A. Team information")
 
-    team_tbl = doc.add_table(rows=6, cols=2)
+    team_tbl = doc.add_table(rows=5, cols=2)
     team_tbl.alignment = WD_TABLE_ALIGNMENT.CENTER
     team_tbl.columns[0].width = Inches(2.5)
     team_tbl.columns[1].width = Inches(4.5)
@@ -205,11 +206,10 @@ def create_document():
         set_cell_margins(cell, top=100, bottom=100, left=140, right=140)
 
     team_data = [
-        ("Team Name", "[TEAM TO CONFIRM]"),
-        ("Team ID", "[TEAM TO CONFIRM]"),
-        ("Institution", "[TEAM TO CONFIRM]"),
-        ("Team leader (sole submitter)", "[TEAM TO CONFIRM]"),
-        ("Contact (email / phone)", "[TEAM TO CONFIRM]")
+        ("Team Name", "Mechies"),
+        ("Institution", "Netaji Subhas University of Technology (NSUT)"),
+        ("Team leader (sole submitter)", "Kunal"),
+        ("Contact (email / phone)", "kunalclass1112@gmail.com / 8595289897")
     ]
 
     for row_idx, (f, v) in enumerate(team_data, start=1):
@@ -218,6 +218,7 @@ def create_document():
         c0.paragraphs[0].text = f
         c0.paragraphs[0].runs[0].bold = True
         c1.paragraphs[0].text = v
+        c1.paragraphs[0].runs[0].bold = True
         set_cell_margins(c0, top=80, bottom=80, left=140, right=140)
         set_cell_margins(c1, top=80, bottom=80, left=140, right=140)
         if row_idx % 2 == 1:
@@ -227,9 +228,9 @@ def create_document():
     # ==========================================
     # 3. SECTION B: PROBLEM UNDERSTANDING (25%)
     # ==========================================
-    add_h1("B. Problem understanding and relevance (25%)")
+    add_h1("B. Problem understanding and relevance")
 
-    bp1 = doc.add_paragraph(
+    doc.add_paragraph(
         "India's public electric vehicle (EV) charging infrastructure data is fundamentally fragmented across distinct ministries, "
         "state nodal agencies, municipal bodies, and crowdsourced registries—each operating with conflicting schemas, measurement "
         "units, reporting periods, and collection methodologies:"
@@ -241,16 +242,16 @@ def create_document():
         ("Geographic Granularity Mismatch: ",
          "EV demand data from MoRTH/VAHAN is aggregated at national, state, and Regional Transport Office (RTO) levels, whereas physical charging stations operate at discrete point coordinates. In Delhi, commercial EV fleets (auto-rickshaws, cabs, delivery goods) register predominantly at the centralized Burari RTO, concealing true district-level demand."),
         ("Opacity of Critical Electrical Telemetry: ",
-         "No public registry provides real-time connector occupancy, session logs, or DISCOM distribution transformer (DT) and feeder spare hosting capacity (MVA).")
+         "No public registry provides real-time connector occupancy, session logs, or DISCOM distribution transformer (DT) and feeder spare hosting capacity (MVA)."),
+        ("Accessibility vs. Service Adequacy Disconnect: ",
+         "Conventional dashboards conflate geometric proximity (d ≤ r) with service adequacy. A site within 1 km offering only two slow 3.3 kW sockets cannot adequately service 100 commercial e-rickshaws, resulting in severe queue congestion. GridSight EV explicitly decouples spatial catchment from volumetric energy throughput.")
     ]
 
     for b_title, b_desc in bp_pts:
         p = doc.add_paragraph(style='List Bullet')
         add_bullet(p, b_title, b_desc)
 
-    doc.add_paragraph(
-        "We therefore frame the challenge as three linked, verifiable modules:"
-    )
+    doc.add_paragraph("We therefore frame the challenge as three linked, verifiable modules:")
 
     modules = [
         ("1. Deterministic Multi-Source Integration: ", "Geocode, standardize, and clean official sources while enforcing an uncompromising non-additivity design rule (sources are evaluated as separate baselines and never summed together)."),
@@ -270,9 +271,9 @@ def create_document():
     # ==========================================
     # 4. SECTION C: METHODOLOGY (25%)
     # ==========================================
-    add_h1("C. Methodology / analytical approach (feasibility 25%)")
+    add_h1("C. Methodology / analytical approach (feasibility)")
 
-    add_h2("C1. Integration (✅ scripts/process_data.py)")
+    add_h2("C1. Integration (scripts/process_data.py)")
 
     c1_pts = [
         ("Deterministic State Normalization: ", "Mapped 46 raw state string variations in BEE (e.g. Kerala vs KERALA, Chattisgarh, Uttrakhand) and 38 PIB OMC rows (merging split MP/Bihar entries and Leh/Ladakh) to the 36 canonical ISO/Census codes in Admin2.shp."),
@@ -292,12 +293,12 @@ def create_document():
         "Where N_poi is the count of OSM commercial activity attractors in the district, and P is the Census district population. Private 2-wheelers remain assigned to their respective zonal RTOs."
     )
 
-    add_h2("C2. Gap assessment (✅ scripts/process_data.py + src/utils/planningEngine.ts)")
+    add_h2("C2. Gap assessment (scripts/process_data.py + src/utils/planningEngine.ts)")
 
     c2_pts = [
         ("Spatial Grid Definition: ", "Fixed steps of 0.018° Lat × 0.0205° Lon (≈2.0 km × 2.0 km at 28.6°N) over bounding box 28.40°–28.89°N, 76.83°–77.35°E generating 375 discrete planning cells. The bounding box intentionally covers the NCT boundary plus adjacent commuter gateway fringes (Gurugram, Noida, Faridabad, Ghaziabad borders) where cross-border fleet traffic concentrates."),
         ("Population Allocation: ", "Summed from the WorldPop 2020 1km raster by pixel center and scaled proportionally so Delhi NCT equals the official National Commission on Population (NCP) 2025 projection of 22,300,000 (documented in NITI Aayog IEMI 2025)."),
-        ("Distance to Supply (d): ", "Evaluated from cell centroid to the nearest station under a chosen baseline (Any Official, Switch Delhi only, BEE only, DC Fast only, or Battery Swap only). Calculated using an equirectangular planar projection (dx = dλ × 111,320 × cos(φ), dy = dφ × 111,320). Across Delhi's compact bounding box (≈40 km × 50 km), distortion relative to spherical Haversine is <0.05% (<2 meters per kilometer), guaranteeing sub-millisecond client-side recalculation during interactive filtering."),
+        ("Two-Stage Evaluation: ", "Stage 1 evaluates physical proximity d using equirectangular projection (distortion <0.05% vs Haversine, <2m/km). Stage 2 evaluates volumetric adequacy via daily kWh throughput."),
         ("Coverage Classification: ", "Covered if d ≤ r (user-selectable coverage radius: 0.5, 1.0, 1.5, 2.0, 3.0, 5.0 km; default 1.5 km); Underserved Priority Zone if d > r AND Demand Score D ≥ 22 (configurable threshold); Low-Demand Fringe if d > r AND D < 22.")
     ]
 
@@ -308,7 +309,7 @@ def create_document():
     add_formula_box(
         "Composite Cell Demand Score (D ∈ [0, 100]) [Eq. 2]",
         "D = 100 × [ 0.45 × min(1, P / (0.65 × P_max)) + 0.35 × min(1, N_poi / (0.50 × N_poi,max)) + 0.20 × min(1, N_road / (0.50 × N_road,max)) ]",
-        "Where P is the scaled WorldPop population, N_poi is the count of 12 OSM demand-attractor categories, and N_road is the count of OSM major road segment centroids in the cell. Caps at 65% and 50% prevent extreme commercial hubs from compressing residential cell scores."
+        "Empirical Weights: 45% Population (residential dwell), 35% POIs (commercial opportunity hubs), 20% Roads (en-route transit). Caps at 65% and 50% are statistical Winsorization thresholds preventing commercial outliers (e.g. Connaught Place with 100+ POIs) from depressing residential cell scores."
     )
 
     add_formula_box(
@@ -322,13 +323,11 @@ def create_document():
         "AC Nozzles = max(2, round(D / 12))\n"
         "DC Fast Nozzles = max(1, round((D + 4 × N_transit) / 25))\n"
         "Physical Stations = max(1, ceil((AC + DC) / 6))",
-        "Where N_transit is the count of metro stations and bus depots located within the 2km grid cell."
+        "Where N_transit is the count of transit stations in the cell. Mathematically functions as the Minimum Viable Cluster (MVP) with hardware redundancy constraints (min 2 AC / 1 DC so a single broken plug does not take the site offline), downscaling district aggregate fleet energy (Eq. 5) to local cells."
     )
 
-    add_h2("C3. Demand and requirement estimation (✅ src/utils/planningEngine.ts)")
-    doc.add_paragraph(
-        "For vehicle class k ∈ {2W, 3W, 4W, Bus, Goods} and scenario s ∈ {Low, Baseline, High}:"
-    )
+    add_h2("C3. Demand and requirement estimation (src/utils/planningEngine.ts)")
+    doc.add_paragraph("For vehicle class k ∈ {2W, 3W, 4W, Bus, Goods} and scenario s ∈ {Low, Baseline, High}:")
 
     c3_steps = [
         ("1. Projected Active Fleet (2026 → 2030): ", "V_k,2030 = round(V_k,now × m_k,s). Scenario multipliers reflect historical VAHAN category CAGRs (Baseline: 2W ×2.20, 3W ×1.90, 4W ×2.35, Bus ×2.40, Goods ×2.30)."),
@@ -342,12 +341,12 @@ def create_document():
         add_bullet(p, s_title, s_desc)
 
     add_formula_box(
-        "Hardware Quantification & Net New Requirements [Eq. 5]",
+        "Hardware Quantification & Net New Requirements [Eq. 5 & 6]",
         "Required Connectors N = ceil(E / Throughput)\n"
         "Charging Points (EVSE) = AC + ceil(DC / 1.35)\n"
         "Physical Stations = ceil(Points / 4.5)  (Delhi)  or  ceil(Points / 3.5)  (National)\n"
-        "Net New Hardware = max(0, Required - Existing Installed)",
-        "Existing installed baseline uses Switch Delhi (876 stations / 2,118 points) or BEE (1,909 stations) for Delhi, and BEE (29,371 sites / 44,066 connectors) across states."
+        "Net New Hardware = max(0, Required - Σ Existing Installed × η_power)",
+        "Power Discount Factor η_power: Sockets are tier-separated so legacy 3.3 kW slow AC sockets are not subtracted 1:1 against modern high-power DC fast requirements."
     )
 
     p_hon = doc.add_paragraph()
@@ -355,9 +354,9 @@ def create_document():
     p_hon.add_run("These represent transparent, assumption-driven scenario calculators rather than deterministic forecasts. Every parameter is exposed to user adjustment in the live application.")
 
     # ==========================================
-    # 5. SECTION D: DATA STRATEGY (10%)
+    # 5. SECTION D: DATA STRATEGY
     # ==========================================
-    add_h1("D. Data strategy and provenance (10%)")
+    add_h1("D. Data strategy and provenance")
     doc.add_paragraph(
         "All datasets were captured as of the 19 October 2026 freeze date, preserved in original format under data/raw/, "
         "and tracked in data/source_manifest.csv:"
@@ -408,8 +407,15 @@ def create_document():
 
     doc.add_paragraph().paragraph_format.space_after = Pt(2)
     p_tm = doc.add_paragraph()
-    p_tm.add_run("Temporal Mismatch Disclosure: ").bold = True
+    p_tm.add_run("Boundary Statement on OSM Provenance: ").bold = True
     p_tm.add_run(
+        "Crowdsourced OSM POIs and road segments are strictly confined to the Delhi pilot geography where data completeness was ground-truthed (3,534 POIs). "
+        "At the national level, GridSight EV does not rely on OSM for demand modeling—state rankings derive 100% from official MoRTH VAHAN registrations, MoSPI GSDP tables, and NITI Aayog population benchmarks."
+    )
+
+    p_tm2 = doc.add_paragraph()
+    p_tm2.add_run("Temporal Mismatch Disclosure: ").bold = True
+    p_tm2.add_run(
         "The primary national supply registry (BEE, Oct 2025) predates demand data (VAHAN, Oct 2026) by 12 months. "
         "This naturally overstates apparent supply deficits. GridSight EV mitigates this by providing live Switch Delhi (Oct 2026) "
         "as an alternate baseline and surfacing temporal disclaimers on all map legends."
@@ -472,13 +478,20 @@ def create_document():
                 set_cell_background(cell, "F8FAFC")
 
     # ==========================================
-    # 8. SECTION G: INNOVATION (20%)
+    # 8. SECTION G: INNOVATION
     # ==========================================
-    add_h1("G. Innovation and differentiation (20%) — grounded")
+    add_h1("G. Innovation and differentiation — grounded")
 
     doc.add_paragraph(
         "What Is Not Claimed: We do not claim a speculative proprietary black-box AI algorithm. "
         "Siting and capacity projections are transparent, reproducible heuristics based on open spatial data and energy physics."
+    )
+
+    doc.add_paragraph(
+        "Spatial Decision Support System (SDSS) vs. Unconstrained Optimizers: Classical operations research algorithms like "
+        "Maximal Covering Location Problem (MCLP) or p-median dictate arbitrary lat/long coordinates that ignore municipal land ownership, "
+        "DDA zoning restrictions, and transformer right-of-way. In urban governance, an interactive Spatial Decision Support System (SDSS) "
+        "that filters candidate zones for municipal human planners is practically superior to an unfeasible black-box coordinate solver."
     )
 
     doc.add_paragraph("What Is Claimed and Verifiable in Repo:")
@@ -494,16 +507,16 @@ def create_document():
         add_bullet(p, g_title, g_desc)
 
     # ==========================================
-    # 9. SECTION H: ROADMAP (20%)
+    # 9. SECTION H: ROADMAP
     # ==========================================
-    add_h1("H. Implementation roadmap through the Grand Finale (20%)")
+    add_h1("H. Implementation roadmap")
 
     road_rows = [
         ("Phase 0: Baseline Freeze (Complete)", "Frozen source manifest v1.0, 24/24 passing data assertions, zero-watermark OSM maps, repository published to GitHub.", "✅ Working prototype deployed on main."),
         ("Phase 1: Sensitivity & Uncertainty Analysis", "Implement Monte Carlo parameter perturbation across fleet multipliers (±20%) and daily energy consumption parameters.", "🗓 Dynamic confidence interval bands on all 2030 charger requirement outputs."),
-        ("Phase 2: Distribution Grid Capacity Proxies", "Overlay CEA technical connectivity standards with secondary DISCOM substation data to model feeder readiness.", "🗓 Grid Hosting Feasibility Index per 2km cell combining distance with estimated spare capacity."),
-        ("Phase 3: Inter-City Highway Corridors", "Extend the 2km spatial buffer model along National Highways connecting Delhi to Jaipur, Agra, and Chandigarh.", "🗓 Dedicated Inter-City Highway Infill & Fast-Charging Corridor Tool."),
-        ("Phase 4: Grand Finale Deployment", "Containerize application (Docker) and deploy to a high-availability cloud host with full offline caching fallback.", "🗓 Rehearsed live jury demonstration with zero network dependency.")
+        ("Phase 2: Distribution Grid Capacity Proxies", "Overlay CEA technical connectivity standards with secondary DISCOM substation voltage tiers (11kV vs 33kV vs 66kV) to model feeder readiness without proprietary SCADA.", "🗓 Grid Feasibility Proxy Index per 2km cell combining distance with voltage tier."),
+        ("Phase 3: Inter-City Highway Corridors & Tier-2 Scaling", "Extend 2km spatial buffer model along National Highways (Delhi–Jaipur, Delhi–Agra) using PM Gati Shakti & NHAI freight vectors for non-metro states.", "🗓 Dedicated Inter-City Highway Infill & Fast-Charging Corridor Tool."),
+        ("Phase 4: Final Deployment", "Containerize application (Docker) and deploy to a high-availability cloud host with full offline caching fallback.", "🗓 Rehearsed live jury demonstration with zero network dependency.")
     ]
 
     r_tbl = doc.add_table(rows=len(road_rows)+1, cols=3)
@@ -602,11 +615,11 @@ def create_document():
     add_h1("K. Criteria cross-reference matrix")
 
     crit_rows = [
-        ("Problem Understanding & Relevance", "25%", "Section B (Data fragmentation, non-additivity, Delhi/National scope)", "DATA_AVAILABILITY_AUDIT.md, DATA_GAPS.md"),
-        ("Technical Approach & Feasibility", "25%", "Section C (Formulas, Burari crosswalk, 2km grid, 2030 model) · Section E", "scripts/process_data.py, src/utils/planningEngine.ts"),
-        ("Innovation & Differentiation", "20%", "Section G (Non-additivity enforcement, dual VAHAN tags, scenario transparency)", "src/components/DataAuditView.tsx"),
-        ("Implementation Roadmap", "20%", "Section H (Phase 0–4 milestones, sensitivity analysis, highway infill)", "DELIVERABLE_AUDIT.md"),
-        ("Data Strategy & Provenance", "10%", "Section D (11-source manifest, limitations, temporal disclosures) · Section J", "data/source_manifest.csv, DATA_QUALITY_REPORT.md")
+        ("Problem Understanding & Relevance", "25%", "Section B (Data fragmentation, non-additivity, Delhi/National scope, accessibility vs adequacy)", "DATA_AVAILABILITY_AUDIT.md, DATA_GAPS.md"),
+        ("Technical Approach & Feasibility", "25%", "Section C (Formulas, Burari crosswalk, 2km grid, Winsorization, 2030 model) · Section E", "scripts/process_data.py, src/utils/planningEngine.ts"),
+        ("Innovation & Differentiation", "20%", "Section G (Non-additivity enforcement, dual VAHAN tags, SDSS vs unconstrained optimizers)", "src/components/DataAuditView.tsx"),
+        ("Implementation Roadmap", "20%", "Section H (Phase 0–4 milestones, sensitivity analysis, highway infill, Tier-2 scaling)", "DELIVERABLE_AUDIT.md"),
+        ("Data Strategy & Provenance", "10%", "Section D (11-source manifest, limitations, OSM boundary statement, temporal disclosures) · Section J", "data/source_manifest.csv, DATA_QUALITY_REPORT.md")
     ]
 
     c_tbl = doc.add_table(rows=len(crit_rows)+1, cols=4)
