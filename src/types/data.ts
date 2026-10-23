@@ -289,6 +289,8 @@ export interface DelhiGridCell {
   bee_connectors_in_cell: number;
   dc_connectors_in_cell: number;
   demand_score: number;
+  ai_demand_score?: number;
+  ai_predicted_kwh_day?: number;
 }
 
 export interface DelhiPowerNode {
@@ -377,12 +379,91 @@ export interface DelhiPilotBundle {
   };
 }
 
+export interface FeatureImportanceItem {
+  feature: string;
+  importance: number;
+}
+
+export interface SpatialDemandRegressorInfo {
+  model_type: string;
+  r2_score: number;
+  cv_r2_mean: number;
+  cv_r2_std: number;
+  mae: number;
+  rmse: number;
+  feature_importances: FeatureImportanceItem[];
+  sample_size: number;
+}
+
+export interface BassDiffusionProjection {
+  year: number;
+  national_cumulative_evs: number;
+  national_p10_low: number;
+  national_p90_high: number;
+  delhi_projected_fleet: number;
+  is_forecast: boolean;
+}
+
+export interface BassDiffusionInfo {
+  model_name: string;
+  parameters: {
+    p_innovation_coefficient: number;
+    q_imitation_coefficient: number;
+    M_market_potential_millions: number;
+    r2_fit: number;
+  };
+  projections: BassDiffusionProjection[];
+}
+
+export interface OptimalSitedCandidate {
+  cell_id: string;
+  district: string;
+  lat: number;
+  lon: number;
+  ai_demand_score: number;
+  dist_to_existing_km: number;
+  substation_dist_m: number;
+  grid_feasibility_score: number;
+  electrical_tier: string;
+  max_hosting_kw: number;
+  utility_score: number;
+  worldpop: number;
+  poi_count: number;
+  transit_count: number;
+  rank: number;
+  recommended_ac_connectors: number;
+  recommended_dc_fast_nozzles: number;
+  recommended_swap_dockets: number;
+  total_installed_load_kw: number;
+}
+
+export interface ConstrainedOptimizationInfo {
+  k_stations_target: number;
+  min_spacing_km: number;
+  solver: string;
+  total_optimal_sites: number;
+  optimal_sites: OptimalSitedCandidate[];
+}
+
+export interface AiOptimizationBundle {
+  metadata: {
+    title: string;
+    version: string;
+    generated_at: string;
+    competition: string;
+  };
+  spatial_demand_regressor: SpatialDemandRegressorInfo;
+  bass_diffusion_forecasting: BassDiffusionInfo;
+  constrained_siting_optimization: ConstrainedOptimizationInfo;
+}
+
 export interface AppDatasets {
   national: NationalOverviewBundle;
   indiaGeoJson: FeatureCollection;
   delhi: DelhiPilotBundle;
   delhiDistrictsGeoJson: FeatureCollection;
   delhiRoadsGeoJson: FeatureCollection;
+  aiOptimization?: AiOptimizationBundle | null;
 }
 
 export function validateNationalBundle(data: unknown): NationalOverviewBundle {

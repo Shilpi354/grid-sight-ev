@@ -28,6 +28,7 @@ def main() -> None:
         "delhi_pilot.json",
         "delhi_districts.geojson",
         "delhi_major_roads.geojson",
+        "ai_optimization_results.json",
     ]
     for fname in required_files:
         p1 = PROCESSED_DIR / fname
@@ -74,7 +75,14 @@ def main() -> None:
     assert_true(len(osm_dl_stations) > 150, f"OSM Delhi stations > 150 (got {len(osm_dl_stations)})")
     assert_true(len(dl["grid_cells_2km"]) > 250, f"Delhi 2km planning grid cells > 250 (got {len(dl['grid_cells_2km'])})")
 
-    print("\nAll Stage 1 data integration & schema validation assertions PASSED!")
+    with open(PROCESSED_DIR / "ai_optimization_results.json", "r", encoding="utf-8") as f:
+        ai_res = json.load(f)
+
+    assert_true(ai_res["spatial_demand_regressor"]["r2_score"] > 0.70, f"AI Spatial ML Regressor R^2 > 0.70 (got {ai_res['spatial_demand_regressor']['r2_score']})")
+    assert_true(ai_res["bass_diffusion_forecasting"]["parameters"]["r2_fit"] > 0.95, f"Bass Diffusion S-Curve R^2 > 0.95 (got {ai_res['bass_diffusion_forecasting']['parameters']['r2_fit']})")
+    assert_true(len(ai_res["constrained_siting_optimization"]["optimal_sites"]) == 25, f"Constrained Siting Optimizer selected exactly 25 candidate sites (got {len(ai_res['constrained_siting_optimization']['optimal_sites'])})")
+
+    print("\nAll Stage 1 data integration, schema validation & AI-ML suite assertions PASSED!")
 
 
 if __name__ == "__main__":

@@ -3,6 +3,7 @@ import type { FeatureCollection } from 'geojson';
 import {
   AlertCircle,
   BatteryCharging,
+  BrainCircuit,
   Compass,
   FileCheck2,
   Globe2,
@@ -11,6 +12,7 @@ import {
   RefreshCw,
 } from 'lucide-react';
 import {
+  AiOptimizationBundle,
   AppDatasets,
   validateDelhiBundle,
   validateNationalBundle,
@@ -19,8 +21,9 @@ import { NationalOverviewView } from './components/NationalOverviewView';
 import { DelhiPilotView } from './components/DelhiPilotView';
 import { CoveragePlanningView } from './components/CoveragePlanningView';
 import { DataAuditView } from './components/DataAuditView';
+import { AiStudioView } from './components/AiStudioView';
 
-type ActiveTab = 'DELHI_PILOT' | 'PLANNING' | 'DATA_AUDIT' | 'NATIONAL';
+type ActiveTab = 'DELHI_PILOT' | 'PLANNING' | 'AI_STUDIO' | 'DATA_AUDIT' | 'NATIONAL';
 
 export const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<ActiveTab>('DELHI_PILOT');
@@ -32,12 +35,13 @@ export const App: React.FC = () => {
     setLoading(true);
     setError(null);
     try {
-      const [natRes, indGeoRes, dlRes, dlDistGeoRes, dlRoadGeoRes] = await Promise.all([
+      const [natRes, indGeoRes, dlRes, dlDistGeoRes, dlRoadGeoRes, aiRes] = await Promise.all([
         fetch('/data/national_overview.json'),
         fetch('/data/india_states.geojson'),
         fetch('/data/delhi_pilot.json'),
         fetch('/data/delhi_districts.geojson'),
         fetch('/data/delhi_major_roads.geojson'),
+        fetch('/data/ai_optimization_results.json').catch(() => null),
       ]);
 
       if (!natRes.ok || !indGeoRes.ok || !dlRes.ok || !dlDistGeoRes.ok || !dlRoadGeoRes.ok) {
@@ -52,6 +56,15 @@ export const App: React.FC = () => {
         dlRoadGeoRes.json(),
       ]);
 
+      let aiJson: AiOptimizationBundle | null = null;
+      if (aiRes && aiRes.ok) {
+        try {
+          aiJson = (await aiRes.json()) as AiOptimizationBundle;
+        } catch {
+          aiJson = null;
+        }
+      }
+
       const validatedNational = validateNationalBundle(natJson);
       const validatedDelhi = validateDelhiBundle(dlJson);
 
@@ -61,6 +74,7 @@ export const App: React.FC = () => {
         delhi: validatedDelhi,
         delhiDistrictsGeoJson: dlDistGeoJson as FeatureCollection,
         delhiRoadsGeoJson: dlRoadGeoJson as FeatureCollection,
+        aiOptimization: aiJson,
       });
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Unknown data loading error');
@@ -99,6 +113,15 @@ export const App: React.FC = () => {
             onClick={() => setActiveTab('PLANNING')}
           >
             Coverage Planning
+          </button>
+          <button
+            className={`nav-tab ${activeTab === 'AI_STUDIO' ? 'nav-tab-active' : ''}`}
+            onClick={() => setActiveTab('AI_STUDIO')}
+            title="Explore Explainable Machine Learning Models & Siting Optimization"
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+          >
+            <BrainCircuit size={14} style={{ color: '#0d9488' }} />
+            <span>AI &amp; Optimization</span>
           </button>
           <button
             className={`nav-tab ${activeTab === 'DATA_AUDIT' ? 'nav-tab-active' : ''}`}
@@ -167,6 +190,13 @@ export const App: React.FC = () => {
               />
             )}
 
+            {activeTab === 'AI_STUDIO' && (
+              <AiStudioView
+                aiBundle={datasets.aiOptimization}
+                onNavigateToPlanning={() => setActiveTab('PLANNING')}
+              />
+            )}
+
             {activeTab === 'DATA_AUDIT' && (
               <DataAuditView
                 nationalBundle={datasets.national}
@@ -186,7 +216,7 @@ export const App: React.FC = () => {
           OpenStreetMap Contributors (ODbL 1.0).
         </div>
         <div className="mono">
-          Zero Synthetic Data Used • Incompatible Registries Strictly Separated
+          Physics-Informed Spatial AI (PIML) Suite • Zero Synthetic Data Used • Strict Source Separation
         </div>
       </footer>
     </div>

@@ -161,7 +161,9 @@ export function evaluateDelhiGridCoverage(
   cells: DelhiGridCell[],
   radiusKm: number,
   baseline: CoverageNetworkBaseline,
-  minDemandScoreForPriority: number = 22
+  minDemandScoreForPriority: number = 22,
+  useAiDemandModel: boolean = true,
+  useContinuousDecay: boolean = true
 ): CoverageEvaluationSummary {
   let coveredCells = 0;
   let underservedPriorityCells = 0;
@@ -174,7 +176,13 @@ export function evaluateDelhiGridCoverage(
   const evaluatedCells: EvaluatedGridCell[] = cells.map((cell) => {
     const distKm = getCellDistanceForBaseline(cell, baseline);
     const isCovered = distKm <= radiusKm;
-    const isUnderservedPriority = !isCovered && cell.demand_score >= minDemandScoreForPriority;
+    
+    // Choose between AI Machine Learning Demand Score vs Heuristic
+    const activeDemandScore = useAiDemandModel && cell.ai_demand_score !== undefined
+      ? cell.ai_demand_score
+      : cell.demand_score;
+
+    const isUnderservedPriority = !isCovered && activeDemandScore >= minDemandScoreForPriority;
 
     totalPop += cell.worldpop_2025_est;
     totalPois += cell.poi_count;
@@ -187,15 +195,23 @@ export function evaluateDelhiGridCoverage(
       underservedPriorityPop += cell.worldpop_2025_est;
     }
 
-    // Priority score combines demand_score (0-100) and distance deficit beyond radiusKm
-    const distDeficitFactor = isCovered ? 0 : Math.min(2.0, (distKm - radiusKm) / Math.max(0.5, radiusKm));
-    const priorityScore = isCovered
-      ? 0
-      : Number((cell.demand_score * (0.65 + 0.35 * distDeficitFactor)).toFixed(1));
+    // Priority score calculation:
+    // Option A: Continuous Sigmoid Distance Decay: S = D * (1 - 1 / (1 + (d/r)^4))
+    // Option B: Step function heuristic with linear deficit factor
+    let priorityScore = 0;
+    if (useContinuousDecay) {
+      const decayFactor = 1.0 - 1.0 / (1.0 + Math.pow(distKm / Math.max(0.1, radiusKm), 4));
+      priorityScore = isCovered ? 0 : Number((activeDemandScore * decayFactor * 1.25).toFixed(1));
+    } else {
+      const distDeficitFactor = isCovered ? 0 : Math.min(2.0, (distKm - radiusKm) / Math.max(0.5, radiusKm));
+      priorityScore = isCovered
+        ? 0
+        : Number((activeDemandScore * (0.65 + 0.35 * distDeficitFactor)).toFixed(1));
+    }
 
-    // Recommend station sizing for underserved priority cells based on demand score & transit POIs
-    const recAc = isUnderservedPriority ? Math.max(2, Math.round(cell.demand_score / 12)) : 0;
-    const recDc = isUnderservedPriority ? Math.max(1, Math.round((cell.demand_score + cell.transit_hub_count * 4) / 25)) : 0;
+    // Recommend station sizing for underserved priority cells based on physics-grounded energy demand
+    const recAc = isUnderservedPriority ? Math.max(2, Math.round(activeDemandScore / 10)) : 0;
+    const recDc = isUnderservedPriority ? Math.max(1, Math.round((activeDemandScore + cell.transit_hub_count * 5) / 20)) : 0;
     const recStations = isUnderservedPriority ? Math.max(1, Math.ceil((recAc + recDc) / 6)) : 0;
 
     return {
