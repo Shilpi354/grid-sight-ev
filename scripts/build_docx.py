@@ -7,6 +7,38 @@ from docx.enum.table import WD_TABLE_ALIGNMENT, WD_ALIGN_VERTICAL
 from docx.oxml import parse_xml, OxmlElement
 from docx.oxml.ns import nsdecls, qn
 
+# ECMA-376 / ISO-IEC 29500 strict OpenXML child element sequences
+TC_PR_ORDER = {tag: i for i, tag in enumerate([
+    'cnfStyle', 'tcW', 'gridSpan', 'hMerge', 'vMerge', 'tcBorders', 'shd', 'noWrap', 'tcMar',
+    'textDirection', 'tcFitText', 'vAlign', 'hideMark', 'headers', 'cellIns', 'cellDel', 'cellMerge', 'tcPrChange'
+])}
+
+TBL_PR_ORDER = {tag: i for i, tag in enumerate([
+    'tblStyle', 'tblpPr', 'tblOverlap', 'bidiVisual', 'tblStyleRowBandSize', 'tblStyleColBandSize',
+    'tblW', 'jc', 'tblCellSpacing', 'tblInd', 'tblBorders', 'shd', 'tblLayout', 'tblCellMar', 'tblLook',
+    'tblCaption', 'tblDescription', 'tblPrChange'
+])}
+
+def enforce_openxml_schema_compliance(doc):
+    """Enforces strict ECMA-376 child element order inside tcPr and tblPr so Microsoft Word validates and opens cleanly without errors."""
+    def sort_element_children(elem, order_map):
+        if elem is None:
+            return
+        children = list(elem)
+        keys = [order_map.get(c.tag.split('}')[-1], 999) for c in children]
+        if keys != sorted(keys):
+            for c in children:
+                elem.remove(c)
+            sorted_children = sorted(children, key=lambda c: order_map.get(c.tag.split('}')[-1], 999))
+            for c in sorted_children:
+                elem.append(c)
+
+    for table in doc.tables:
+        sort_element_children(table._tbl.tblPr, TBL_PR_ORDER)
+        for row in table.rows:
+            for cell in row.cells:
+                sort_element_children(cell._tc.get_or_add_tcPr(), TC_PR_ORDER)
+
 def create_document():
     doc = Document()
 
@@ -723,6 +755,9 @@ def create_document():
             set_cell_margins(cell, top=60, bottom=60, left=80, right=80)
             if row_idx % 2 == 1:
                 set_cell_background(cell, "F8FAFC")
+
+    # ENFORCE STRICT OPENXML SCHEMA COMPLIANCE (Word Validation)
+    enforce_openxml_schema_compliance(doc)
 
     # Output file path in project root
     workspace_dir = r"C:\Users\hp\.gemini\antigravity\scratch\ev-infra-map-india"
