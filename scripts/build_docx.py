@@ -429,11 +429,11 @@ def create_document():
     add_h1("E. Technical architecture and tools")
 
     e_pts = [
-        ("Data Pipeline: ", "Python (scripts/process_data.py, ~1,770 lines; utilizing NumPy, Shapely, and PIL for GeoTIFF raster extraction) generating clean, lightweight GeoJSON and JSON bundles in public/data/ and data/processed/."),
+        ("Data & AI Pipelines: ", "Python (scripts/process_data.py, ~1,770 lines; scripts/train_ai_models.py) generating clean, lightweight GeoJSON, JSON bundles, and trained AI models in public/data/ and data/processed/."),
         ("Frontend Architecture: ", "React 18 with TypeScript (strict mode), bundled via Vite."),
         ("Cartographic Engine: ", "Leaflet and React-Leaflet using OpenStreetMap standard tiles (https://tile.openstreetmap.org/{z}/{x}/{y}.png). The basemap is 100% keyless, free, and completely watermark-free, providing full street-level context without third-party API dependencies."),
-        ("Client-Side Spatial Computation: ", "src/utils/planningEngine.ts executes all grid filtering, coverage distance evaluations, and scenario projections entirely in the browser in sub-millisecond time."),
-        ("Editorial Geospatial Intelligence UI: ", "A calm, research-oriented light interface featuring four dedicated views: Delhi Pilot Map (Primary Default with 876 stations), Coverage Planning (375-cell grid and 2030 simulator), Data & Methodology Audit (reconciliation matrix), and National Overview (36-state choropleths and 776 BEE district hub clusters).")
+        ("Client-Side Spatial Computation: ", "src/utils/planningEngine.ts executes all grid filtering, coverage distance evaluations, sigmoid decay functions, and scenario projections entirely in the browser in sub-millisecond time."),
+        ("Editorial Geospatial Intelligence UI: ", "A research-grade light interface featuring five dedicated views: Delhi Pilot Map (876 stations), Coverage Planning (375-cell grid and 2030 simulator), AI & Optimization Studio (Random Forest regressor, Bass diffusion curves, and constrained siting optimizer), Data & Methodology Audit (reconciliation matrix), and National Overview (36-state choropleths and 776 BEE district hub clusters).")
     ]
 
     for e_title, e_desc in e_pts:
@@ -510,11 +510,10 @@ def create_document():
     add_h1("H. Implementation roadmap")
 
     road_rows = [
-        ("Phase 0: Baseline Freeze (Complete)", "Frozen source manifest v1.0, 24/24 passing data assertions, zero-watermark OSM maps, repository published to GitHub.", "✅ Working prototype deployed on main."),
-        ("Phase 1: Sensitivity & Uncertainty Analysis", "Implement Monte Carlo parameter perturbation across fleet multipliers (±20%) and daily energy consumption parameters.", "🗓 Dynamic confidence interval bands on all 2030 charger requirement outputs."),
-        ("Phase 2: Distribution Grid Capacity Proxies", "Overlay CEA technical connectivity standards with secondary DISCOM substation voltage tiers (11kV vs 33kV vs 66kV) to model feeder readiness without proprietary SCADA.", "🗓 Grid Feasibility Proxy Index per 2km cell combining distance with voltage tier."),
-        ("Phase 3: Inter-City Highway Corridors & Tier-2 Scaling", "Extend 2km spatial buffer model along National Highways (Delhi–Jaipur, Delhi–Agra) using PM Gati Shakti & NHAI freight vectors for non-metro states.", "🗓 Dedicated Inter-City Highway Infill & Fast-Charging Corridor Tool."),
-        ("Phase 4: Final Deployment", "Containerize application (Docker) and deploy to a high-availability cloud host with full offline caching fallback.", "🗓 Rehearsed live jury demonstration with zero network dependency.")
+        ("Phase 0: Baseline Freeze & AI Integration (Complete)", "Frozen source manifest v1.0, 28/28 passing data & AI assertions, trained Random Forest regressor, Bass diffusion curves, constrained siting optimizer, zero-watermark OSM maps, repository published to GitHub.", "✅ Working prototype deployed on main."),
+        ("Phase 1: Highway Corridor Scaling (Weeks 1–2)", "Extend 5km spatial buffer along National Highways (Delhi–Jaipur NH-48, Delhi–Agra Yamuna Expressway) using PM Gati Shakti & NHAI freight vectors for inter-city infill.", "🗓 Dedicated Inter-City Highway Infill & Fast-Charging Corridor Tool."),
+        ("Phase 2: Distribution Grid Capacity Proxies (Weeks 3–4)", "Overlay CEA technical connectivity standards with secondary DISCOM substation voltage tiers (11kV vs 33kV vs 66kV) to model feeder readiness without proprietary SCADA.", "🗓 Grid Feasibility Proxy Index per 2km cell combining distance with voltage tier."),
+        ("Phase 3: Final Deployment & Grand Finale Prep (Weeks 5–6)", "Containerize application (Docker) and deploy to a high-availability cloud host with full offline caching fallback.", "🗓 Rehearsed live jury demonstration with zero network dependency.")
     ]
 
     r_tbl = doc.add_table(rows=len(road_rows)+1, cols=3)
@@ -614,9 +613,9 @@ def create_document():
 
     crit_rows = [
         ("Problem Understanding & Relevance", "25%", "Section B (Data fragmentation, non-additivity, Delhi/National scope, accessibility vs adequacy)", "DATA_AVAILABILITY_AUDIT.md, DATA_GAPS.md"),
-        ("Technical Approach & Feasibility", "25%", "Section C (Formulas, Burari crosswalk, 2km grid, Winsorization, 2030 model) · Section E", "scripts/process_data.py, src/utils/planningEngine.ts"),
-        ("Innovation & Differentiation", "20%", "Section G (Non-additivity enforcement, dual VAHAN tags, SDSS vs unconstrained optimizers)", "src/components/DataAuditView.tsx"),
-        ("Implementation Roadmap", "20%", "Section H (Phase 0–4 milestones, sensitivity analysis, highway infill, Tier-2 scaling)", "DELIVERABLE_AUDIT.md"),
+        ("Technical Approach & Feasibility", "25%", "Section C (Spatial ML Regressor, Sigmoid decay, Energy disaggregation, Bass Diffusion, 2030 model) · Section E", "scripts/train_ai_models.py, src/utils/planningEngine.ts"),
+        ("Innovation & Differentiation", "20%", "Section G (Explainable AI / PIML, Bass S-curve, constrained siting optimization, non-additivity, dual VAHAN tags)", "src/components/AiStudioView.tsx, public/data/ai_optimization_results.json"),
+        ("Implementation Roadmap", "20%", "Section H (Phase 0–3 milestones, sprint timelines, highway infill, Tier-2 scaling)", "DELIVERABLE_AUDIT.md"),
         ("Data Strategy & Provenance", "10%", "Section D (11-source manifest, limitations, OSM boundary statement, temporal disclosures) · Section J", "data/source_manifest.csv, DATA_QUALITY_REPORT.md")
     ]
 
