@@ -9,7 +9,9 @@ import {
   Globe2,
   Loader2,
   MapPin,
+  Moon,
   RefreshCw,
+  Sun,
 } from 'lucide-react';
 import {
   AiOptimizationBundle,
@@ -23,13 +25,39 @@ import { CoveragePlanningView } from './components/CoveragePlanningView';
 import { DataAuditView } from './components/DataAuditView';
 import { AiStudioView } from './components/AiStudioView';
 
-type ActiveTab = 'DELHI_PILOT' | 'PLANNING' | 'AI_STUDIO' | 'DATA_AUDIT' | 'NATIONAL';
+type ActiveTab = 'DELHI_PILOT' | 'NATIONAL' | 'PLANNING' | 'AI_STUDIO' | 'DATA_AUDIT';
 
 export const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<ActiveTab>('DELHI_PILOT');
   const [datasets, setDatasets] = useState<AppDatasets | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+
+  // Dark Mode state (defaults to light mode as requested)
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
+    try {
+      const saved = localStorage.getItem('gridsight_theme');
+      return saved === 'dark';
+    } catch {
+      return false;
+    }
+  });
+
+  useEffect(() => {
+    try {
+      if (isDarkMode) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('gridsight_theme', 'dark');
+      } else {
+        document.documentElement.removeAttribute('data-theme');
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('gridsight_theme', 'light');
+      }
+    } catch {
+      // ignore storage errors
+    }
+  }, [isDarkMode]);
 
   const loadAllData = async () => {
     setLoading(true);
@@ -109,6 +137,13 @@ export const App: React.FC = () => {
             Delhi Map
           </button>
           <button
+            className={`nav-tab ${activeTab === 'NATIONAL' ? 'nav-tab-active' : ''}`}
+            onClick={() => setActiveTab('NATIONAL')}
+            title="Explore 36 States/UTs National EV & Charger Overview"
+          >
+            National Overview
+          </button>
+          <button
             className={`nav-tab ${activeTab === 'PLANNING' ? 'nav-tab-active' : ''}`}
             onClick={() => setActiveTab('PLANNING')}
           >
@@ -129,14 +164,19 @@ export const App: React.FC = () => {
           >
             Data &amp; Methodology
           </button>
-          <button
-            className={`nav-tab nav-tab-secondary ${activeTab === 'NATIONAL' ? 'nav-tab-active' : ''}`}
-            onClick={() => setActiveTab('NATIONAL')}
-            title="Explore 36 States/UTs National EV & Charger Overview"
-          >
-            National Overview
-          </button>
         </nav>
+
+        <div className="header-actions">
+          <button
+            className="theme-toggle-btn"
+            onClick={() => setIsDarkMode((prev) => !prev)}
+            title={isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+            aria-label={isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+          >
+            {isDarkMode ? <Sun size={14} className="icon-amber" /> : <Moon size={14} />}
+            <span>{isDarkMode ? 'Light Mode' : 'Dark Mode'}</span>
+          </button>
+        </div>
       </header>
 
       {/* Main Content Area */}

@@ -195,6 +195,34 @@ body {
   color: var(--text-secondary);
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.theme-toggle-btn:hover {
+  background: var(--border-subtle);
+  color: var(--text-primary);
+  border-color: var(--border-medium);
+}
+
 /* ============================================================
    Main Layout & Editorial Typography
    ============================================================ */
@@ -2456,4 +2484,176 @@ body {
   font-size: 12px;
   color: #166534;
   line-height: 1.45;
+}
+
+/* ============================================================
+   Dark Mode Theme System (Default: Light Mode)
+   ============================================================ */
+body.dark-mode,
+[data-theme="dark"] {
+  /* Canvas & Surfaces */
+  --bg-canvas: #090d16;
+  --bg-surface: #111827;
+  --bg-subtle: #1a2233;
+  --bg-muted: #242f44;
+  --bg-input: #151d2c;
+
+  /* Borders & Dividers */
+  --border-subtle: #242f44;
+  --border-medium: #334155;
+  --border-strong: #475569;
+
+  /* Typography / Text Colors */
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-tertiary: #64748b;
+
+  /* Editorial Accent Palette - Dark Mode Optimized */
+  --accent-teal: #14b8a6;
+  --accent-teal-hover: #2dd4bf;
+  --accent-teal-subtle: rgba(20, 184, 166, 0.16);
+  --accent-teal-border: rgba(20, 184, 166, 0.35);
+
+  --accent-blue: #38bdf8;
+  --accent-blue-hover: #60a5fa;
+  --accent-blue-subtle: rgba(56, 189, 248, 0.16);
+  --accent-blue-border: rgba(56, 189, 248, 0.35);
+
+  --accent-amber: #fbbf24;
+  --accent-amber-hover: #fcd34d;
+  --accent-amber-subtle: rgba(251, 191, 36, 0.16);
+  --accent-amber-border: rgba(251, 191, 36, 0.35);
+
+  --accent-red: #f87171;
+  --accent-red-hover: #fca5a5;
+  --accent-red-subtle: rgba(248, 113, 113, 0.16);
+  --accent-red-border: rgba(248, 113, 113, 0.35);
+
+  --accent-emerald: #34d399;
+  --accent-emerald-subtle: rgba(52, 211, 153, 0.16);
+
+  /* Shadows */
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.45);
+  --shadow-card: 0 2px 5px rgba(0, 0, 0, 0.55);
+  --shadow-dropdown: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+
+/* Dark Mode Leaflet Cartography & Popups */
+body.dark-mode .leaflet-tile {
+  filter: invert(1) hue-rotate(180deg) brightness(0.82) contrast(1.15) !important;
+}
+
+body.dark-mode .leaflet-container {
+  background-color: #0b0f17 !important;
+}
+
+body.dark-mode .leaflet-popup-content-wrapper,
+body.dark-mode .leaflet-popup-tip {
+  background: #1e293b !important;
+  color: #f8fafc !important;
+  border-color: #334155 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6) !important;
+}
+
+body.dark-mode .leaflet-tooltip {
+  background: #1e293b !important;
+  color: #f8fafc !important;
+  border-color: #334155 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Dark Mode Form & Filter Controls */
+body.dark-mode .search-input-field {
+  background: var(--bg-input) !important;
+  border-color: var(--border-medium) !important;
+  color: var(--text-primary) !important;
+}
+
+body.dark-mode .select-input,
+body.dark-mode .select-input-sm,
+body.dark-mode .select-input-xs {
+  background: var(--bg-input) !important;
+  border-color: var(--border-medium) !important;
+  color: var(--text-primary) !important;
+}
+
+body.dark-mode .segment-btn.segment-active {
+  background: #242f44 !important;
+  color: #f8fafc !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Dark Mode Specific Component Overrides */
+body.dark-mode .ai-controls-strip {
+  background: linear-gradient(135deg, rgba(30, 27, 75, 0.75), rgba(49, 46, 129, 0.55)) !important;
+  border: 1px solid #4338ca !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35) !important;
+}
+
+body.dark-mode .ai-strip-title {
+  color: #a5b4fc !important;
+}
+
+body.dark-mode .ai-control-label {
+  color: #cbd5e1 !important;
+}
+
+body.dark-mode .ai-highlight-card {
+  background: linear-gradient(135deg, rgba(46, 16, 101, 0.45), rgba(30, 27, 75, 0.6)) !important;
+  border: 1px solid #6366f1 !important;
+  border-left: 4px solid #8b5cf6 !important;
+}
+
+body.dark-mode .ai-scenario-badge-banner {
+  background: rgba(6, 78, 59, 0.35) !important;
+  border: 1px solid #059669 !important;
+  color: #a7f3d0 !important;
+}
+
+body.dark-mode .integrity-banner {
+  background: rgba(15, 118, 110, 0.22) !important;
+  border-color: rgba(20, 184, 166, 0.4) !important;
+  color: #5eead4 !important;
+}
+
+body.dark-mode .map-legend-bar {
+  background: var(--bg-surface) !important;
+  border-color: var(--border-medium) !important;
+}
+
+body.dark-mode .assumptions-box {
+  background: var(--bg-subtle) !important;
+  border-color: var(--border-medium) !important;
+}
+
+body.dark-mode .fact-estimate {
+  background: rgba(30, 41, 59, 0.6) !important;
+  border-color: var(--border-medium) !important;
+}
+
+body.dark-mode .alloc-ac {
+  background: rgba(3, 105, 161, 0.2) !important;
+  border-color: rgba(56, 189, 248, 0.35) !important;
+  color: #7dd3fc !important;
+}
+
+body.dark-mode .alloc-dc {
+  background: rgba(180, 83, 9, 0.2) !important;
+  border-color: rgba(245, 158, 11, 0.35) !important;
+  color: #fde047 !important;
+}
+
+body.dark-mode .alloc-swap {
+  background: rgba(134, 25, 143, 0.2) !important;
+  border-color: rgba(217, 70, 239, 0.35) !important;
+  color: #f5d0fe !important;
+}
+
+body.dark-mode .data-table tbody tr:hover {
+  background-color: rgba(20, 184, 166, 0.15) !important;
+}
+
+body.dark-mode .tr-selected {
+  background-color: rgba(20, 184, 166, 0.22) !important;
 }
