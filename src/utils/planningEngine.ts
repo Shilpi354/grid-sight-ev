@@ -7,7 +7,7 @@ export type CoverageNetworkBaseline =
   | 'DC_FAST_ONLY'
   | 'BATTERY_SWAPPING';
 
-export type GrowthScenarioId = 'LOW' | 'BASELINE' | 'HIGH';
+export type GrowthScenarioId = 'LOW' | 'BASELINE' | 'HIGH' | 'BASS_AI';
 
 export interface GrowthScenarioConfig {
   id: GrowthScenarioId;
@@ -97,6 +97,27 @@ export const DEFAULT_SCENARIOS: Record<GrowthScenarioId, GrowthScenarioConfig> =
     effectiveHoursPerDayAC: 5.0,
     effectiveHoursPerDayDC: 5.5,
     swapsPerDocketPerDay: 11,
+  },
+  BASS_AI: {
+    id: 'BASS_AI',
+    label: 'AI Bass Diffusion S-Curve (R² = 0.992)',
+    horizonYear: 2030,
+    description:
+      'Calibrated non-linear adoption model (p=0.0114, q=0.4963, M=20.0M) fitted on 68 months of historical VAHAN registrations, capturing market inflection and projecting ~933,751 Delhi active EVs by 2030.',
+    multiplier2W: 1.85,
+    multiplier3W: 1.70,
+    multiplier4W: 2.10,
+    multiplierBus: 2.20,
+    multiplierGoods: 2.15,
+    publicChargingShare2W: 0.20,
+    publicChargingShare3W: 0.55,
+    publicChargingShare4W: 0.35,
+    publicChargingShareBus: 0.20,
+    publicChargingShareGoods: 0.50,
+    swapShareOfPublic2W3W: 0.35,
+    effectiveHoursPerDayAC: 5.5,
+    effectiveHoursPerDayDC: 6.0,
+    swapsPerDocketPerDay: 13,
   },
 };
 

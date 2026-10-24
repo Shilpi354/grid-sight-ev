@@ -178,6 +178,7 @@ export const App: React.FC = () => {
                 bundle={datasets.delhi}
                 districtsGeoJson={datasets.delhiDistrictsGeoJson}
                 roadsGeoJson={datasets.delhiRoadsGeoJson}
+                aiBundle={datasets.aiOptimization}
                 onOpenPlanningView={() => setActiveTab('PLANNING')}
               />
             )}
@@ -187,6 +188,7 @@ export const App: React.FC = () => {
                 delhiBundle={datasets.delhi}
                 delhiDistrictsGeoJson={datasets.delhiDistrictsGeoJson}
                 nationalBundle={datasets.national}
+                aiBundle={datasets.aiOptimization}
               />
             )}
 

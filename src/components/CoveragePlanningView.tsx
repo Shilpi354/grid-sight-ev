@@ -4,11 +4,13 @@ import {
   TileLayer,
   GeoJSON,
   Rectangle,
+  CircleMarker,
   Tooltip as LeafletTooltip,
 } from 'react-leaflet';
 import type { FeatureCollection } from 'geojson';
 import {
   AlertTriangle,
+  BrainCircuit,
   Calculator,
   CheckCircle2,
   Compass,
@@ -16,11 +18,12 @@ import {
   Info,
   Layers,
   Sliders,
+  Sparkles,
   Target,
   TrendingUp,
   Zap,
 } from 'lucide-react';
-import type { DelhiPilotBundle, NationalOverviewBundle } from '../types/data';
+import type { AiOptimizationBundle, DelhiPilotBundle, NationalOverviewBundle } from '../types/data';
 import {
   computeDelhiDistrictFutureRequirements,
   computeNationalStateFutureRequirements,
@@ -38,12 +41,14 @@ interface CoveragePlanningViewProps {
   delhiBundle: DelhiPilotBundle;
   delhiDistrictsGeoJson: FeatureCollection;
   nationalBundle: NationalOverviewBundle;
+  aiBundle?: AiOptimizationBundle | null;
 }
 
 export const CoveragePlanningView: React.FC<CoveragePlanningViewProps> = ({
   delhiBundle,
   delhiDistrictsGeoJson,
   nationalBundle,
+  aiBundle,
 }) => {
   // Coverage Distance Rule State
   const [coverageRadiusKm, setCoverageRadiusKm] = useState<number>(1.5);
@@ -51,9 +56,14 @@ export const CoveragePlanningView: React.FC<CoveragePlanningViewProps> = ({
   const [minDemandThreshold, setMinDemandThreshold] = useState<number>(22);
   const [selectedCell, setSelectedCell] = useState<EvaluatedGridCell | null>(null);
 
+  // AI-Driven Modeling & Optimization State
+  const [useAiDemandModel, setUseAiDemandModel] = useState<boolean>(true);
+  const [useContinuousDecay, setUseContinuousDecay] = useState<boolean>(true);
+  const [showAiOptimizedPlazas, setShowAiOptimizedPlazas] = useState<boolean>(true);
+
   // Future Growth Scenario State
-  const [scenarioId, setScenarioId] = useState<GrowthScenarioId>('BASELINE');
-  const [customConfig, setCustomConfig] = useState<GrowthScenarioConfig>(DEFAULT_SCENARIOS.BASELINE);
+  const [scenarioId, setScenarioId] = useState<GrowthScenarioId>('BASS_AI');
+  const [customConfig, setCustomConfig] = useState<GrowthScenarioConfig>(DEFAULT_SCENARIOS.BASS_AI);
   const [supplyBaseline, setSupplyBaseline] = useState<'SWITCH_DELHI' | 'BEE_DELHI'>('BEE_DELHI');
   const [planningScopeTab, setPlanningScopeTab] = useState<'DELHI_DISTRICTS' | 'NATIONAL_STATES'>(
     'DELHI_DISTRICTS'
@@ -70,9 +80,18 @@ export const CoveragePlanningView: React.FC<CoveragePlanningViewProps> = ({
       delhiBundle.grid_cells_2km,
       coverageRadiusKm,
       networkBaseline,
-      minDemandThreshold
+      minDemandThreshold,
+      useAiDemandModel,
+      useContinuousDecay
     );
-  }, [delhiBundle.grid_cells_2km, coverageRadiusKm, networkBaseline, minDemandThreshold]);
+  }, [
+    delhiBundle.grid_cells_2km,
+    coverageRadiusKm,
+    networkBaseline,
+    minDemandThreshold,
+    useAiDemandModel,
+    useContinuousDecay,
+  ]);
 
   const activeCell = selectedCell || coverageResult.topUnderservedCells[0] || coverageResult.evaluatedCells[0];
 
@@ -146,6 +165,13 @@ export const CoveragePlanningView: React.FC<CoveragePlanningViewProps> = ({
     );
   }, [nationalBundle.states, customConfig]);
 
+  const activeAiOptimalSite = useMemo(() => {
+    if (!activeCell || !aiBundle?.constrained_siting_optimization?.optimal_sites) return null;
+    return aiBundle.constrained_siting_optimization.optimal_sites.find(
+      (s) => s.cell_id === activeCell.cell_id
+    );
+  }, [activeCell, aiBundle]);
+
   return (
     <div className="view-container">
       {/* Methodological Transparency Banner */}
@@ -162,6 +188,65 @@ export const CoveragePlanningView: React.FC<CoveragePlanningViewProps> = ({
             <strong>Stations (Sites)</strong>, <strong>Charging Points (EVSE)</strong>,{' '}
             <strong>AC vs. DC Connectors (Nozzles)</strong>, and <strong>Battery Swap Dockets</strong>.
           </div>
+        </div>
+      </div>
+
+      {/* Native AI/ML Optimization Control Bar */}
+      <div className="ai-controls-strip">
+        <div className="ai-strip-title">
+          <BrainCircuit size={16} className="icon-sky" />
+          <span>Native AI Optimization Engine:</span>
+        </div>
+
+        <div className="ai-control-group">
+          <span className="ai-control-label">Spatial Demand Model:</span>
+          <div className="segmented-control">
+            <button
+              className={`segment-btn ${useAiDemandModel ? 'segment-active' : ''}`}
+              onClick={() => setUseAiDemandModel(true)}
+              title="Spatial Random Forest regressor (120 trees, R² = 0.796) trained on verified Switch Delhi grid points across 6 spatial features"
+            >
+              🧠 Spatial ML Regressor (R²=0.796)
+            </button>
+            <button
+              className={`segment-btn ${!useAiDemandModel ? 'segment-active' : ''}`}
+              onClick={() => setUseAiDemandModel(false)}
+              title="Baseline linear heuristic: 45% WorldPop + 35% POIs + 20% Road Length"
+            >
+              ⚡ Baseline Heuristic (Eq. 2)
+            </button>
+          </div>
+        </div>
+
+        <div className="ai-control-group">
+          <span className="ai-control-label">Distance Priority Kernel:</span>
+          <div className="segmented-control">
+            <button
+              className={`segment-btn ${useContinuousDecay ? 'segment-active' : ''}`}
+              onClick={() => setUseContinuousDecay(true)}
+              title="Continuous sigmoid distance decay kernel: S = D * (1 - 1 / (1 + (d/r)^4)) eliminating boundary cliffs"
+            >
+              Sigmoid Kernel (Continuous)
+            </button>
+            <button
+              className={`segment-btn ${!useContinuousDecay ? 'segment-active' : ''}`}
+              onClick={() => setUseContinuousDecay(false)}
+              title="Standard discrete step-buffer radius filter"
+            >
+              Step Buffer (Cliff)
+            </button>
+          </div>
+        </div>
+
+        <div className="ai-control-group checkbox-block" style={{ marginLeft: 'auto' }}>
+          <label className="checkbox-label-sm" style={{ fontWeight: 600, color: '#4338ca' }}>
+            <input
+              type="checkbox"
+              checked={showAiOptimizedPlazas}
+              onChange={(e) => setShowAiOptimizedPlazas(e.target.checked)}
+            />
+            <span>Overlay 25 AI Sited Plazas</span>
+          </label>
         </div>
       </div>
 
@@ -284,6 +369,11 @@ export const CoveragePlanningView: React.FC<CoveragePlanningViewProps> = ({
                 <i className="key-dot" style={{ backgroundColor: '#475569' }} /> Low-Demand Fringe (&gt;
                 {coverageRadiusKm}km)
               </span>
+              {showAiOptimizedPlazas && (
+                <span>
+                  <i className="key-dot" style={{ backgroundColor: '#8b5cf6' }} /> 🧠 AI Sited Plazas (25)
+                </span>
+              )}
             </div>
           </div>
 
@@ -367,6 +457,57 @@ export const CoveragePlanningView: React.FC<CoveragePlanningViewProps> = ({
                   </Rectangle>
                 );
               })}
+
+              {/* AI-Optimized Candidate Hubs (25 Plazas) */}
+              {showAiOptimizedPlazas &&
+                aiBundle?.constrained_siting_optimization?.optimal_sites.map((site) => {
+                  const isSelected = activeCell?.cell_id === site.cell_id;
+                  const matchingCell = coverageResult.evaluatedCells.find((c) => c.cell_id === site.cell_id);
+
+                  return (
+                    <CircleMarker
+                      key={`ai-opt-${site.cell_id}`}
+                      center={[site.lat, site.lon]}
+                      radius={isSelected ? 9 : 7}
+                      pathOptions={{
+                        color: '#ffffff',
+                        weight: isSelected ? 2.5 : 1.5,
+                        fillColor: '#8b5cf6',
+                        fillOpacity: 0.95,
+                      }}
+                      eventHandlers={{
+                        click: () => {
+                          if (matchingCell) {
+                            setSelectedCell(matchingCell);
+                          }
+                        },
+                      }}
+                    >
+                      <LeafletTooltip direction="top">
+                        <div style={{ fontFamily: 'Inter, sans-serif', fontSize: '12px' }}>
+                          <span style={{ color: '#8b5cf6', fontWeight: 700 }}>
+                            🧠 AI OPTIMAL PLAZA #{site.rank}
+                          </span>
+                          <br />
+                          <strong>
+                            {site.cell_id} ({site.district})
+                          </strong>
+                          <br />
+                          ML Demand Score: <b>{site.ai_demand_score}/100</b>
+                          <br />
+                          Substation Feeder: <b>{site.substation_dist_m}m</b> ({site.electrical_tier})
+                          <br />
+                          Hardware Sizing:{' '}
+                          <b>
+                            1 Plaza • {site.recommended_dc_fast_nozzles} DC Fast + {site.recommended_ac_connectors} AC
+                          </b>
+                          <br />
+                          Grid Connection: <b>{site.total_installed_load_kw} kW</b> (Max Hosting: {site.max_hosting_kw} kW)
+                        </div>
+                      </LeafletTooltip>
+                    </CircleMarker>
+                  );
+                })}
             </MapContainer>
           </div>
         </div>
@@ -413,10 +554,19 @@ export const CoveragePlanningView: React.FC<CoveragePlanningViewProps> = ({
                   <span className="mini-sub">WorldPop Scaled</span>
                 </div>
                 <div className="mini-stat-box">
-                  <span className="mini-label">Demand Score</span>
-                  <strong className="mono text-sky">{activeCell.demand_score} / 100</strong>
+                  <span className="mini-label">
+                    {useAiDemandModel ? 'AI ML Demand' : 'Demand Score'}
+                  </span>
+                  <strong className="mono text-sky">
+                    {useAiDemandModel && activeCell.ai_demand_score !== undefined
+                      ? activeCell.ai_demand_score
+                      : activeCell.demand_score}{' '}
+                    / 100
+                  </strong>
                   <span className="mini-sub">
-                    {activeCell.poi_count} POIs • {activeCell.road_segments_count} road ways
+                    {useAiDemandModel && activeCell.ai_predicted_kwh_day !== undefined
+                      ? `~${activeCell.ai_predicted_kwh_day} kWh/day`
+                      : `${activeCell.poi_count} POIs • ${activeCell.road_segments_count} ways`}
                   </span>
                 </div>
                 <div className="mini-stat-box">
@@ -425,6 +575,39 @@ export const CoveragePlanningView: React.FC<CoveragePlanningViewProps> = ({
                   <span className="mini-sub">Physical distance only</span>
                 </div>
               </div>
+
+              {activeAiOptimalSite && (
+                <div className="fact-section ai-highlight-card">
+                  <div className="fact-section-header">
+                    <BrainCircuit size={15} className="icon-sky" />
+                    <strong>AI CONSTRAINED SITING: CANDIDATE HUB #{activeAiOptimalSite.rank}</strong>
+                  </div>
+                  <p style={{ fontSize: '12px', margin: '4px 0 8px' }}>
+                    Ranked #{activeAiOptimalSite.rank} across Delhi via Submodular Greedy Optimization (Grid Feeder &lt;1.5km, Spacing &ge;1.2km):
+                  </p>
+                  <div className="mini-grid-3">
+                    <div className="mini-stat-box">
+                      <span className="mini-label">Sited Facility</span>
+                      <strong className="mono text-teal">1 Plaza (Rank #{activeAiOptimalSite.rank})</strong>
+                      <span className="mini-sub">Utility Score: {activeAiOptimalSite.utility_score}</span>
+                    </div>
+                    <div className="mini-stat-box">
+                      <span className="mini-label">DC Fast / AC Sizing</span>
+                      <strong className="mono text-sky">
+                        {activeAiOptimalSite.recommended_dc_fast_nozzles} DC / {activeAiOptimalSite.recommended_ac_connectors} AC
+                      </strong>
+                      <span className="mini-sub">{activeAiOptimalSite.recommended_swap_dockets} Swap Dockets</span>
+                    </div>
+                    <div className="mini-stat-box">
+                      <span className="mini-label">Grid Feeder Load</span>
+                      <strong className="mono text-amber">{activeAiOptimalSite.total_installed_load_kw} kW</strong>
+                      <span className="mini-sub">
+                        {activeAiOptimalSite.electrical_tier} ({activeAiOptimalSite.substation_dist_m}m)
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              )}
 
               <div className="inspector-section">
                 <h4 className="sub-heading">Multi-Network Distance Profile for {activeCell.cell_id}</h4>
@@ -540,19 +723,32 @@ export const CoveragePlanningView: React.FC<CoveragePlanningViewProps> = ({
             </p>
           </div>
           <div className="scenario-tabs">
-            {(['LOW', 'BASELINE', 'HIGH'] as GrowthScenarioId[]).map((id) => (
+            {(['BASS_AI', 'BASELINE', 'HIGH', 'LOW'] as GrowthScenarioId[]).map((id) => (
               <button
                 key={id}
                 className={`pill-btn ${scenarioId === id ? 'pill-active' : ''}`}
                 onClick={() => handleSelectScenarioPreset(id)}
               >
-                {id === 'LOW' && 'Low Scenario (Conservative)'}
-                {id === 'BASELINE' && 'Baseline Scenario (Policy)'}
-                {id === 'HIGH' && 'High Scenario (Accelerated)'}
+                {id === 'BASS_AI' && '🧠 AI Bass S-Curve (R² = 0.992)'}
+                {id === 'BASELINE' && 'Baseline Policy (2030)'}
+                {id === 'HIGH' && 'High Accelerated (2030)'}
+                {id === 'LOW' && 'Low Conservative (2030)'}
               </button>
             ))}
           </div>
         </div>
+
+        {scenarioId === 'BASS_AI' && (
+          <div className="ai-scenario-badge-banner" style={{ margin: '0 16px 12px' }}>
+            <Sparkles size={15} className="icon-sky" />
+            <span>
+              <strong>Bass Non-Linear Diffusion S-Curve Calibrated:</strong> Non-linear adoption model (
+              <span className="mono">p=0.0114</span> innovation, <span className="mono">q=0.4963</span> imitation,{' '}
+              <span className="mono">M=20.0M</span> ceiling) fitted on 68 months of MoRTH VAHAN time-series (
+              <span className="mono">R² = 0.992</span>), dynamically projecting ~933,751 active Delhi EVs by 2030.
+            </span>
+          </div>
+        )}
 
         {/* Documented Assumptions & Interactive Sliders */}
         <div className="assumptions-box">

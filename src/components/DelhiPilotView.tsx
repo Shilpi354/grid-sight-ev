@@ -29,8 +29,11 @@ import {
   SlidersHorizontal,
   X,
   Zap,
+  BrainCircuit,
+  Sparkles,
 } from 'lucide-react';
 import type {
+  AiOptimizationBundle,
   DelhiPilotBundle,
   DelhiStationRecord,
 } from '../types/data';
@@ -47,6 +50,7 @@ interface DelhiPilotViewProps {
   bundle: DelhiPilotBundle;
   districtsGeoJson: FeatureCollection;
   roadsGeoJson: FeatureCollection;
+  aiBundle?: AiOptimizationBundle | null;
   onOpenPlanningView: () => void;
 }
 
@@ -69,6 +73,7 @@ export const DelhiPilotView: React.FC<DelhiPilotViewProps> = ({
   bundle,
   districtsGeoJson,
   roadsGeoJson,
+  aiBundle,
   onOpenPlanningView,
 }) => {
   // Station & Source Filters
@@ -79,6 +84,7 @@ export const DelhiPilotView: React.FC<DelhiPilotViewProps> = ({
   const [selectedDistrict, setSelectedDistrict] = useState<string>('ALL');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [includePinEstimatedSwap, setIncludePinEstimatedSwap] = useState<boolean>(false);
+  const [showAiCandidateHubs, setShowAiCandidateHubs] = useState<boolean>(true);
 
   // Filter drawer / sidebar collapse for mobile and compact desktop view
   const [isFilterPanelOpen, setIsFilterPanelOpen] = useState<boolean>(true);
@@ -521,6 +527,15 @@ export const DelhiPilotView: React.FC<DelhiPilotViewProps> = ({
             </div>
 
             <div className="layer-checkbox-list">
+              <label className="checkbox-label-sm" style={{ fontWeight: 600, color: '#4338ca' }}>
+                <input
+                  type="checkbox"
+                  checked={showAiCandidateHubs}
+                  onChange={(e) => setShowAiCandidateHubs(e.target.checked)}
+                />
+                <span>🧠 AI Siting Candidates (Top 25)</span>
+              </label>
+
               <label className="checkbox-label-sm">
                 <input
                   type="checkbox"
@@ -608,6 +623,11 @@ export const DelhiPilotView: React.FC<DelhiPilotViewProps> = ({
             {showPowerGrid && (
               <span className="legend-item">
                 <i className="legend-indicator" style={{ backgroundColor: '#b91c1c' }} /> Substation (Location only)
+              </span>
+            )}
+            {showAiCandidateHubs && (
+              <span className="legend-item">
+                <i className="legend-indicator" style={{ backgroundColor: '#8b5cf6' }} /> AI Sited Plazas (25)
               </span>
             )}
             <span className="legend-count mono">
@@ -771,6 +791,95 @@ export const DelhiPilotView: React.FC<DelhiPilotViewProps> = ({
                 </CircleMarker>
               );
             })}
+
+            {/* AI-Optimized Candidate Hubs (Top 25 Plazas) */}
+            {showAiCandidateHubs &&
+              aiBundle?.constrained_siting_optimization?.optimal_sites.map((site) => (
+                <CircleMarker
+                  key={`ai-hub-${site.cell_id}`}
+                  center={[site.lat, site.lon]}
+                  radius={8.5}
+                  pathOptions={{
+                    color: '#ffffff',
+                    weight: 2.2,
+                    fillColor: '#8b5cf6',
+                    fillOpacity: 0.95,
+                  }}
+                >
+                  <Popup>
+                    <div className="leaflet-custom-popup">
+                      <div className="popup-header-tags">
+                        <span
+                          className="popup-badge"
+                          style={{
+                            background: '#f5f3ff',
+                            color: '#6d28d9',
+                            border: '1px solid #ddd6fe',
+                          }}
+                        >
+                          🧠 AI Siting Candidate #{site.rank}
+                        </span>
+                        <span className="popup-badge badge-teal">
+                          1 Sited Plaza
+                        </span>
+                      </div>
+                      <h4>
+                        {site.cell_id} — {site.district}
+                      </h4>
+                      <p className="popup-addr">
+                        Optimal plaza identified by Submodular Greedy Optimization (Feeder &lt;1.5km &amp; Spacing &ge;1.2km).
+                      </p>
+                      <div className="popup-grid">
+                        <div>
+                          <span>AI ML Demand:</span>{' '}
+                          <strong className="text-sky">{site.ai_demand_score}/100</strong>
+                        </div>
+                        <div>
+                          <span>Utility Score:</span>{' '}
+                          <strong>{site.utility_score}</strong>
+                        </div>
+                        <div>
+                          <span>Nearest Substation:</span>{' '}
+                          <strong>
+                            {site.substation_dist_m}m ({site.electrical_tier})
+                          </strong>
+                        </div>
+                        <div>
+                          <span>Sized DC Fast Nozzles:</span>{' '}
+                          <strong className="text-amber">
+                            {site.recommended_dc_fast_nozzles} nozzles
+                          </strong>
+                        </div>
+                        <div>
+                          <span>Sized AC Connectors:</span>{' '}
+                          <strong>{site.recommended_ac_connectors} nozzles</strong>
+                        </div>
+                        <div>
+                          <span>Grid Connection Load:</span>{' '}
+                          <strong className="text-teal">
+                            {site.total_installed_load_kw} kW (Max: {site.max_hosting_kw} kW)
+                          </strong>
+                        </div>
+                      </div>
+                      <div
+                        style={{
+                          marginTop: '10px',
+                          paddingTop: '8px',
+                          borderTop: '1px dashed #cbd5e1',
+                        }}
+                      >
+                        <button
+                          className="btn-primary-xs"
+                          style={{ width: '100%', justifyContent: 'center' }}
+                          onClick={onOpenPlanningView}
+                        >
+                          Open in Coverage &amp; Siting Planning Engine &rarr;
+                        </button>
+                      </div>
+                    </div>
+                  </Popup>
+                </CircleMarker>
+              ))}
           </MapContainer>
         </div>
 
