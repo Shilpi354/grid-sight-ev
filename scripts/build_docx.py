@@ -759,11 +759,14 @@ def create_document():
     # ENFORCE STRICT OPENXML SCHEMA COMPLIANCE (Word Validation)
     enforce_openxml_schema_compliance(doc)
 
-    # Output file path in project root
+    # Output file paths in project root
     workspace_dir = r"C:\Users\hp\.gemini\antigravity\scratch\ev-infra-map-india"
-    out_path = os.path.join(workspace_dir, "TECHFEST_SUBMISSION_ROUND_1.docx")
-    doc.save(out_path)
-    print(f"[SUCCESS] Document generated cleanly: {out_path} (size: {os.path.getsize(out_path)} bytes)")
+    out_path1 = os.path.join(workspace_dir, "TECHFEST_SUBMISSION_ROUND_1.docx")
+    out_path2 = os.path.join(workspace_dir, "METHODOLOGY_DOCUMENT.docx")
+    
+    doc.save(out_path1)
+    doc.save(out_path2)
+    print(f"[SUCCESS] Documents generated cleanly:\n - {out_path1} (size: {os.path.getsize(out_path1)} bytes)\n - {out_path2} (size: {os.path.getsize(out_path2)} bytes)")
 
 if __name__ == "__main__":
     create_document()
