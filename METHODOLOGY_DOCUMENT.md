@@ -100,12 +100,31 @@ $$\mathbf{w_{\text{district}} = 0.40 \cdot \left(\frac{P_{\text{district}}}{P_{\
 ### 3.2 Spatial Grid Discretization (375 Planning Cells)
 The NCT of Delhi is discretized into 375 uniform cells of $0.018^\circ\text{ Lat} \times 0.0205^\circ\text{ Lon}$ ($\approx 2.0\text{ km} \times 2.0\text{ km}$). The bounding box ($28.40^\circ\text{–}28.89^\circ\text{N}, 76.83^\circ\text{–}77.35^\circ\text{E}$) encompasses the municipal boundary plus cross-border commuter freight gateways (Gurugram, Noida, Faridabad, Ghaziabad borders).
 
-### 3.3 Supervised Spatial Demand ML Regressor
-Rather than relying on arbitrary heuristic weights, GridSight EV trains a **Supervised Random Forest Regressor** (120 trees, max depth 6) across all 375 planning cells against observed charging infrastructure density:
+### 3.3 Supervised Machine-Learning Model for Spatial Demand & Latent Carrying Capacity
+Rather than relying on arbitrary heuristic weights, GridSight EV trains a supervised **Random Forest Regressor** (120 estimators, maximum tree depth 6) across all $N = 375$ spatial planning cells of the National Capital Territory of Delhi ($0.01^\circ \times 0.01^\circ \approx 1.1\text{ km} \times 1.1\text{ km}$).
 
-$$\mathbf{D_{\text{AI}} = f_{\text{RF}}\Big(\text{Pop}, \text{POI}_{\text{comm}}, \text{Transit}, \text{Roads}, \text{Dist}_{\text{substation}}, \text{DT}_{\text{count}}\Big) \in [0, 100]} \quad \text{[Eq. 2]}$$
+$$\mathbf{y_i = 3.5 \cdot N_{\text{Switch}, i} + 2.0 \cdot N_{\text{BEE}, i} + 0.4 \cdot D_{\text{heuristic}, i} \in [0, 100]} \quad \text{[Eq. 2A: Demonstrated Carrying Capacity Target]}$$
 
-**Empirical Feature Importance Distribution ($R^2 = 0.796, \text{MAE} = 5.85$):**
+**Target Variable Formulation & Observations:** The regression target $y_i$ is explicitly formulated as the *demonstrated spatial carrying capacity* of each cell, synthesized from empirical charging density. It assigns higher weight to verified, high-utilization municipal chargers ($N_{\text{Switch}}$) than to self-reported commercial installations ($N_{\text{BEE}}$), establishing a continuous numerical measure of observed infrastructure concentration. The training dataset comprises all 375 spatial planning cells spanning the 1,483 km² area of Delhi NCT.
+
+**Translating Predicted Carrying Capacity into Unmet Demand Priority:** A critical methodological distinction must be made: the Random Forest regressor predicts $\hat{D}_{\text{AI}, i} \in [0, 100]$, which represents an area's *latent commercial carrying capacity* based on urban activity, transit density, and road connectivity—**not unmet demand directly**. If $\hat{D}_{\text{AI}}$ were used directly as a siting priority, it would merely recreate past investment patterns and reinforce existing spatial misallocations.
+
+To translate latent carrying capacity into genuine **unmet demand priority ($S_i$)**, GridSight EV routes $\hat{D}_{\text{AI}, i}$ through a non-linear spatial accessibility deficit kernel (Equation 3):
+
+$$\mathbf{S_i = \hat{D}_{\text{AI}, i} \cdot \left[ 1 - \frac{1}{1 + \left(\frac{d_i}{r}\right)^4} \right]} \quad \text{[Eq. 2B: Spatial Accessibility Deficit Translation]}$$
+
+where $d_i$ is the Euclidean/Haversine distance from cell centroid $i$ to the nearest operational public charging station, and $r = 1.5\text{ km}$ represents the target 15-minute urban catchment threshold:
+- **Well-Served Cells ($d_i \ll r$):** As distance approaches zero, the deficit multiplier $[1 - 1/(1 + (d_i/r)^4)] \to 0$. Even if a central commercial hub exhibits maximum latent carrying capacity ($\hat{D}_{\text{AI}} \approx 100$), its unmet priority drops to $S_i \approx 0$, preventing redundant over-clustering.
+- **Underserved Peripheral Corridors ($d_i \ge r$):** As distance exceeds the service radius, the deficit multiplier approaches $1.0$, allowing the full latent carrying capacity to register as urgent unmet demand ($S_i \to \hat{D}_{\text{AI}}$).
+
+Consequently, the Random Forest model predicts **where EV infrastructure can be commercially and operationally sustained**, while the spatial accessibility kernel determines **where it is currently lacking**.
+
+**Validation Protocol and Cross-Validation Generalization:**
+Model validation was conducted using a 5-fold cross-validation scheme ($k=5$, random seed 42) with spatial stratification across the 375 planning cells:
+- **Resubstitution Performance:** Training across the full dataset yields $R^2 = 0.796$, Mean Absolute Error ($\text{MAE}$) = $5.85$, and Root Mean Squared Error ($\text{RMSE}$) = $8.42$.
+- **Out-of-Fold Generalization:** 5-fold cross-validation yields an average out-of-fold $R^2_{\text{CV}} = 0.333 \pm 0.096$ with out-of-fold $\text{MAE} = 8.12$. The divergence between resubstitution fit and out-of-fold generalization is expected in spatial regression problems due to spatial autocorrelation and high land-use heterogeneity between dense central wards and peripheral agricultural/industrial fringe wards.
+
+**Observed Empirical Feature Importance:**
 - **Population Density (WorldPop):** **49.65%** (overnight residential charging elasticity)
 - **Commercial & Activity POIs:** **22.67%** (daytime dwell and opportunity charging)
 - **Distance to Feeder Substation:** **9.14%** (distribution grid interconnection readiness)
@@ -122,19 +141,29 @@ $$\mathbf{S = D_{\text{AI}} \cdot \left[ 1 - \frac{1}{1 + \left(\frac{d}{r}\righ
 - When $d = r$: $S = 0.50 \cdot D_{\text{AI}}$ (half-maximum transition at threshold).
 - When $d \gg r$: $S \to D_{\text{AI}}$ (full priority deficit penalty outside catchment).
 
-### 3.5 Predictive Fleet Adoption: Bass Diffusion S-Curve Model
-To replace static linear multipliers with a realistic non-linear technology adoption trajectory, GridSight EV calibrates the **Bass Diffusion Model** on historical VAHAN national registration time-series:
+### 3.5 Forecasting EV Adoption with the Bass Diffusion S-Curve
+A fixed linear growth multiplier is an inadequate way to model technology transitions, as it ignores adoption saturation and peer effects. GridSight EV calibrates the classical **Bass Diffusion Model** of innovation adoption to the historical national EV registration time-series:
 
-$$\mathbf{F(t) = M \cdot \frac{1 - e^{-(p+q)t}}{1 + \frac{q}{p}e^{-(p+q)t}}} \quad \text{[Eq. 4]}$$
+$$\mathbf{F(t) = M \cdot \frac{1 - e^{-(p+q)t}}{1 + \frac{q}{p}e^{-(p+q)t}}} \quad \text{[Eq. 4: Bass Diffusion Adoption Curve]}$$
 
-- **Calibrated Parameters ($R^2 = 0.992$):**
-  - **Innovation Coefficient ($p$):** $0.0114$ (policy-driven adoption, subsidies, early adopters)
-  - **Imitation Coefficient ($q$):** $0.4963$ (word-of-mouth, charging network visibility, peer effects)
-  - **National Market Ceiling ($M$):** $20.0\text{ Million EVs}$
-- **Trajectory Forecasts (National & Delhi Fleet with $P_{10}/P_{90}$ Bands):**
-  - **2026 Baseline:** National $10.69\text{M}$ EVs; Delhi active fleet: $\mathbf{549,153\text{ EVs}}$.
-  - **2028 Horizon:** National $15.63\text{M}$ EVs ($P_{10}: 12.23\text{M}, P_{90}: 18.71\text{M}$); Delhi active fleet: $\mathbf{803,300\text{ EVs}}$.
-  - **2030 Horizon:** National $18.17\text{M}$ EVs ($P_{10}: 15.27\text{M}, P_{90}: 20.58\text{M}$); Delhi active fleet: $\mathbf{933,751\text{ EVs}}$.
+**Calibration Period & Fitting Procedure:**
+- **Calibration Period:** Fitted over 9 annual empirical observations (2018–2026) obtained from the MoRTH VAHAN 4 national registration portal, tracking India's cumulative registered EV fleet from $0.12\text{M}$ vehicles in 2018 to $10.69\text{M}$ vehicles by early 2026.
+- **Fitting Procedure:** Parameters are estimated via non-linear least squares (NLLS) using SciPy's Trust Region Reflective (`trf`) algorithm with bounded parameter domains ($p \in [0.001, 0.05]$, $q \in [0.1, 0.8]$, $M \in [15.0\text{M}, 25.0\text{M}]$), minimizing the residual sum of squares: $\min \sum [Y(t) - F(t; p, q, M)]^2$.
+- **Calibrated Parameters ($R^2 = 0.992, \text{RMSE} = 0.14\text{M}$):**
+  - **Innovation Coefficient ($p$):** $0.0114$ (adoption driven by central policy, purchase subsidies like FAME-II/PM E-DRIVE, and early adopters).
+  - **Imitation Coefficient ($q$):** $0.4963$ (peer influence, word of mouth, commercial TCO parity, and charging network visibility).
+
+**Justification for National Market Ceiling ($M = 20.0\text{ Million EVs}$):**
+The assumed national ceiling $M = 20.0\text{M}$ is directly anchored to Government of India policy commitments under NITI Aayog's **EV30@30 roadmap** (targeting 30% private automobile, 70% commercial light vehicle, and 80% 2W/3W electric penetration by 2030), which translates to an operational fleet of 18 to 22 million active EVs nationwide between 2030 and 2032. Delhi NCT's localized EV fleet is calibrated at $5.14\%$ of the national cumulative total (based on historical VAHAN RTO share), yielding an expected active fleet of **933,751 EVs in Delhi by 2030**.
+
+**Adoption Projections and Fleet Forecasts (with $P_{10}/P_{90}$ Uncertainty Bands):**
+- **2026 Baseline:** $10.69\text{M}$ EVs nationally; Delhi active fleet: **549,153 active EVs**.
+- **2028 Projection:** $15.63\text{M}$ EVs nationally ($P_{10}: 12.23\text{M}, P_{90}: 18.71\text{M}$); Delhi active fleet: **803,300 active EVs**.
+- **2030 Projection:** $18.17\text{M}$ EVs nationally ($P_{10}: 15.27\text{M}, P_{90}: 20.58\text{M}$); Delhi active fleet: **933,751 active EVs**.
+
+**Distinguishing Fitted Statistical Uncertainty vs. Policy/Macroeconomic Shocks:**
+The reported $P_{10}/P_{90}$ confidence intervals represent **statistical parameter estimation uncertainty**, derived by propagating the parameter covariance matrix of $(p, q, M)$ with $\pm 10\%$ variation on $p$, $\pm 12\%$ on $q$, and $\pm 15\%$ on $M$. 
+Crucially, this statistical fit assumes **policy regime continuity**. It does not capture exogenous structural shocks, such as sudden revisions to PM E-DRIVE subsidy allocations, domestic cell battery pack supply-chain cost shocks, or DISCOM tariff restructuring. Consequently, the Bass diffusion curve serves as an extrapolative baseline trajectory; GridSight EV provides interactive Low / Baseline / High scenario switches in the Coverage Planning module to let municipal planners stress-test infrastructure capital against policy fluctuations.
 
 ### 3.6 Bottom-Up Volumetric Energy Balance & Hardware Sizing
 For each vehicle category $k \in \{\text{2W}, \text{3W}, \text{4W}, \text{Bus}, \text{Goods}\}$:
@@ -158,14 +187,36 @@ $$\mathbf{\text{Net New Hardware} = \max\left(0, \text{Required Hardware} - \sum
 
 *Where $\eta_{\text{power}}$ is a power-substitution matrix preventing slow $3.3\text{ kW}$ sockets from discounting high-power DC fast requirements.*
 
-### 3.7 Submodular Greedy Grid-Constrained Siting Optimizer
-To select optimal candidate locations, GridSight EV executes a submodular greedy optimizer bounded by spatial and electrical constraints:
-- **Objective:** $\max \sum_{i \in \text{Selected}} S_i \cdot (0.6 + 0.4 \cdot \text{GridFeasibility}_i)$.
-- **Feeder Distance Constraint:** Sites are classified into Feeder Tiers based on physical distance to nearest $11\text{kV}/33\text{kV}$ substation:
-  - **Tier-1 (<1.0 km):** $\ge 500\text{ kVA}$ spare capacity proxy ($250\text{ kW}$ max hosting capacity).
-  - **Tier-2 (1.0–2.5 km):** $150\text{–}250\text{ kVA}$ spare capacity proxy ($120\text{ kW}$ max hosting capacity).
-  - **Tier-3 (>2.5 km):** Feeder constrained; requires dedicated distribution transformer upgrade ($60\text{ kW}$ max hosting capacity).
-- **Spatial Anti-Cannibalization Constraint:** $\text{Haversine}(i, j) \ge 1.2\text{ km}$ for all pairs of selected candidate hubs $(i, j)$.
+### 3.7 Spatial-Electrical Hub Siting Optimizer & Feeder Screening
+To translate continuous spatial demand surfaces into actionable capital investment recommendations, GridSight EV executes a **Greedy Constructive Spatial Heuristic with Conflict Graph Rejection** to site $K = 25$ candidate charging hubs across Delhi's 375 planning cells.
+
+$$\mathbf{\max_{\mathcal{S} \subseteq \mathcal{V}, \,|\mathcal{S}| \le K} \quad \mathcal{J}(\mathcal{S}) = \sum_{i \in \mathcal{S}} S_i \cdot \left(0.6 + 0.4 \cdot \Phi_{\text{grid}, i}\right)} \quad \text{[Eq. 8: Hub Siting Objective]}$$
+
+**Formal Combinatorial Optimization Formulation:**
+The optimizer solves a constrained maximum-coverage problem over the discrete set of planning cell centroids $\mathcal{V}$ ($|\mathcal{V}| = 375$):
+- **Cardinality Constraint:** $|\mathcal{S}| \le K = 25$ hubs, capping total capital outlay.
+- **Spatial Anti-Cannibalization Constraint:**
+  $$\text{Haversine}(u, v) \ge d_{\min} = 1.2\text{ km}, \quad \forall u, v \in \mathcal{S}, \; u \neq v$$
+  preventing capital clustering and cannibalization between public charging plazas.
+- **Feeder Distance Screening Constraint:**
+  $$\text{dist}(u, \text{Substation}) \le 2.5\text{ km}, \quad \forall u \in \mathcal{S} \quad (\text{Tier 1 or Tier 2 eligible})$$
+
+**Algorithmic Classification & Theoretical Bounds:**
+While unconstrained maximum coverage over a uniform matroid exhibits submodularity with Nemhauser's classic $(1 - 1/e) \approx 63.2\%$ greedy approximation guarantee, the addition of hard pairwise spatial separation constraints ($\text{Haversine}(u, v) \ge 1.2\text{ km}$) transforms the problem into a **Constrained Maximum-Weight Independent Set (MWIS) on a Geometric Conflict Graph**, which is known to be **NP-hard**. 
+Therefore, GridSight EV does not claim an unconstrained submodular approximation guarantee. Instead, the algorithm operates as a rigorous, deterministic greedy heuristic:
+- **Selection Procedure:** Candidate cells in $\mathcal{V}$ are sorted in descending order of composite objective score $W_i = S_i \cdot (0.6 + 0.4 \cdot \Phi_{\text{grid}, i})$. The algorithm iteratively selects the highest-scoring available candidate $u^* = \arg\max_{u \in \mathcal{V}_{\text{eligible}}} W_u$, commits $u^*$ to solution set $\mathcal{S}$, and immediately purges $u^*$ and all spatial neighbors within a $1.2\text{ km}$ Haversine radius from $\mathcal{V}_{\text{eligible}}$:
+  $$\mathcal{V}_{\text{eligible}} \leftarrow \mathcal{V}_{\text{eligible}} \setminus \left\{ v \in \mathcal{V} \mid \text{Haversine}(u^*, v) < 1.2\text{ km} \right\}$$
+- **Stopping Rule:** Execution halts cleanly when $|\mathcal{S}| = K = 25$ or when $\mathcal{V}_{\text{eligible}} = \emptyset$.
+- **Runtime Complexity:** With complexity $O(K \cdot |\mathcal{V}|)$, the siting optimizer executes client-side in TypeScript in $< 5\text{ milliseconds}$.
+
+**Grid-Feasibility Screening Assumptions (Feeder Interconnection Proxies):**
+Physical distance to an $11\text{ kV}/33\text{ kV}$ substation is utilized as an **initial spatial screening proxy** for interconnection capital expenditure and distribution feeder line drop, derived from Central Electricity Authority (CEA) Technical Standards for Connectivity and Delhi DISCOM (BSES Rajdhani/Yamuna, Tata Power DDL) line-extension practices:
+- **Tier 1 (< 1.0 km):** Direct $11\text{ kV}$ secondary line tap-off without severe voltage drop or extensive Right-of-Way (RoW) road trenching; assumed screening proxy of $\ge 500\text{ kVA}$ spare transformer capacity ($250\text{ kW}$ maximum recommended hosting capacity).
+- **Tier 2 (1.0–2.5 km):** Feeder extension requires moderate $11\text{ kV}$ cable routing with RoW permissions; hosting capacity derated to $120\text{ kW}$ screening proxy ($150–250\text{ kVA}$ spare capacity proxy).
+- **Tier 3 (> 2.5 km):** Long cable run prone to unacceptable line drop ($> 5\%$ statutory threshold); classified as feeder-constrained, requiring dedicated distribution-transformer augmentation or an express feeder ($60\text{ kW}$ maximum proxy).
+
+> [!WARNING]
+> **Mandatory Utility Assessment Disclaimer:** Physical distance alone cannot establish real-time transformer thermal headroom, reverse power flow capability, or dynamic feeder loading. In production deployment, every candidate site identified by GridSight EV must undergo a formal DISCOM Interconnection Feasibility Study (load-flow, short-circuit, and power quality analysis) prior to capital expenditure and hardware procurement.
 
 ---
 
